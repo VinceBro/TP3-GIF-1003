@@ -1,0 +1,46 @@
+10:06:34 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../src/Reference.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Reference.d" -MT"src/Reference.o" -o "src/Reference.o" "../src/Reference.cpp"
+../src/Reference.cpp:21:6: error: prototype for ‘void biblio::Reference::affich_auteur()’ does not match any in class ‘biblio::Reference’
+ void Reference::affich_auteur(){
+      ^~~~~~~~~
+In file included from ../src/Reference.cpp:2:0:
+../src/Reference.h:20:10: error: candidate is: void biblio::Reference::affich_auteur() const
+     void affich_auteur() const;
+          ^~~~~~~~~~~~~
+../src/Reference.cpp:25:6: error: prototype for ‘void biblio::Reference::affich_titre()’ does not match any in class ‘biblio::Reference’
+ void Reference::affich_titre(){
+      ^~~~~~~~~
+In file included from ../src/Reference.cpp:2:0:
+../src/Reference.h:21:10: error: candidate is: void biblio::Reference::affich_titre() const
+     void affich_titre() const;
+          ^~~~~~~~~~~~
+../src/Reference.cpp:29:6: error: prototype for ‘void biblio::Reference::affich_identifiant()’ does not match any in class ‘biblio::Reference’
+ void Reference::affich_identifiant(){
+      ^~~~~~~~~
+In file included from ../src/Reference.cpp:2:0:
+../src/Reference.h:22:10: error: candidate is: void biblio::Reference::affich_identifiant() const
+     void affich_identifiant() const;
+          ^~~~~~~~~~~~~~~~~~
+../src/Reference.cpp:33:6: error: prototype for ‘void biblio::Reference::affich_annee()’ does not match any in class ‘biblio::Reference’
+ void Reference::affich_annee(){
+      ^~~~~~~~~
+In file included from ../src/Reference.cpp:2:0:
+../src/Reference.h:23:10: error: candidate is: void biblio::Reference::affich_annee() const
+     void affich_annee() const;
+          ^~~~~~~~~~~~
+../src/Reference.cpp:43:8: error: prototype for ‘std::__cxx11::string biblio::Reference::reqReferenceFormate()’ does not match any in class ‘biblio::Reference’
+ string Reference::reqReferenceFormate(){
+        ^~~~~~~~~
+In file included from ../src/Reference.cpp:2:0:
+../src/Reference.h:25:17: error: candidate is: std::__cxx11::string biblio::Reference::reqReferenceFormate() const
+     std::string reqReferenceFormate() const;
+                 ^~~~~~~~~~~~~~~~~~~
+src/subdir.mk:18: recipe for target 'src/Reference.o' failed
+make: *** [src/Reference.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+10:06:35 Build Failed. 12 errors, 0 warnings. (took 474ms)
+
