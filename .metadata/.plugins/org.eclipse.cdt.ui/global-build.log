@@ -84,3 +84,235 @@ In file included from ../src/Reference.cpp:2:0:
 src/subdir.mk:18: recipe for target 'src/Reference.o' failed
 make: *** [src/Reference.o] Error 1
 "make all" terminated with exit code 2. Build might be incomplete.
+10:28:46 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../src/Reference.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Reference.d" -MT"src/Reference.o" -o "src/Reference.o" "../src/Reference.cpp"
+../src/Reference.cpp: In member function ‘void biblio::Reference::modif_auteurs(std::__cxx11::string)’:
+../src/Reference.cpp:39:9: error: ‘util’ has not been declared
+     if (util::validerFormatNom(nouv_auteurs)) m_auteurs = nouv_auteurs;
+         ^~~~
+src/subdir.mk:21: recipe for target 'src/Reference.o' failed
+make: *** [src/Reference.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:29:30 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../src/Reference.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Reference.d" -MT"src/Reference.o" -o "src/Reference.o" "../src/Reference.cpp"
+Finished building: ../src/Reference.cpp
+ 
+Building file: ../src/util.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/util.d" -MT"src/util.o" -o "src/util.o" "../src/util.cpp"
+../src/util.cpp:4:35: error: ‘string’ does not name a type; did you mean ‘stdin’?
+ bool util::validerFormatNom(const string &p_nom){
+                                   ^~~~~~
+                                   stdin
+../src/util.cpp:4:48: error: ‘bool util::validerFormatNom(const int&)’ should have been declared inside ‘util’
+ bool util::validerFormatNom(const string &p_nom){
+                                                ^
+../src/util.cpp: In function ‘bool util::validerFormatNom(const int&)’:
+../src/util.cpp:7:5: error: ‘string’ was not declared in this scope
+     string str = p_nom;
+     ^~~~~~
+../src/util.cpp:7:5: note: suggested alternatives:
+In file included from /usr/include/c++/7/string:39:0,
+                 from ../src/util.h:10,
+                 from ../src/util.cpp:2:
+/usr/include/c++/7/bits/stringfwd.h:74:33: note:   ‘std::__cxx11::string’
+   typedef basic_string<char>    string;
+                                 ^~~~~~
+/usr/include/c++/7/bits/stringfwd.h:74:33: note:   ‘std::__cxx11::string’
+../src/util.cpp:8:13: error: ‘str’ was not declared in this scope
+     if (int(str[0]) == 32) valide = false;
+             ^~~
+../src/util.cpp:9:36: error: ‘str’ was not declared in this scope
+     for(std::string::iterator it = str.begin(); it != str.end(); ++it) {
+                                    ^~~
+../src/util.cpp: At global scope:
+../src/util.cpp:18:34: error: ‘string’ does not name a type; did you mean ‘stdin’?
+ bool util::validerCodeIssn(const string &p_issn){
+                                  ^~~~~~
+                                  stdin
+../src/util.cpp:18:48: error: ‘bool util::validerCodeIssn(const int&)’ should have been declared inside ‘util’
+ bool util::validerCodeIssn(const string &p_issn){
+                                                ^
+../src/util.cpp: In function ‘bool util::validerCodeIssn(const int&)’:
+../src/util.cpp:21:5: error: ‘string’ was not declared in this scope
+     string str = p_issn;
+     ^~~~~~
+../src/util.cpp:21:5: note: suggested alternatives:
+In file included from /usr/include/c++/7/string:39:0,
+                 from ../src/util.h:10,
+                 from ../src/util.cpp:2:
+/usr/include/c++/7/bits/stringfwd.h:74:33: note:   ‘std::__cxx11::string’
+   typedef basic_string<char>    string;
+                                 ^~~~~~
+/usr/include/c++/7/bits/stringfwd.h:74:33: note:   ‘std::__cxx11::string’
+../src/util.cpp:23:9: error: ‘str’ was not declared in this scope
+     if (str.length() != 14)
+         ^~~
+../src/util.cpp:26:13: error: ‘str’ was not declared in this scope
+     if (int(str[0]) != 73 or int(str[1]) != 83 or int(str[2]) != 83  or int(str[3]) != 78 or int(str[4]) != 32){
+             ^~~
+../src/util.cpp:30:28: error: ‘str’ was not declared in this scope
+         if (i == 9 and int(str[i]) != 45)
+                            ^~~
+../src/util.cpp:32:40: error: ‘str’ was not declared in this scope
+         if (i != 9  and not (48 <= int(str[i]) and int(str[i]) <= 57))
+                                        ^~~
+../src/util.cpp:35:19: error: ‘str’ was not declared in this scope
+     total = ((int(str[5])-48)* 8) + ((int(str[6])-48)* 7) + ((int(str[7])-48)* 6) + ((int(str[8])-48)* 5) + ((int(str[10])-48)* 4) + ((int(str[11])-48)* 3) + ((int(str[12])-48)* 2);
+                   ^~~
+../src/util.cpp: At global scope:
+../src/util.cpp:43:34: error: ‘string’ does not name a type; did you mean ‘stdin’?
+ bool util::validerCodeIsbn(const string &p_isbn){
+                                  ^~~~~~
+                                  stdin
+../src/util.cpp:43:48: error: ‘bool util::validerCodeIsbn(const int&)’ should have been declared inside ‘util’
+ bool util::validerCodeIsbn(const string &p_isbn){
+                                                ^
+../src/util.cpp: In function ‘bool util::validerCodeIsbn(const int&)’:
+../src/util.cpp:47:5: error: ‘string’ was not declared in this scope
+     string str = p_isbn;
+     ^~~~~~
+../src/util.cpp:47:5: note: suggested alternatives:
+In file included from /usr/include/c++/7/string:39:0,
+                 from ../src/util.h:10,
+                 from ../src/util.cpp:2:
+/usr/include/c++/7/bits/stringfwd.h:74:33: note:   ‘std::__cxx11::string’
+   typedef basic_string<char>    string;
+                                 ^~~~~~
+/usr/include/c++/7/bits/stringfwd.h:74:33: note:   ‘std::__cxx11::string’
+../src/util.cpp:48:15: error: ‘str’ was not declared in this scope
+     int len = str.length();
+               ^~~
+src/subdir.mk:21: recipe for target 'src/util.o' failed
+make: *** [src/util.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:30:32 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../src/util.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/util.d" -MT"src/util.o" -o "src/util.o" "../src/util.cpp"
+Finished building: ../src/util.cpp
+ 
+Building target: Classes
+Invoking: GCC C++ Linker
+g++  -o "Classes"  ./src/Reference.o ./src/util.o   
+Finished building target: Classes
+ 
+10:40:24 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../src/Reference.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Reference.d" -MT"src/Reference.o" -o "src/Reference.o" "../src/Reference.cpp"
+Finished building: ../src/Reference.cpp
+ 
+Building target: Classes
+Invoking: GCC C++ Linker
+g++  -o "Classes"  ./src/Reference.o ./src/util.o   
+./src/Reference.o: In function `biblio::Reference::Reference(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int)':
+/home/vincebro/Documents/cpp/TP3/Classes/Debug/../src/Reference.cpp:12: undefined reference to `vtable for biblio::Reference'
+collect2: error: ld returned 1 exit status
+makefile:45: recipe for target 'Classes' failed
+make: *** [Classes] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:41:12 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../src/Reference.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Reference.d" -MT"src/Reference.o" -o "src/Reference.o" "../src/Reference.cpp"
+Finished building: ../src/Reference.cpp
+ 
+Building target: Classes
+Invoking: GCC C++ Linker
+g++  -o "Classes"  ./src/Reference.o ./src/util.o   
+makefile:45: recipe for target 'Classes' failed
+./src/Reference.o: In function `biblio::Reference::Reference(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int)':
+/home/vincebro/Documents/cpp/TP3/Classes/Debug/../src/Reference.cpp:12: undefined reference to `vtable for biblio::Reference'
+collect2: error: ld returned 1 exit status
+make: *** [Classes] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:41:32 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../src/Reference.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Reference.d" -MT"src/Reference.o" -o "src/Reference.o" "../src/Reference.cpp"
+Finished building: ../src/Reference.cpp
+ 
+Building target: Classes
+Invoking: GCC C++ Linker
+g++  -o "Classes"  ./src/Reference.o ./src/util.o   
+./src/Reference.o: In function `biblio::Reference::Reference(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int)':
+/home/vincebro/Documents/cpp/TP3/Classes/Debug/../src/Reference.cpp:12: undefined reference to `vtable for biblio::Reference'
+collect2: error: ld returned 1 exit status
+make: *** [Classes] Error 1
+makefile:45: recipe for target 'Classes' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+10:41:40 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../src/Reference.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Reference.d" -MT"src/Reference.o" -o "src/Reference.o" "../src/Reference.cpp"
+Finished building: ../src/Reference.cpp
+ 
+Building target: Classes
+Invoking: GCC C++ Linker
+g++  -o "Classes"  ./src/Reference.o ./src/util.o   
+Finished building target: Classes
+ 
+10:47:47 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../src/Reference.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Reference.d" -MT"src/Reference.o" -o "src/Reference.o" "../src/Reference.cpp"
+../src/Reference.cpp:21:20: error: declaration of ‘~biblio::Reference’ as non-member
+ virtual ~Reference(){
+                    ^
+../src/Reference.cpp:47:1: error: ‘virtual’ outside class declaration
+ virtual string Reference::reqReferenceFormate() const{
+ ^~~~~~~
+src/subdir.mk:21: recipe for target 'src/Reference.o' failed
+make: *** [src/Reference.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:48:03 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../src/Reference.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Reference.d" -MT"src/Reference.o" -o "src/Reference.o" "../src/Reference.cpp"
+../src/Reference.cpp:21:1: error: ‘virtual’ outside class declaration
+ virtual Reference::~Reference(){
+ ^~~~~~~
+../src/Reference.cpp:47:1: error: ‘virtual’ outside class declaration
+ virtual string Reference::reqReferenceFormate() const{
+ ^~~~~~~
+src/subdir.mk:21: recipe for target 'src/Reference.o' failed
+make: *** [src/Reference.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:49:57 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../src/Reference.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Reference.d" -MT"src/Reference.o" -o "src/Reference.o" "../src/Reference.cpp"
+Finished building: ../src/Reference.cpp
+ 
+Building target: Classes
+Invoking: GCC C++ Linker
+g++  -o "Classes"  ./src/Reference.o ./src/util.o   
+Finished building target: Classes
+ 
+10:50:04 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../src/Reference.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Reference.d" -MT"src/Reference.o" -o "src/Reference.o" "../src/Reference.cpp"
+Finished building: ../src/Reference.cpp
+ 
+Building target: Classes
+Invoking: GCC C++ Linker
+g++  -o "Classes"  ./src/Reference.o ./src/util.o   
+Finished building target: Classes
+ 
