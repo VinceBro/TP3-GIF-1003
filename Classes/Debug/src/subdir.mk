@@ -4,19 +4,28 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../src/Bibliographie.cpp \
+../src/ContratException.cpp \
+../src/Journal.cpp \
 ../src/Ouvrage.cpp \
 ../src/Reference.cpp \
-../src/util.cpp 
+../src/Util.cpp 
 
 OBJS += \
+./src/Bibliographie.o \
+./src/ContratException.o \
+./src/Journal.o \
 ./src/Ouvrage.o \
 ./src/Reference.o \
-./src/util.o 
+./src/Util.o 
 
 CPP_DEPS += \
+./src/Bibliographie.d \
+./src/ContratException.d \
+./src/Journal.d \
 ./src/Ouvrage.d \
 ./src/Reference.d \
-./src/util.d 
+./src/Util.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

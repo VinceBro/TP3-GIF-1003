@@ -6,10 +6,16 @@
  */
 #include "Ouvrage.h"
 using namespace std;
-Ouvrage::Ouvrage(const string auteurs, const std::string titre, const std::string identifiant, const int annee, const std::string editeur, const std::string ville) : biblio::Reference(auteurs, titre, identifiant, annee)
+using namespace biblio;
+Ouvrage::Ouvrage(const string auteurs, const std::string titre,
+		const std::string identifiant, const int annee, const std::string editeur,
+		const std::string ville) : biblio::Reference(auteurs, titre, identifiant, annee)
 {
+	if (util::validerFormatNom(editeur) && util::validerFormatNom(ville))
+	{
 	m_editeur = editeur;
 	m_ville = ville;
+	} else cout << "Erreur du constructeur de Ouvrage mon excellent ami" << endl;
 }
 std::string Ouvrage::reqReferenceFormate() const{
 	ostringstream os;

@@ -1,4 +1,3 @@
-#include <iostream>
 #include "Reference.h"
 
 using namespace std;
@@ -10,12 +9,16 @@ int main(){
 
 //constructeur
 Reference::Reference(const string auteurs, const string titre, const string identifiant, int annee){
-
-        m_auteurs = auteurs;
-        m_titre = titre;
-        m_identifiant = identifiant;
-        m_annee = annee;
-
+	if (util::validerFormatNom(auteurs) && (titre.length() > 0) &&
+		(util::validerCodeIsbn(identifiant) || util::validerCodeIssn(identifiant)) &&
+		(annee > 0))
+	{
+	m_auteurs = auteurs;
+	m_titre = titre;
+	m_identifiant = identifiant;
+	m_annee = annee;
+	}
+	else cout << "Erreur du constructeur de Reference mon excellent ami" << endl;
 
 }
 //affiche le ou les auteurs dans la console
@@ -35,7 +38,7 @@ void Reference::affich_annee() const{
     cout << "Année de publication: " << m_annee << endl;
 }
 //change l'auteur si le nom d'auteur est valide
-void Reference::modif_auteurs(string nouv_auteurs){
+void Reference::modif_auteurs(const string nouv_auteurs){
 
     if (util::validerFormatNom(nouv_auteurs)) m_auteurs = nouv_auteurs;
 

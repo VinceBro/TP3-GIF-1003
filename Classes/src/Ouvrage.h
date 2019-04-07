@@ -11,10 +11,13 @@
  * \class Ouvrage
  * \brief Hérite de la classe Référence
  */
+namespace biblio{
 class Ouvrage: public biblio::Reference{
 
 public:
 	Ouvrage(const std::string, const std::string, const std::string, const int, const std::string, const std::string );
+	void affich_editeur() const{ std::cout << "Éditeur: " << m_editeur << std::endl;};
+	void affich_ville() const{std::cout << "Ville: " << m_ville << std::endl;};
     virtual std::string reqReferenceFormate() const;
     virtual Reference* clone() const {return new Ouvrage(*this);};
 
@@ -23,6 +26,6 @@ private:
 
 };
 
-
+}
 
 #endif /* OUVRAGE_H_ */

@@ -1,0 +1,27 @@
+/*
+ * Bibliographie.h
+ *
+ *  Created on: Apr. 7, 2019
+ *      Author: root
+ */
+
+#ifndef BIBLIOGRAPHIE_H_
+#define BIBLIOGRAPHIE_H_
+#include "Reference.h"
+#include "Ouvrage.h"
+#include "Journal.h"
+#include <vector>
+
+
+class Bibliographie: public biblio::Reference
+{
+public:
+
+private:
+	std::vector<biblio::Reference*> m_vReferences;
+
+};
+
+
+
+#endif /* BIBLIOGRAPHIE_H_ */
