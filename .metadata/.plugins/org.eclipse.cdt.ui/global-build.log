@@ -316,3 +316,388 @@ Invoking: GCC C++ Linker
 g++  -o "Classes"  ./src/Reference.o ./src/util.o   
 Finished building target: Classes
  
+22:44:16 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../src/Ouvrage.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ouvrage.d" -MT"src/Ouvrage.o" -o "src/Ouvrage.o" "../src/Ouvrage.cpp"
+../src/Ouvrage.cpp:9:18: error: definition of implicitly-declared ‘Ouvrage::Ouvrage()’
+ Ouvrage::Ouvrage(){
+                  ^
+../src/Ouvrage.cpp: In member function ‘virtual biblio::Reference* Ouvrage::clone() const’:
+../src/Ouvrage.cpp:15:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+src/subdir.mk:24: recipe for target 'src/Ouvrage.o' failed
+make: *** [src/Ouvrage.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:46:20 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../src/Ouvrage.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ouvrage.d" -MT"src/Ouvrage.o" -o "src/Ouvrage.o" "../src/Ouvrage.cpp"
+../src/Ouvrage.cpp: In constructor ‘Ouvrage::Ouvrage()’:
+../src/Ouvrage.cpp:9:18: error: no matching function for call to ‘biblio::Reference::Reference()’
+ Ouvrage::Ouvrage(){
+                  ^
+In file included from ../src/Ouvrage.h:7:0,
+                 from ../src/Ouvrage.cpp:7:
+../src/Reference.h:15:5: note: candidate: biblio::Reference::Reference(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int)
+     Reference(const std::string, const std::string, const std::string, int);
+     ^~~~~~~~~
+../src/Reference.h:15:5: note:   candidate expects 4 arguments, 0 provided
+../src/Reference.h:11:7: note: candidate: biblio::Reference::Reference(const biblio::Reference&)
+ class Reference
+       ^~~~~~~~~
+../src/Reference.h:11:7: note:   candidate expects 1 argument, 0 provided
+make: *** [src/Ouvrage.o] Error 1
+src/subdir.mk:24: recipe for target 'src/Ouvrage.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+22:55:59 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../src/Ouvrage.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ouvrage.d" -MT"src/Ouvrage.o" -o "src/Ouvrage.o" "../src/Ouvrage.cpp"
+../src/Ouvrage.cpp:9:1: error: prototype for ‘Ouvrage::Ouvrage()’ does not match any in class ‘Ouvrage’
+ Ouvrage::Ouvrage(){
+ ^~~~~~~
+In file included from ../src/Ouvrage.cpp:7:0:
+../src/Ouvrage.h:14:7: error: candidates are: Ouvrage::Ouvrage(Ouvrage&&)
+ class Ouvrage: public biblio::Reference{
+       ^~~~~~~
+../src/Ouvrage.h:14:7: error:                 Ouvrage::Ouvrage(const Ouvrage&)
+../src/Ouvrage.h:17:2: error:                 Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int)
+  Ouvrage(const std::string, const std::string, const std::string, const int);
+  ^~~~~~~
+src/subdir.mk:24: recipe for target 'src/Ouvrage.o' failed
+make: *** [src/Ouvrage.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:09:58 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../src/Ouvrage.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ouvrage.d" -MT"src/Ouvrage.o" -o "src/Ouvrage.o" "../src/Ouvrage.cpp"
+../src/Ouvrage.cpp:9:84: error: declaration of ‘Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int)’ outside of class is not definition [-fpermissive]
+ Ouvrage::Ouvrage(const std::string, const std::string, const std::string, const int);
+                                                                                    ^
+../src/Ouvrage.cpp:10:1: error: expected unqualified-id before ‘{’ token
+ {
+ ^
+src/subdir.mk:24: recipe for target 'src/Ouvrage.o' failed
+make: *** [src/Ouvrage.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:10:21 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../src/Ouvrage.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ouvrage.d" -MT"src/Ouvrage.o" -o "src/Ouvrage.o" "../src/Ouvrage.cpp"
+../src/Ouvrage.cpp: In constructor ‘Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int)’:
+../src/Ouvrage.cpp:9:84: error: no matching function for call to ‘biblio::Reference::Reference()’
+ Ouvrage::Ouvrage(const std::string, const std::string, const std::string, const int)
+                                                                                    ^
+In file included from ../src/Ouvrage.h:7:0,
+                 from ../src/Ouvrage.cpp:7:
+../src/Reference.h:15:5: note: candidate: biblio::Reference::Reference(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int)
+     Reference(const std::string, const std::string, const std::string, int);
+     ^~~~~~~~~
+../src/Reference.h:15:5: note:   candidate expects 4 arguments, 0 provided
+../src/Reference.h:11:7: note: candidate: biblio::Reference::Reference(const biblio::Reference&)
+ class Reference
+       ^~~~~~~~~
+../src/Reference.h:11:7: note:   candidate expects 1 argument, 0 provided
+src/subdir.mk:24: recipe for target 'src/Ouvrage.o' failed
+make: *** [src/Ouvrage.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:11:41 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../src/Ouvrage.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ouvrage.d" -MT"src/Ouvrage.o" -o "src/Ouvrage.o" "../src/Ouvrage.cpp"
+../src/Ouvrage.cpp: In constructor ‘Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int)’:
+../src/Ouvrage.cpp:9:84: error: no matching function for call to ‘biblio::Reference::Reference()’
+ Ouvrage::Ouvrage(const std::string, const std::string, const std::string, const int)
+                                                                                    ^
+In file included from ../src/Ouvrage.h:7:0,
+                 from ../src/Ouvrage.cpp:7:
+../src/Reference.h:15:5: note: candidate: biblio::Reference::Reference(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int)
+     Reference(const std::string, const std::string, const std::string, int);
+     ^~~~~~~~~
+../src/Reference.h:15:5: note:   candidate expects 4 arguments, 0 provided
+../src/Reference.h:11:7: note: candidate: biblio::Reference::Reference(const biblio::Reference&)
+ class Reference
+       ^~~~~~~~~
+../src/Reference.h:11:7: note:   candidate expects 1 argument, 0 provided
+../src/Ouvrage.cpp: In member function ‘virtual biblio::Reference* Ouvrage::clone() const’:
+../src/Ouvrage.cpp:15:13: error: expected type-specifier
+  return new Ouvrage::Ouvrage(*this);
+             ^~~~~~~
+../src/Ouvrage.cpp:15:13: error: expected ‘;’
+../src/Ouvrage.cpp:15:35: error: cannot call constructor ‘Ouvrage::Ouvrage’ directly [-fpermissive]
+  return new Ouvrage::Ouvrage(*this);
+                                   ^
+../src/Ouvrage.cpp:15:35: note: for a function-style cast, remove the redundant ‘::Ouvrage’
+src/subdir.mk:24: recipe for target 'src/Ouvrage.o' failed
+make: *** [src/Ouvrage.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:11:50 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../src/Ouvrage.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ouvrage.d" -MT"src/Ouvrage.o" -o "src/Ouvrage.o" "../src/Ouvrage.cpp"
+../src/Ouvrage.cpp: In constructor ‘Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int)’:
+../src/Ouvrage.cpp:9:84: error: no matching function for call to ‘biblio::Reference::Reference()’
+ Ouvrage::Ouvrage(const std::string, const std::string, const std::string, const int)
+                                                                                    ^
+In file included from ../src/Ouvrage.h:7:0,
+                 from ../src/Ouvrage.cpp:7:
+../src/Reference.h:15:5: note: candidate: biblio::Reference::Reference(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int)
+     Reference(const std::string, const std::string, const std::string, int);
+     ^~~~~~~~~
+../src/Reference.h:15:5: note:   candidate expects 4 arguments, 0 provided
+../src/Reference.h:11:7: note: candidate: biblio::Reference::Reference(const biblio::Reference&)
+ class Reference
+       ^~~~~~~~~
+../src/Reference.h:11:7: note:   candidate expects 1 argument, 0 provided
+make: *** [src/Ouvrage.o] Error 1
+src/subdir.mk:24: recipe for target 'src/Ouvrage.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+10:12:56 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../src/Ouvrage.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ouvrage.d" -MT"src/Ouvrage.o" -o "src/Ouvrage.o" "../src/Ouvrage.cpp"
+../src/Ouvrage.cpp: In constructor ‘Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int)’:
+../src/Ouvrage.cpp:9:84: error: no matching function for call to ‘biblio::Reference::Reference()’
+ Ouvrage::Ouvrage(const std::string, const std::string, const std::string, const int)
+                                                                                    ^
+In file included from ../src/Ouvrage.h:7:0,
+                 from ../src/Ouvrage.cpp:7:
+../src/Reference.h:15:5: note: candidate: biblio::Reference::Reference(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int)
+     Reference(const std::string, const std::string, const std::string, int);
+     ^~~~~~~~~
+../src/Reference.h:15:5: note:   candidate expects 4 arguments, 0 provided
+../src/Reference.h:11:7: note: candidate: biblio::Reference::Reference(const biblio::Reference&)
+ class Reference
+       ^~~~~~~~~
+../src/Reference.h:11:7: note:   candidate expects 1 argument, 0 provided
+src/subdir.mk:24: recipe for target 'src/Ouvrage.o' failed
+make: *** [src/Ouvrage.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:16:00 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../src/Ouvrage.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ouvrage.d" -MT"src/Ouvrage.o" -o "src/Ouvrage.o" "../src/Ouvrage.cpp"
+../src/Ouvrage.cpp: In constructor ‘Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string, std::__cxx11::string)’:
+../src/Ouvrage.cpp:9:163: error: no matching function for call to ‘biblio::Reference::Reference()’
+ Ouvrage::Ouvrage(const string auteurs, const std::string titre, const std::string identifiant, const int annee, const std::string editeur, const std::string ville)
+                                                                                                                                                                   ^
+In file included from ../src/Ouvrage.h:7:0,
+                 from ../src/Ouvrage.cpp:7:
+../src/Reference.h:15:5: note: candidate: biblio::Reference::Reference(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int)
+     Reference(const std::string, const std::string, const std::string, int);
+     ^~~~~~~~~
+../src/Reference.h:15:5: note:   candidate expects 4 arguments, 0 provided
+../src/Reference.h:11:7: note: candidate: biblio::Reference::Reference(const biblio::Reference&)
+ class Reference
+       ^~~~~~~~~
+../src/Reference.h:11:7: note:   candidate expects 1 argument, 0 provided
+make: *** [src/Ouvrage.o] Error 1
+src/subdir.mk:24: recipe for target 'src/Ouvrage.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+10:20:30 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../src/Ouvrage.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ouvrage.d" -MT"src/Ouvrage.o" -o "src/Ouvrage.o" "../src/Ouvrage.cpp"
+Finished building: ../src/Ouvrage.cpp
+ 
+Building file: ../src/Reference.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Reference.d" -MT"src/Reference.o" -o "src/Reference.o" "../src/Reference.cpp"
+Finished building: ../src/Reference.cpp
+ 
+Building target: Classes
+Invoking: GCC C++ Linker
+g++  -o "Classes"  ./src/Ouvrage.o ./src/Reference.o ./src/util.o   
+./src/Ouvrage.o: In function `Ouvrage::Ouvrage(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)':
+/home/vincebro/Documents/cpp/TP3/Classes/Debug/../src/Ouvrage.cpp:9: undefined reference to `vtable for Ouvrage'
+./src/Ouvrage.o: In function `Ouvrage::Ouvrage(Ouvrage const&)':
+/home/vincebro/Documents/cpp/TP3/Classes/Debug/../src/Ouvrage.h:14: undefined reference to `vtable for Ouvrage'
+collect2: error: ld returned 1 exit status
+make: *** [Classes] Error 1
+makefile:45: recipe for target 'Classes' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+10:23:06 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../src/Ouvrage.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ouvrage.d" -MT"src/Ouvrage.o" -o "src/Ouvrage.o" "../src/Ouvrage.cpp"
+In file included from ../src/Ouvrage.cpp:7:0:
+../src/Ouvrage.h: In constructor ‘Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string, std::__cxx11::string)’:
+../src/Ouvrage.h:17:137: error: ‘auteurs’ was not declared in this scope
+  Ouvrage(const std::string, const std::string, const std::string, const int, const std::string, const std::string ) : biblio::Reference(auteurs, titre, identifiant, annee);
+                                                                                                                                         ^~~~~~~
+../src/Ouvrage.h:17:137: note: suggested alternative: ‘m_auteurs’
+  Ouvrage(const std::string, const std::string, const std::string, const int, const std::string, const std::string ) : biblio::Reference(auteurs, titre, identifiant, annee);
+                                                                                                                                         ^~~~~~~
+                                                                                                                                         m_auteurs
+../src/Ouvrage.h:17:146: error: ‘titre’ was not declared in this scope
+  Ouvrage(const std::string, const std::string, const std::string, const int, const std::string, const std::string ) : biblio::Reference(auteurs, titre, identifiant, annee);
+                                                                                                                                                  ^~~~~
+../src/Ouvrage.h:17:146: note: suggested alternative: ‘m_titre’
+  Ouvrage(const std::string, const std::string, const std::string, const int, const std::string, const std::string ) : biblio::Reference(auteurs, titre, identifiant, annee);
+                                                                                                                                                  ^~~~~
+                                                                                                                                                  m_titre
+../src/Ouvrage.h:17:153: error: ‘identifiant’ was not declared in this scope
+  Ouvrage(const std::string, const std::string, const std::string, const int, const std::string, const std::string ) : biblio::Reference(auteurs, titre, identifiant, annee);
+                                                                                                                                                         ^~~~~~~~~~~
+../src/Ouvrage.h:17:153: note: suggested alternative: ‘m_identifiant’
+  Ouvrage(const std::string, const std::string, const std::string, const int, const std::string, const std::string ) : biblio::Reference(auteurs, titre, identifiant, annee);
+                                                                                                                                                         ^~~~~~~~~~~
+                                                                                                                                                         m_identifiant
+../src/Ouvrage.h:17:166: error: ‘annee’ was not declared in this scope
+  Ouvrage(const std::string, const std::string, const std::string, const int, const std::string, const std::string ) : biblio::Reference(auteurs, titre, identifiant, annee);
+                                                                                                                                                                      ^~~~~
+../src/Ouvrage.h:17:166: note: suggested alternative: ‘m_annee’
+  Ouvrage(const std::string, const std::string, const std::string, const int, const std::string, const std::string ) : biblio::Reference(auteurs, titre, identifiant, annee);
+                                                                                                                                                                      ^~~~~
+                                                                                                                                                                      m_annee
+../src/Ouvrage.h:17:171: error: expected ‘{’ at end of input
+  Ouvrage(const std::string, const std::string, const std::string, const int, const std::string, const std::string ) : biblio::Reference(auteurs, titre, identifiant, annee);
+                                                                                                                                                                           ^
+../src/Ouvrage.cpp: At global scope:
+../src/Ouvrage.cpp:9:1: error: redefinition of ‘Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string, std::__cxx11::string)’
+ Ouvrage::Ouvrage(const string auteurs, const std::string titre, const std::string identifiant, const int annee, const std::string editeur, const std::string ville) : biblio::Reference(auteurs, titre, identifiant, annee)
+ ^~~~~~~
+In file included from ../src/Ouvrage.cpp:7:0:
+../src/Ouvrage.h:17:2: note: ‘Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string, std::__cxx11::string)’ previously defined here
+  Ouvrage(const std::string, const std::string, const std::string, const int, const std::string, const std::string ) : biblio::Reference(auteurs, titre, identifiant, annee);
+  ^~~~~~~
+src/subdir.mk:24: recipe for target 'src/Ouvrage.o' failed
+make: *** [src/Ouvrage.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:23:48 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../src/Ouvrage.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ouvrage.d" -MT"src/Ouvrage.o" -o "src/Ouvrage.o" "../src/Ouvrage.cpp"
+Finished building: ../src/Ouvrage.cpp
+ 
+Building target: Classes
+Invoking: GCC C++ Linker
+g++  -o "Classes"  ./src/Ouvrage.o ./src/Reference.o ./src/util.o   
+./src/Ouvrage.o: In function `Ouvrage::Ouvrage(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)':
+/home/vincebro/Documents/cpp/TP3/Classes/Debug/../src/Ouvrage.cpp:9: undefined reference to `vtable for Ouvrage'
+./src/Ouvrage.o: In function `Ouvrage::Ouvrage(Ouvrage const&)':
+makefile:45: recipe for target 'Classes' failed
+/home/vincebro/Documents/cpp/TP3/Classes/Debug/../src/Ouvrage.h:14: undefined reference to `vtable for Ouvrage'
+collect2: error: ld returned 1 exit status
+make: *** [Classes] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:28:56 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../src/Ouvrage.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ouvrage.d" -MT"src/Ouvrage.o" -o "src/Ouvrage.o" "../src/Ouvrage.cpp"
+Finished building: ../src/Ouvrage.cpp
+ 
+Building target: Classes
+Invoking: GCC C++ Linker
+g++  -o "Classes"  ./src/Ouvrage.o ./src/Reference.o ./src/util.o   
+./src/Ouvrage.o: In function `Ouvrage::Ouvrage(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)':
+/home/vincebro/Documents/cpp/TP3/Classes/Debug/../src/Ouvrage.cpp:9: undefined reference to `vtable for Ouvrage'
+./src/Ouvrage.o: In function `Ouvrage::Ouvrage(Ouvrage const&)':
+/home/vincebro/Documents/cpp/TP3/Classes/Debug/../src/Ouvrage.h:14: undefined reference to `vtable for Ouvrage'
+collect2: error: ld returned 1 exit status
+makefile:45: recipe for target 'Classes' failed
+make: *** [Classes] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:35:27 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../src/Ouvrage.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ouvrage.d" -MT"src/Ouvrage.o" -o "src/Ouvrage.o" "../src/Ouvrage.cpp"
+../src/Ouvrage.cpp:18:35: error: non-member function ‘std::__cxx11::string reqReferenceFormate()’ cannot have cv-qualifier
+ std::string reqReferenceFormate() const{
+                                   ^~~~~
+../src/Ouvrage.cpp: In function ‘std::__cxx11::string reqReferenceFormate()’:
+../src/Ouvrage.cpp:20:8: error: ‘m_auteurs’ was not declared in this scope
+  os << m_auteurs << ", " << m_titre << ", "<< m_annee << ", " << m_identifiant;
+        ^~~~~~~~~
+../src/Ouvrage.cpp:20:29: error: ‘m_titre’ was not declared in this scope
+  os << m_auteurs << ", " << m_titre << ", "<< m_annee << ", " << m_identifiant;
+                             ^~~~~~~
+../src/Ouvrage.cpp:20:29: note: suggested alternative: ‘mktime’
+  os << m_auteurs << ", " << m_titre << ", "<< m_annee << ", " << m_identifiant;
+                             ^~~~~~~
+                             mktime
+../src/Ouvrage.cpp:20:47: error: ‘m_annee’ was not declared in this scope
+  os << m_auteurs << ", " << m_titre << ", "<< m_annee << ", " << m_identifiant;
+                                               ^~~~~~~
+../src/Ouvrage.cpp:20:66: error: ‘m_identifiant’ was not declared in this scope
+  os << m_auteurs << ", " << m_titre << ", "<< m_annee << ", " << m_identifiant;
+                                                                  ^~~~~~~~~~~~~
+src/subdir.mk:24: recipe for target 'src/Ouvrage.o' failed
+make: *** [src/Ouvrage.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+10:40:16 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../src/Ouvrage.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ouvrage.d" -MT"src/Ouvrage.o" -o "src/Ouvrage.o" "../src/Ouvrage.cpp"
+Finished building: ../src/Ouvrage.cpp
+ 
+Building target: Classes
+Invoking: GCC C++ Linker
+g++  -o "Classes"  ./src/Ouvrage.o ./src/Reference.o ./src/util.o   
+Finished building target: Classes
+ 
+10:43:30 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../src/Ouvrage.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ouvrage.d" -MT"src/Ouvrage.o" -o "src/Ouvrage.o" "../src/Ouvrage.cpp"
+Finished building: ../src/Ouvrage.cpp
+ 
+Building target: Classes
+Invoking: GCC C++ Linker
+g++  -o "Classes"  ./src/Ouvrage.o ./src/Reference.o ./src/util.o   
+Finished building target: Classes
+ 
+10:59:42 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../src/Ouvrage.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ouvrage.d" -MT"src/Ouvrage.o" -o "src/Ouvrage.o" "../src/Ouvrage.cpp"
+Finished building: ../src/Ouvrage.cpp
+ 
+Building target: Classes
+Invoking: GCC C++ Linker
+g++  -o "Classes"  ./src/Ouvrage.o ./src/Reference.o ./src/util.o   
+Finished building target: Classes
+ 
+11:03:01 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../src/Ouvrage.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ouvrage.d" -MT"src/Ouvrage.o" -o "src/Ouvrage.o" "../src/Ouvrage.cpp"
+Finished building: ../src/Ouvrage.cpp
+ 
+Building target: Classes
+Invoking: GCC C++ Linker
+g++  -o "Classes"  ./src/Ouvrage.o ./src/Reference.o ./src/util.o   
+Finished building target: Classes
+ 
+11:04:23 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../src/Ouvrage.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ouvrage.d" -MT"src/Ouvrage.o" -o "src/Ouvrage.o" "../src/Ouvrage.cpp"
+Finished building: ../src/Ouvrage.cpp
+ 
+Building target: Classes
+Invoking: GCC C++ Linker
+g++  -o "Classes"  ./src/Ouvrage.o ./src/Reference.o ./src/util.o   
+Finished building target: Classes
+ 

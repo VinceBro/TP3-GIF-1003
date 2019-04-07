@@ -1,15 +1,15 @@
-10:50:04 **** Incremental Build of configuration Debug for project Classes ****
+11:04:23 **** Incremental Build of configuration Debug for project Classes ****
 make all 
-Building file: ../src/Reference.cpp
+Building file: ../src/Ouvrage.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Reference.d" -MT"src/Reference.o" -o "src/Reference.o" "../src/Reference.cpp"
-Finished building: ../src/Reference.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ouvrage.d" -MT"src/Ouvrage.o" -o "src/Ouvrage.o" "../src/Ouvrage.cpp"
+Finished building: ../src/Ouvrage.cpp
  
 Building target: Classes
 Invoking: GCC C++ Linker
-g++  -o "Classes"  ./src/Reference.o ./src/util.o   
+g++  -o "Classes"  ./src/Ouvrage.o ./src/Reference.o ./src/util.o   
 Finished building target: Classes
  
 
-10:50:05 Build Finished. 0 errors, 0 warnings. (took 621ms)
+11:04:24 Build Finished. 0 errors, 0 warnings. (took 626ms)
 

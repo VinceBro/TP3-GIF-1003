@@ -18,9 +18,6 @@ Reference::Reference(const string auteurs, const string titre, const string iden
 
 
 }
-Reference::~Reference(){
-	cout << "lol" << endl;
-}
 //affiche le ou les auteurs dans la console
 void Reference::affich_auteur() const{
     cout << "Auteur(s): " << m_auteurs << endl;

@@ -3,8 +3,11 @@
 #include "util.h"
 #include <string>
 #include <sstream>
-//de biblio: classe reference: stocke et gère une reference
 namespace biblio{
+/*
+ * \class Reference
+ * \brief Classe de base
+ */
 class Reference
 {
 
@@ -17,8 +20,8 @@ public:
     void modif_auteurs(std::string);
     virtual std::string reqReferenceFormate() const = 0;
     bool operator==(Reference *c_ref);
-    virtual ~Reference();
-private:
+    virtual ~Reference(){};
+protected:
     std::string m_auteurs, m_titre, m_identifiant;
     int m_annee;
 };
