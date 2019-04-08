@@ -65,3 +65,218 @@ makefile:44: recipe for target 'Testeur' failed
 collect2: error: ld returned 1 exit status
 make: *** [Testeur] Error 1
 "make all" terminated with exit code 2. Build might be incomplete.
+21:26:42 **** Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building file: ../ContratException.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ContratException.d" -MT"ContratException.o" -o "ContratException.o" "../ContratException.cpp"
+Finished building: ../ContratException.cpp
+ 
+Building file: ../Journal.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Journal.d" -MT"Journal.o" -o "Journal.o" "../Journal.cpp"
+Finished building: ../Journal.cpp
+ 
+Building file: ../Ouvrage.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Ouvrage.d" -MT"Ouvrage.o" -o "Ouvrage.o" "../Ouvrage.cpp"
+Finished building: ../Ouvrage.cpp
+ 
+Building file: ../Reference.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reference.d" -MT"Reference.o" -o "Reference.o" "../Reference.cpp"
+Finished building: ../Reference.cpp
+ 
+Building file: ../Util.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Util.d" -MT"Util.o" -o "Util.o" "../Util.cpp"
+Finished building: ../Util.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+21:26:57 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:27:18 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:27:19 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../ReferenceTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReferenceTesteur.d" -MT"ReferenceTesteur.o" -o "ReferenceTesteur.o" "../ReferenceTesteur.cpp"
+Finished building: ../ReferenceTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+/usr/bin/ld: cannot find -lgtest_main
+makefile:44: recipe for target 'Testeur' failed
+collect2: error: ld returned 1 exit status
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:34:18 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:34:31 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:34:31 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../ReferenceTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReferenceTesteur.d" -MT"ReferenceTesteur.o" -o "ReferenceTesteur.o" "../ReferenceTesteur.cpp"
+../ReferenceTesteur.cpp:7:20: warning: extra tokens at end of #include directive
+ #include <iostream>;
+                    ^
+Finished building: ../ReferenceTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+/usr/bin/ld: cannot find -lgtest_main
+makefile:44: recipe for target 'Testeur' failed
+collect2: error: ld returned 1 exit status
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:47:03 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:47:47 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:47:53 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:47:53 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../ReferenceTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReferenceTesteur.d" -MT"ReferenceTesteur.o" -o "ReferenceTesteur.o" "../ReferenceTesteur.cpp"
+Finished building: ../ReferenceTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtest -lgtest_main -lpthread
+/usr/bin/ld: cannot find -lgtest_main
+makefile:44: recipe for target 'Testeur' failed
+collect2: error: ld returned 1 exit status
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:48:39 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:48:45 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:48:49 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:48:50 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:48:53 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:49:00 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:49:24 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:49:25 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:49:25 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:49:26 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:49:26 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:49:57 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:49:58 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:49:58 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:49:58 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:49:59 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:50:18 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:50:36 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:50:37 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:50:37 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:50:37 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:50:38 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:50:50 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:50:51 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:50:52 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:50:52 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:50:52 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:50:52 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:50:53 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:50:53 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:50:53 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:51:07 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:51:08 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../ReferenceTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReferenceTesteur.d" -MT"ReferenceTesteur.o" -o "ReferenceTesteur.o" "../ReferenceTesteur.cpp"
+Finished building: ../ReferenceTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtest -lpthread
+Finished building target: Testeur
+ 
