@@ -1,0 +1,54 @@
+\hypertarget{ContratException_8h}{}\section{Contrat\+Exception.\+h File Reference}
+\label{ContratException_8h}\index{Contrat\+Exception.\+h@{Contrat\+Exception.\+h}}
+
+
+Fichier contenant la déclaration de la classe \hyperlink{classContratException}{Contrat\+Exception} et de ses héritiers.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classContratException}{Contrat\+Exception}
+\begin{DoxyCompactList}\small\item\em Classe de base des exceptions de contrat. \end{DoxyCompactList}\item 
+class \hyperlink{classAssertionException}{Assertion\+Exception}
+\begin{DoxyCompactList}\small\item\em Classe pour la gestion des erreurs d\textquotesingle{}assertion. \end{DoxyCompactList}\item 
+class \hyperlink{classPreconditionException}{Precondition\+Exception}
+\begin{DoxyCompactList}\small\item\em Classe pour la gestion des erreurs de précondition. \end{DoxyCompactList}\item 
+class \hyperlink{classPostconditionException}{Postcondition\+Exception}
+\begin{DoxyCompactList}\small\item\em Classe pour la gestion des erreurs de postcondition. \end{DoxyCompactList}\item 
+class \hyperlink{classInvariantException}{Invariant\+Exception}
+\begin{DoxyCompactList}\small\item\em Classe pour la gestion des erreurs d\textquotesingle{}invariant. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{ContratException_8h_a52dddc2c198c58b53b201c313934e40c}\label{ContratException_8h_a52dddc2c198c58b53b201c313934e40c}} 
+\#define {\bfseries I\+N\+V\+A\+R\+I\+A\+N\+TS}()~verifie\+Invariant()
+\item 
+\mbox{\Hypertarget{ContratException_8h_abe6e3e0ff48f8595570e6485b506a8c4}\label{ContratException_8h_abe6e3e0ff48f8595570e6485b506a8c4}} 
+\#define {\bfseries A\+S\+S\+E\+R\+T\+I\+ON}(f)~if (!(f)) throw \hyperlink{classAssertionException}{Assertion\+Exception}(\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+,\+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \#f);
+\item 
+\mbox{\Hypertarget{ContratException_8h_acb3361bd87fc697a57b7286a9998c106}\label{ContratException_8h_acb3361bd87fc697a57b7286a9998c106}} 
+\#define {\bfseries P\+R\+E\+C\+O\+N\+D\+I\+T\+I\+ON}(f)~if (!(f)) throw \hyperlink{classPreconditionException}{Precondition\+Exception}(\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \#f);
+\item 
+\mbox{\Hypertarget{ContratException_8h_a438b75c0c77a1ce8d1e914f9f04ea548}\label{ContratException_8h_a438b75c0c77a1ce8d1e914f9f04ea548}} 
+\#define {\bfseries P\+O\+S\+T\+C\+O\+N\+D\+I\+T\+I\+ON}(f)~if (!(f)) throw \hyperlink{classPostconditionException}{Postcondition\+Exception}(\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \#f);
+\item 
+\mbox{\Hypertarget{ContratException_8h_a08f80155f47e05681c2b9bb9c5f6fffe}\label{ContratException_8h_a08f80155f47e05681c2b9bb9c5f6fffe}} 
+\#define {\bfseries I\+N\+V\+A\+R\+I\+A\+NT}(f)~if (!(f)) throw \hyperlink{classInvariantException}{Invariant\+Exception}(\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+,\+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \#f);
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fichier contenant la déclaration de la classe \hyperlink{classContratException}{Contrat\+Exception} et de ses héritiers. 
+
+\begin{DoxyAuthor}{Author}
+administrateur 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+16 janvier 2014 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+révisée balises Doxygen C++ normes H2014 
+\end{DoxyVersion}

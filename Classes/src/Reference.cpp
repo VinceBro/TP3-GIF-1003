@@ -1,13 +1,28 @@
+/**
+ * \file Reference.cpp
+ * \brief Implémentation de la classe de base abstraite Reference
+ * \author Vincent Breault
+ * \date
+ */
+
 #include "Reference.h"
 
 using namespace std;
 using namespace biblio;
-
+/**
+ * \brief TODO J'ai aucune idée quoi documenter pour main
+ * @return
+ */
 int main(){
 	return 0;
 }
-
-//constructeur
+/**
+ * \brief Constructeur avec paramètre, Construction d'un objet Reference à partir des valeurs passées en paramètre
+ * @param[in] auteurs correspond au nom du ou des auteurs (string)
+ * @param[in] titre correspond au titre (string)
+ * @param[in] identifiant correspond au ISBN ou au ISSN (string)
+ * @param[in] annee correspond à l'année (int)
+ */
 Reference::Reference(const string auteurs, const string titre, const string identifiant, int annee){
 	if (util::validerFormatNom(auteurs) && (titre.length() > 0) &&
 		(util::validerCodeIsbn(identifiant) || util::validerCodeIssn(identifiant)) &&
@@ -21,35 +36,22 @@ Reference::Reference(const string auteurs, const string titre, const string iden
 	else cout << "Erreur du constructeur de Reference mon excellent ami" << endl;
 
 }
-//affiche le ou les auteurs dans la console
-void Reference::affich_auteur() const{
-    cout << "Auteur(s): " << m_auteurs << endl;
-    }
-// affiche le titre dans la console
-void Reference::affich_titre() const{
-    cout << "Titre: " << m_titre << endl;
-}
-//affiche l'indentifiant dans la console
-void Reference::affich_identifiant() const{
-    cout << "Identifiant: " << m_identifiant << endl;
-}
-//affiche l'année dans la console
-void Reference::affich_annee() const{
-    cout << "Année de publication: " << m_annee << endl;
-}
-//change l'auteur si le nom d'auteur est valide
+
+/**
+ * \brief Modifie l'auteur si le format est valide
+ * @param nouv_auteurs
+ */
 void Reference::modif_auteurs(const string nouv_auteurs){
 
     if (util::validerFormatNom(nouv_auteurs)) m_auteurs = nouv_auteurs;
 
 }
-//retourne les variables de la classe formatés
-string Reference::reqReferenceFormate() const{
-    ostringstream os;
-    os << m_auteurs << ", " << m_titre << ", "<< m_annee << ", " << m_identifiant;
-    return os.str();
-}
-//determine si deux objets reference sont égaux
+
+/**
+ * \brief détermine si deux objets Reference sont égaux en comparant les attributs
+ * @param c_ref pointeur d'un objet Reference
+ * @return booléen
+ */
 bool Reference::operator==(Reference *c_ref){
    return((c_ref-> m_auteurs == m_auteurs) && (c_ref-> m_titre == m_titre) && (c_ref-> m_identifiant == m_identifiant) &&(c_ref->m_annee == m_annee));
    }

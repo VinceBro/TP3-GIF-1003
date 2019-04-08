@@ -1,0 +1,176 @@
+\hypertarget{classbiblio_1_1Reference}{}\section{biblio\+:\+:Reference Class Reference}
+\label{classbiblio_1_1Reference}\index{biblio\+::\+Reference@{biblio\+::\+Reference}}
+
+
+Classe de base abstraite, les classes \hyperlink{classbiblio_1_1Ouvrage}{Ouvrage} et \hyperlink{classbiblio_1_1Journal}{Journal} hérite de cette classe.  
+
+
+
+
+{\ttfamily \#include $<$Reference.\+h$>$}
+
+Inheritance diagram for biblio\+:\+:Reference\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classbiblio_1_1Reference}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbiblio_1_1Reference_a541f69f48b76d770c8cdf5b97197c60c}{Reference} (const std\+::string auteurs, const std\+::string titre, const std\+::string identifiant, int annee)
+\begin{DoxyCompactList}\small\item\em Constructeur avec paramètre, Construction d\textquotesingle{}un objet \hyperlink{classbiblio_1_1Reference}{Reference} à partir des valeurs passées en paramètre. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classbiblio_1_1Reference_a5521fc6d8894b38c314db3c300bd8a23}{req\+Auteurs} () const
+\begin{DoxyCompactList}\small\item\em Accesseur auteur. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classbiblio_1_1Reference_af8ad0d5a379d11a0ea8eccacf6898f93}{req\+Titre} () const
+\begin{DoxyCompactList}\small\item\em Accesseur titre. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classbiblio_1_1Reference_a1d47d3d615f219d41ce6dbd9c7b0651d}{req\+Identifiant} () const
+\begin{DoxyCompactList}\small\item\em Accesseur identifiant. \end{DoxyCompactList}\item 
+int \hyperlink{classbiblio_1_1Reference_adcf4b47dfbd090e0da711a3167aaf7ab}{req\+Annee} () const
+\begin{DoxyCompactList}\small\item\em Accesseur annee. \end{DoxyCompactList}\item 
+void \hyperlink{classbiblio_1_1Reference_ab7a8dcf22156371b9206095d52a6c25d}{modif\+\_\+auteurs} (const std\+::string nouv\+\_\+auteurs)
+\begin{DoxyCompactList}\small\item\em Modifie l\textquotesingle{}auteur si le format est valide. \end{DoxyCompactList}\item 
+bool \hyperlink{classbiblio_1_1Reference_a37fde155612f4a9cc58fa3d6a125e024}{operator==} (\hyperlink{classbiblio_1_1Reference}{Reference} $\ast$c\+\_\+ref)
+\begin{DoxyCompactList}\small\item\em détermine si deux objets \hyperlink{classbiblio_1_1Reference}{Reference} sont égaux en comparant les attributs \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classbiblio_1_1Reference_a901a53cc5f23012fc02b2bbc17d6d7aa}\label{classbiblio_1_1Reference_a901a53cc5f23012fc02b2bbc17d6d7aa}} 
+virtual std\+::string {\bfseries req\+Reference\+Formate} () const =0
+\item 
+\mbox{\Hypertarget{classbiblio_1_1Reference_a912da874b8a5221d8e17aa3118d3116b}\label{classbiblio_1_1Reference_a912da874b8a5221d8e17aa3118d3116b}} 
+virtual \hyperlink{classbiblio_1_1Reference}{Reference} $\ast$ {\bfseries clone} () const =0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbiblio_1_1Reference_ab7bfeb4a416f7d1b3d7929c79a44c9c6}\label{classbiblio_1_1Reference_ab7bfeb4a416f7d1b3d7929c79a44c9c6}} 
+std\+::string {\bfseries m\+\_\+auteurs}
+\item 
+\mbox{\Hypertarget{classbiblio_1_1Reference_a340a7d5fd78d419e6f48db3120299ce7}\label{classbiblio_1_1Reference_a340a7d5fd78d419e6f48db3120299ce7}} 
+std\+::string {\bfseries m\+\_\+titre}
+\item 
+\mbox{\Hypertarget{classbiblio_1_1Reference_a15374f0ddba5060ed50d7ef557643109}\label{classbiblio_1_1Reference_a15374f0ddba5060ed50d7ef557643109}} 
+std\+::string {\bfseries m\+\_\+identifiant}
+\item 
+\mbox{\Hypertarget{classbiblio_1_1Reference_a5ac4da2899bd6275d2c5632daea05433}\label{classbiblio_1_1Reference_a5ac4da2899bd6275d2c5632daea05433}} 
+int {\bfseries m\+\_\+annee}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe de base abstraite, les classes \hyperlink{classbiblio_1_1Ouvrage}{Ouvrage} et \hyperlink{classbiblio_1_1Journal}{Journal} hérite de cette classe. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbiblio_1_1Reference_a541f69f48b76d770c8cdf5b97197c60c}\label{classbiblio_1_1Reference_a541f69f48b76d770c8cdf5b97197c60c}} 
+\index{biblio\+::\+Reference@{biblio\+::\+Reference}!Reference@{Reference}}
+\index{Reference@{Reference}!biblio\+::\+Reference@{biblio\+::\+Reference}}
+\subsubsection{\texorpdfstring{Reference()}{Reference()}}
+{\footnotesize\ttfamily Reference\+::\+Reference (\begin{DoxyParamCaption}\item[{const std\+::string}]{auteurs,  }\item[{const std\+::string}]{titre,  }\item[{const std\+::string}]{identifiant,  }\item[{int}]{annee }\end{DoxyParamCaption})}
+
+
+
+Constructeur avec paramètre, Construction d\textquotesingle{}un objet \hyperlink{classbiblio_1_1Reference}{Reference} à partir des valeurs passées en paramètre. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em auteurs} & correspond au nom du ou des auteurs (string) \\
+\hline
+\mbox{\tt in}  & {\em titre} & correspond au titre (string) \\
+\hline
+\mbox{\tt in}  & {\em identifiant} & correspond au I\+S\+BN ou au I\+S\+SN (string) \\
+\hline
+\mbox{\tt in}  & {\em annee} & correspond à l\textquotesingle{}année (int) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classbiblio_1_1Reference_ab7a8dcf22156371b9206095d52a6c25d}\label{classbiblio_1_1Reference_ab7a8dcf22156371b9206095d52a6c25d}} 
+\index{biblio\+::\+Reference@{biblio\+::\+Reference}!modif\+\_\+auteurs@{modif\+\_\+auteurs}}
+\index{modif\+\_\+auteurs@{modif\+\_\+auteurs}!biblio\+::\+Reference@{biblio\+::\+Reference}}
+\subsubsection{\texorpdfstring{modif\+\_\+auteurs()}{modif\_auteurs()}}
+{\footnotesize\ttfamily void Reference\+::modif\+\_\+auteurs (\begin{DoxyParamCaption}\item[{const std\+::string}]{nouv\+\_\+auteurs }\end{DoxyParamCaption})}
+
+
+
+Modifie l\textquotesingle{}auteur si le format est valide. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nouv\+\_\+auteurs} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbiblio_1_1Reference_a37fde155612f4a9cc58fa3d6a125e024}\label{classbiblio_1_1Reference_a37fde155612f4a9cc58fa3d6a125e024}} 
+\index{biblio\+::\+Reference@{biblio\+::\+Reference}!operator==@{operator==}}
+\index{operator==@{operator==}!biblio\+::\+Reference@{biblio\+::\+Reference}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Reference\+::operator== (\begin{DoxyParamCaption}\item[{\hyperlink{classbiblio_1_1Reference}{Reference} $\ast$}]{c\+\_\+ref }\end{DoxyParamCaption})}
+
+
+
+détermine si deux objets \hyperlink{classbiblio_1_1Reference}{Reference} sont égaux en comparant les attributs 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c\+\_\+ref} & pointeur d\textquotesingle{}un objet \hyperlink{classbiblio_1_1Reference}{Reference} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+booléen 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbiblio_1_1Reference_adcf4b47dfbd090e0da711a3167aaf7ab}\label{classbiblio_1_1Reference_adcf4b47dfbd090e0da711a3167aaf7ab}} 
+\index{biblio\+::\+Reference@{biblio\+::\+Reference}!req\+Annee@{req\+Annee}}
+\index{req\+Annee@{req\+Annee}!biblio\+::\+Reference@{biblio\+::\+Reference}}
+\subsubsection{\texorpdfstring{req\+Annee()}{reqAnnee()}}
+{\footnotesize\ttfamily int biblio\+::\+Reference\+::req\+Annee (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Accesseur annee. 
+
+\begin{DoxyReturn}{Returns}
+annee 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbiblio_1_1Reference_a5521fc6d8894b38c314db3c300bd8a23}\label{classbiblio_1_1Reference_a5521fc6d8894b38c314db3c300bd8a23}} 
+\index{biblio\+::\+Reference@{biblio\+::\+Reference}!req\+Auteurs@{req\+Auteurs}}
+\index{req\+Auteurs@{req\+Auteurs}!biblio\+::\+Reference@{biblio\+::\+Reference}}
+\subsubsection{\texorpdfstring{req\+Auteurs()}{reqAuteurs()}}
+{\footnotesize\ttfamily std\+::string biblio\+::\+Reference\+::req\+Auteurs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Accesseur auteur. 
+
+\begin{DoxyReturn}{Returns}
+auteur 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbiblio_1_1Reference_a1d47d3d615f219d41ce6dbd9c7b0651d}\label{classbiblio_1_1Reference_a1d47d3d615f219d41ce6dbd9c7b0651d}} 
+\index{biblio\+::\+Reference@{biblio\+::\+Reference}!req\+Identifiant@{req\+Identifiant}}
+\index{req\+Identifiant@{req\+Identifiant}!biblio\+::\+Reference@{biblio\+::\+Reference}}
+\subsubsection{\texorpdfstring{req\+Identifiant()}{reqIdentifiant()}}
+{\footnotesize\ttfamily std\+::string biblio\+::\+Reference\+::req\+Identifiant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Accesseur identifiant. 
+
+\begin{DoxyReturn}{Returns}
+identifiant 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbiblio_1_1Reference_af8ad0d5a379d11a0ea8eccacf6898f93}\label{classbiblio_1_1Reference_af8ad0d5a379d11a0ea8eccacf6898f93}} 
+\index{biblio\+::\+Reference@{biblio\+::\+Reference}!req\+Titre@{req\+Titre}}
+\index{req\+Titre@{req\+Titre}!biblio\+::\+Reference@{biblio\+::\+Reference}}
+\subsubsection{\texorpdfstring{req\+Titre()}{reqTitre()}}
+{\footnotesize\ttfamily std\+::string biblio\+::\+Reference\+::req\+Titre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Accesseur titre. 
+
+\begin{DoxyReturn}{Returns}
+titre 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Reference_8h}{Reference.\+h}\item 
+\hyperlink{Reference_8cpp}{Reference.\+cpp}\end{DoxyCompactItemize}

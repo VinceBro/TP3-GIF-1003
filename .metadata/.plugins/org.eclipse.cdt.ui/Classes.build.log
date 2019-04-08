@@ -1,15 +1,6 @@
-16:24:02 **** Incremental Build of configuration Debug for project Classes ****
+21:18:39 **** Incremental Build of configuration Debug for project Classes ****
 make all 
-Building file: ../src/Bibliographie.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Bibliographie.d" -MT"src/Bibliographie.o" -o "src/Bibliographie.o" "../src/Bibliographie.cpp"
-Finished building: ../src/Bibliographie.cpp
- 
-Building target: Classes
-Invoking: GCC C++ Linker
-g++  -o "Classes"  ./src/Bibliographie.o ./src/ContratException.o ./src/Journal.o ./src/Ouvrage.o ./src/Reference.o ./src/Util.o   
-Finished building target: Classes
- 
+make: Nothing to be done for 'all'.
 
-16:24:03 Build Finished. 0 errors, 0 warnings. (took 778ms)
+21:18:39 Build Finished. 0 errors, 0 warnings. (took 76ms)
 

@@ -1,25 +1,50 @@
-/*
- * Journal.h
- *
- *  Created on: Apr. 7, 2019
- *      Author: root
+/**
+ * \file Journal.h
+ * \brief Classe Journal dérivée de Reference
+ * \author Vincent Breault
+ * \date
  */
 #include "Reference.h"
 #ifndef JOURNAL_H_
 #define JOURNAL_H_
 
+
 namespace biblio{
+/**
+ * \class Journal
+ * \brief Classe dérivée de la classe Reference
+ */
 class Journal: public biblio::Reference{
 
 public:
 	Journal(const std::string auteurs, const std::string titre,
 			const std::string identifiant, const int annee, const std::string nom,
 			const int volume, const int numero, const int page);
-	void affich_nom() const {std::cout << "Nom: " << m_nom << std::endl;}
-	void affich_volume() const {std::cout << "Volume: " << m_volume << std::endl;}
-	void affich_numero() const {std::cout << "Numéro: " << m_numero << std::endl;}
-	void affich_page() const {std::cout << "Page: " << m_page << std::endl;}
+	/**
+	 * \brief Accesseur nom
+	 * @return nom
+	 */
+	std::string reqNom() const {return m_nom;};
+	/**
+	 * \brief Accesseur volume
+	 * @return volume
+	 */
+	int reqVolume() const {return m_volume;};
+	/**
+	 * \brief Accesseur numero
+	 * @return numero
+	 */
+	int reqNumero() const {return m_numero;};
+	/**
+	 * \brief Accesseur page
+	 * @return page
+	 */
+	int reqPage() const {return m_page;};
 
+	/**
+	 * \brief Effectue une copie de l'objet courant
+	 * @return Objet Journal
+	 */
     virtual Reference* clone() const {return new Journal(*this);};
     virtual std::string reqReferenceFormate() const;
 
