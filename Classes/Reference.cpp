@@ -13,9 +13,6 @@ using namespace biblio;
  * \brief TODO J'ai aucune idée quoi documenter pour main
  * @return
  */
-int main(){
-	return 0;
-}
 /**
  * \brief Constructeur avec paramètre, Construction d'un objet Reference à partir des valeurs passées en paramètre
  * @param[in] auteurs correspond au nom du ou des auteurs (string)
@@ -24,9 +21,15 @@ int main(){
  * @param[in] annee correspond à l'année (int)
  */
 Reference::Reference(const string auteurs, const string titre, const string identifiant, int annee){
-	if (util::validerFormatNom(auteurs) && (titre.length() > 0) &&
+	PRECONDITION(util::validerFormatNom(auteurs));
+	PRECONDITION(!(titre.empty()));
+	PRECONDITION(annee >= 0);
+	PRECONDITION(util::validerCodeIsbn(identifiant) || util::validerCodeIssn(identifiant));
+
+
+	if (util::validerFormatNom(auteurs) && (!(titre.empty()) &&
 		(util::validerCodeIsbn(identifiant) || util::validerCodeIssn(identifiant)) &&
-		(annee > 0))
+		(annee >= 0)))
 	{
 	m_auteurs = auteurs;
 	m_titre = titre;
@@ -35,16 +38,27 @@ Reference::Reference(const string auteurs, const string titre, const string iden
 	}
 	else cout << "Erreur du constructeur de Reference mon excellent ami" << endl;
 
+	POSTCONDITION(m_auteurs == auteurs);
+	POSTCONDITION(m_titre == titre);
+	POSTCONDITION(m_annee == annee);
+	POSTCONDITION(m_identifiant == identifiant);
+
+	INVARIANTS();
+
 }
 
 /**
  * \brief Modifie l'auteur si le format est valide
- * @param nouv_auteurs
+ * @param auteurs
  */
-void Reference::modif_auteurs(const string nouv_auteurs){
+void Reference::modif_auteurs(const string auteurs){
+	PRECONDITION(util::validerFormatNom(auteurs));
 
-    if (util::validerFormatNom(nouv_auteurs)) m_auteurs = nouv_auteurs;
+    if (util::validerFormatNom(auteurs)) m_auteurs = auteurs;
 
+    POSTCONDITION(m_auteurs == auteurs);
+
+    INVARIANTS();
 }
 
 /**
@@ -55,5 +69,10 @@ void Reference::modif_auteurs(const string nouv_auteurs){
 bool Reference::operator==(Reference *c_ref){
    return((c_ref-> m_auteurs == m_auteurs) && (c_ref-> m_titre == m_titre) && (c_ref-> m_identifiant == m_identifiant) &&(c_ref->m_annee == m_annee));
    }
-
+void Reference::verifieInvariant() const
+{
+	INVARIANT(util::validerFormatNom(m_auteurs));
+	INVARIANT(!(m_titre.empty()));
+	INVARIANT(m_annee >= 0);
+}
 

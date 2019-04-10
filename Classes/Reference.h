@@ -7,6 +7,7 @@
 #ifndef REFERENCE_H
 #define REFERENCE_H
 #include "Util.h"
+#include "ContratException.h"
 #include <iostream>
 #include <string>
 #include <sstream>
@@ -48,6 +49,8 @@ public:
 protected:
     std::string m_auteurs, m_titre, m_identifiant;
     int m_annee;
+private:
+    void verifieInvariant() const;
 };
 }
 

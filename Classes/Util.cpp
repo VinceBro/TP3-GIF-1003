@@ -6,6 +6,7 @@ bool util::validerFormatNom(const string &p_nom){
     bool valide = true;
 
     string str = p_nom;
+    if (str.empty()) valide = false;
     if (int(str[0]) == 32) valide = false;
     for(std::string::iterator it = str.begin(); it != str.end(); ++it) {
 

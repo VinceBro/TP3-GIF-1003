@@ -17,7 +17,7 @@ class Ouvrage: public biblio::Reference{
 
 public:
 	Ouvrage(const std::string auteurs, const std::string titre, const std::string identifiant
-			, const int annee, const std::string editeur, const std::string ville);
+			, const int annee, const std::string ville, const std::string editeur);
 	/**
 	 * \brief Accesseur editeur
 	 * @return editeur
@@ -37,7 +37,7 @@ public:
 
 private:
 	std::string m_editeur, m_ville;
-
+	void verifieInvariant() const;
 };
 
 }

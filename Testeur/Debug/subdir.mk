@@ -4,12 +4,15 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../OuvrageTesteur.cpp \
 ../ReferenceTesteur.cpp 
 
 OBJS += \
+./OuvrageTesteur.o \
 ./ReferenceTesteur.o 
 
 CPP_DEPS += \
+./OuvrageTesteur.d \
 ./ReferenceTesteur.d 
 
 

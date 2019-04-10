@@ -280,3 +280,1460 @@ Invoking: GCC C++ Linker
 g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtest -lpthread
 Finished building target: Testeur
  
+18:28:31 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+18:28:31 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../ReferenceTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReferenceTesteur.d" -MT"ReferenceTesteur.o" -o "ReferenceTesteur.o" "../ReferenceTesteur.cpp"
+Finished building: ../ReferenceTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtest -lpthread
+Finished building target: Testeur
+ 
+18:57:03 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building file: ../Journal.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Journal.d" -MT"Journal.o" -o "Journal.o" "../Journal.cpp"
+Finished building: ../Journal.cpp
+ 
+Building file: ../Ouvrage.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Ouvrage.d" -MT"Ouvrage.o" -o "Ouvrage.o" "../Ouvrage.cpp"
+Finished building: ../Ouvrage.cpp
+ 
+Building file: ../Reference.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reference.d" -MT"Reference.o" -o "Reference.o" "../Reference.cpp"
+../Reference.cpp: In member function ‘void biblio::Reference::modif_auteurs(std::__cxx11::string)’:
+../Reference.cpp:60:32: error: ‘nouv_auteurs’ was not declared in this scope
+     if (util::validerFormatNom(nouv_auteurs)) m_auteurs = nouv_auteurs;
+                                ^~~~~~~~~~~~
+../Reference.cpp:60:32: note: suggested alternative: ‘modif_auteurs’
+     if (util::validerFormatNom(nouv_auteurs)) m_auteurs = nouv_auteurs;
+                                ^~~~~~~~~~~~
+                                modif_auteurs
+make: *** [Reference.o] Error 1
+subdir.mk:33: recipe for target 'Reference.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+18:57:05 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../ReferenceTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReferenceTesteur.d" -MT"ReferenceTesteur.o" -o "ReferenceTesteur.o" "../ReferenceTesteur.cpp"
+Finished building: ../ReferenceTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtest -lpthread
+/usr/bin/ld: cannot find -lClasses
+collect2: error: ld returned 1 exit status
+makefile:44: recipe for target 'Testeur' failed
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:57:29 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Reference.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reference.d" -MT"Reference.o" -o "Reference.o" "../Reference.cpp"
+../Reference.cpp: In member function ‘void biblio::Reference::modif_auteurs(std::__cxx11::string)’:
+../Reference.cpp:60:32: error: ‘nouv_auteurs’ was not declared in this scope
+     if (util::validerFormatNom(nouv_auteurs)) m_auteurs = auteurs;
+                                ^~~~~~~~~~~~
+../Reference.cpp:60:32: note: suggested alternative: ‘modif_auteurs’
+     if (util::validerFormatNom(nouv_auteurs)) m_auteurs = auteurs;
+                                ^~~~~~~~~~~~
+                                modif_auteurs
+subdir.mk:33: recipe for target 'Reference.o' failed
+make: *** [Reference.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:57:30 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtest -lpthread
+/usr/bin/ld: cannot find -lClasses
+makefile:44: recipe for target 'Testeur' failed
+collect2: error: ld returned 1 exit status
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:57:52 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Reference.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reference.d" -MT"Reference.o" -o "Reference.o" "../Reference.cpp"
+Finished building: ../Reference.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+18:57:53 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtest -lpthread
+Finished building target: Testeur
+ 
+19:09:16 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:09:16 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../ReferenceTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReferenceTesteur.d" -MT"ReferenceTesteur.o" -o "ReferenceTesteur.o" "../ReferenceTesteur.cpp"
+Finished building: ../ReferenceTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtest -lpthread
+Finished building target: Testeur
+ 
+19:12:32 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../ReferenceTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReferenceTesteur.d" -MT"ReferenceTesteur.o" -o "ReferenceTesteur.o" "../ReferenceTesteur.cpp"
+Finished building: ../ReferenceTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtest -lpthread
+Finished building target: Testeur
+ 
+19:22:37 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:22:37 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../ReferenceTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReferenceTesteur.d" -MT"ReferenceTesteur.o" -o "ReferenceTesteur.o" "../ReferenceTesteur.cpp"
+../ReferenceTesteur.cpp: In member function ‘virtual void Reference_ConstructeurNormal_Test::TestBody()’:
+../ReferenceTesteur.cpp:49:37: error: expected ‘}’ at end of input
+  ASSERT_EQ(2008, Testeur.reqAnnee());
+                                     ^
+make: *** [ReferenceTesteur.o] Error 1
+subdir.mk:18: recipe for target 'ReferenceTesteur.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+19:22:44 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:22:44 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../ReferenceTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReferenceTesteur.d" -MT"ReferenceTesteur.o" -o "ReferenceTesteur.o" "../ReferenceTesteur.cpp"
+Finished building: ../ReferenceTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtest -lpthread
+./ReferenceTesteur.o: In function `TestReference::reqReferenceFormate[abi:cxx11]() const':
+/home/vincebro/Documents/cpp/TP3/Testeur/Debug/../ReferenceTesteur.cpp:26: undefined reference to `biblio::Reference::reqReferenceFormate[abi:cxx11]() const'
+collect2: error: ld returned 1 exit status
+makefile:44: recipe for target 'Testeur' failed
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:23:56 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:23:57 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../ReferenceTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReferenceTesteur.d" -MT"ReferenceTesteur.o" -o "ReferenceTesteur.o" "../ReferenceTesteur.cpp"
+Finished building: ../ReferenceTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtest -lpthread
+Finished building target: Testeur
+ 
+19:24:04 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+19:24:06 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+19:24:52 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+19:27:58 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:27:59 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../ReferenceTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReferenceTesteur.d" -MT"ReferenceTesteur.o" -o "ReferenceTesteur.o" "../ReferenceTesteur.cpp"
+Finished building: ../ReferenceTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtestmain -lgtest -lpthread
+/usr/bin/ld: cannot find -lgtestmain
+makefile:44: recipe for target 'Testeur' failed
+collect2: error: ld returned 1 exit status
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:31:04 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:31:04 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtestmain -lgtest -lpthread
+/usr/bin/ld: cannot find -lgtestmain
+makefile:44: recipe for target 'Testeur' failed
+collect2: error: ld returned 1 exit status
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:31:09 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:31:09 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtestmain -lgtest -lpthread
+/usr/bin/ld: cannot find -lgtestmain
+makefile:44: recipe for target 'Testeur' failed
+collect2: error: ld returned 1 exit status
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:31:10 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:31:11 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../ReferenceTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReferenceTesteur.d" -MT"ReferenceTesteur.o" -o "ReferenceTesteur.o" "../ReferenceTesteur.cpp"
+../ReferenceTesteur.cpp:13:1: error: ‘ss’ does not name a type
+ ss
+ ^~
+../ReferenceTesteur.cpp:34:2: error: ‘TestReference’ does not name a type
+  TestReference ref_1;
+  ^~~~~~~~~~~~~
+../ReferenceTesteur.cpp: In constructor ‘OneRef::OneRef()’:
+../ReferenceTesteur.cpp:32:12: error: class ‘OneRef’ does not have any field named ‘ref_1’
+  OneRef(): ref_1("Homayoon Beigi", "Fundamentals of Speaker Recognition", "ISBN 978-3-16-148410-0", 2008)
+            ^~~~~
+../ReferenceTesteur.cpp: In member function ‘virtual void Reference_ConstructeurNormal_Test::TestBody()’:
+../ReferenceTesteur.cpp:39:2: error: ‘TestReference’ was not declared in this scope
+  TestReference Testeur ("Mon grand ami",
+  ^~~~~~~~~~~~~
+In file included from /usr/include/gtest/gtest.h:1874:0,
+                 from ../ReferenceTesteur.cpp:9:
+../ReferenceTesteur.cpp:43:29: error: ‘Testeur’ was not declared in this scope
+  ASSERT_EQ("Mon grand ami", Testeur.reqAuteurs());
+                             ^
+../ReferenceTesteur.cpp:43:29: note: suggested alternative: ‘Test’
+../ReferenceTesteur.cpp:45:51: error: ‘Testeur’ was not declared in this scope
+  ASSERT_EQ("Fundamentals of Speaker Recognition", Testeur.reqTitre());
+                                                   ^
+../ReferenceTesteur.cpp:45:51: note: suggested alternative: ‘Test’
+../ReferenceTesteur.cpp:47:38: error: ‘Testeur’ was not declared in this scope
+  ASSERT_EQ("ISBN 978-0-387-77591-3", Testeur.reqIdentifiant());
+                                      ^
+../ReferenceTesteur.cpp:47:38: note: suggested alternative: ‘Test’
+../ReferenceTesteur.cpp:49:18: error: ‘Testeur’ was not declared in this scope
+  ASSERT_EQ(2008, Testeur.reqAnnee());
+                  ^
+../ReferenceTesteur.cpp:49:18: note: suggested alternative: ‘Test’
+subdir.mk:18: recipe for target 'ReferenceTesteur.o' failed
+make: *** [ReferenceTesteur.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:31:15 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:31:16 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../ReferenceTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReferenceTesteur.d" -MT"ReferenceTesteur.o" -o "ReferenceTesteur.o" "../ReferenceTesteur.cpp"
+Finished building: ../ReferenceTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtestmain -lgtest -lpthread
+/usr/bin/ld: cannot find -lgtestmain
+makefile:44: recipe for target 'Testeur' failed
+collect2: error: ld returned 1 exit status
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:34:12 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:34:12 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtestmain -lgtest -lpthread
+/usr/bin/ld: cannot find -lgtestmain
+makefile:44: recipe for target 'Testeur' failed
+collect2: error: ld returned 1 exit status
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:34:13 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:34:13 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtestmain -lgtest -lpthread
+/usr/bin/ld: cannot find -lgtestmain
+collect2: error: ld returned 1 exit status
+makefile:44: recipe for target 'Testeur' failed
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:34:14 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:34:14 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtestmain -lgtest -lpthread
+/usr/bin/ld: cannot find -lgtestmain
+makefile:44: recipe for target 'Testeur' failed
+collect2: error: ld returned 1 exit status
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:34:17 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:34:17 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtestmain -lgtest -lpthread
+/usr/bin/ld: cannot find -lgtestmain
+collect2: error: ld returned 1 exit status
+makefile:44: recipe for target 'Testeur' failed
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:34:18 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:34:18 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtestmain -lgtest -lpthread
+/usr/bin/ld: cannot find -lgtestmain
+collect2: error: ld returned 1 exit status
+makefile:44: recipe for target 'Testeur' failed
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:34:18 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:34:18 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtestmain -lgtest -lpthread
+/usr/bin/ld: cannot find -lgtestmain
+collect2: error: ld returned 1 exit status
+makefile:44: recipe for target 'Testeur' failed
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:34:19 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:34:19 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtestmain -lgtest -lpthread
+/usr/bin/ld: cannot find -lgtestmain
+collect2: error: ld returned 1 exit status
+make: *** [Testeur] Error 1
+makefile:44: recipe for target 'Testeur' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+19:34:20 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:34:20 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtestmain -lgtest -lpthread
+/usr/bin/ld: cannot find -lgtestmain
+makefile:44: recipe for target 'Testeur' failed
+collect2: error: ld returned 1 exit status
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:34:20 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:34:21 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtestmain -lgtest -lpthread
+/usr/bin/ld: cannot find -lgtestmain
+collect2: error: ld returned 1 exit status
+make: *** [Testeur] Error 1
+makefile:44: recipe for target 'Testeur' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+19:34:21 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:34:22 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtestmain -lgtest -lpthread
+/usr/bin/ld: cannot find -lgtestmain
+collect2: error: ld returned 1 exit status
+make: *** [Testeur] Error 1
+makefile:44: recipe for target 'Testeur' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+19:34:25 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:34:25 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtestmain -lgtest -lpthread
+/usr/bin/ld: cannot find -lgtestmain
+collect2: error: ld returned 1 exit status
+makefile:44: recipe for target 'Testeur' failed
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:34:26 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:34:26 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtestmain -lgtest -lpthread
+/usr/bin/ld: cannot find -lgtestmain
+makefile:44: recipe for target 'Testeur' failed
+collect2: error: ld returned 1 exit status
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:34:26 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:34:26 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtestmain -lgtest -lpthread
+/usr/bin/ld: cannot find -lgtestmain
+makefile:44: recipe for target 'Testeur' failed
+collect2: error: ld returned 1 exit status
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:34:27 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:34:27 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtestmain -lgtest -lpthread
+/usr/bin/ld: cannot find -lgtestmain
+collect2: error: ld returned 1 exit status
+make: *** [Testeur] Error 1
+makefile:44: recipe for target 'Testeur' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+19:34:27 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:34:28 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtestmain -lgtest -lpthread
+/usr/bin/ld: cannot find -lgtestmain
+makefile:44: recipe for target 'Testeur' failed
+collect2: error: ld returned 1 exit status
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:34:28 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:34:28 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtestmain -lgtest -lpthread
+/usr/bin/ld: cannot find -lgtestmain
+collect2: error: ld returned 1 exit status
+makefile:44: recipe for target 'Testeur' failed
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:34:52 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:34:52 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+19:35:38 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:35:39 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../ReferenceTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReferenceTesteur.d" -MT"ReferenceTesteur.o" -o "ReferenceTesteur.o" "../ReferenceTesteur.cpp"
+Finished building: ../ReferenceTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+19:35:52 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+19:36:19 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+19:36:24 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:36:24 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+19:36:25 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:36:25 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+19:38:36 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+19:44:25 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+19:44:39 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:44:40 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../ReferenceTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReferenceTesteur.d" -MT"ReferenceTesteur.o" -o "ReferenceTesteur.o" "../ReferenceTesteur.cpp"
+../ReferenceTesteur.cpp:13:1: error: ‘ss’ does not name a type
+ ss
+ ^~
+../ReferenceTesteur.cpp:34:2: error: ‘TestReference’ does not name a type
+  TestReference ref_1;
+  ^~~~~~~~~~~~~
+../ReferenceTesteur.cpp: In constructor ‘OneRef::OneRef()’:
+../ReferenceTesteur.cpp:32:12: error: class ‘OneRef’ does not have any field named ‘ref_1’
+  OneRef(): ref_1("Homayoon Beigi", "Fundamentals of Speaker Recognition", "ISBN 978-3-16-148410-0", 2008)
+            ^~~~~
+../ReferenceTesteur.cpp: In member function ‘virtual void Reference_ConstructeurNormal_Test::TestBody()’:
+../ReferenceTesteur.cpp:39:2: error: ‘TestReference’ was not declared in this scope
+  TestReference Testeur ("Mon grand ami",
+  ^~~~~~~~~~~~~
+In file included from /usr/local/include/gtest/gtest.h:1874:0,
+                 from ../ReferenceTesteur.cpp:9:
+../ReferenceTesteur.cpp:43:29: error: ‘Testeur’ was not declared in this scope
+  ASSERT_EQ("Mon grand ami", Testeur.reqAuteurs());
+                             ^
+../ReferenceTesteur.cpp:43:29: note: suggested alternative: ‘Test’
+../ReferenceTesteur.cpp:45:51: error: ‘Testeur’ was not declared in this scope
+  ASSERT_EQ("Fundamentals of Speaker Recognition", Testeur.reqTitre());
+                                                   ^
+../ReferenceTesteur.cpp:45:51: note: suggested alternative: ‘Test’
+../ReferenceTesteur.cpp:47:38: error: ‘Testeur’ was not declared in this scope
+  ASSERT_EQ("ISBN 978-0-387-77591-3", Testeur.reqIdentifiant());
+                                      ^
+../ReferenceTesteur.cpp:47:38: note: suggested alternative: ‘Test’
+../ReferenceTesteur.cpp:49:18: error: ‘Testeur’ was not declared in this scope
+  ASSERT_EQ(2008, Testeur.reqAnnee());
+                  ^
+../ReferenceTesteur.cpp:49:18: note: suggested alternative: ‘Test’
+subdir.mk:18: recipe for target 'ReferenceTesteur.o' failed
+make: *** [ReferenceTesteur.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:44:45 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:44:45 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../ReferenceTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReferenceTesteur.d" -MT"ReferenceTesteur.o" -o "ReferenceTesteur.o" "../ReferenceTesteur.cpp"
+Finished building: ../ReferenceTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+19:45:04 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+19:45:59 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:45:59 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../ReferenceTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReferenceTesteur.d" -MT"ReferenceTesteur.o" -o "ReferenceTesteur.o" "../ReferenceTesteur.cpp"
+Finished building: ../ReferenceTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+19:46:08 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+19:50:47 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:50:47 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../ReferenceTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReferenceTesteur.d" -MT"ReferenceTesteur.o" -o "ReferenceTesteur.o" "../ReferenceTesteur.cpp"
+Finished building: ../ReferenceTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+19:50:54 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+19:53:12 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:53:13 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../ReferenceTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReferenceTesteur.d" -MT"ReferenceTesteur.o" -o "ReferenceTesteur.o" "../ReferenceTesteur.cpp"
+Finished building: ../ReferenceTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+19:53:19 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+19:55:57 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Reference.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reference.d" -MT"Reference.o" -o "Reference.o" "../Reference.cpp"
+Finished building: ../Reference.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+19:55:58 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+19:56:03 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+19:59:04 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:59:04 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../ReferenceTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReferenceTesteur.d" -MT"ReferenceTesteur.o" -o "ReferenceTesteur.o" "../ReferenceTesteur.cpp"
+Finished building: ../ReferenceTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+19:59:08 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+20:06:16 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Util.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Util.d" -MT"Util.o" -o "Util.o" "../Util.cpp"
+Finished building: ../Util.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+20:06:16 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+20:06:27 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../ReferenceTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReferenceTesteur.d" -MT"ReferenceTesteur.o" -o "ReferenceTesteur.o" "../ReferenceTesteur.cpp"
+Finished building: ../ReferenceTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+20:08:43 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+20:08:44 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../ReferenceTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReferenceTesteur.d" -MT"ReferenceTesteur.o" -o "ReferenceTesteur.o" "../ReferenceTesteur.cpp"
+In file included from /usr/local/include/gtest/gtest.h:1874:0,
+                 from ../ReferenceTesteur.cpp:8:
+../ReferenceTesteur.cpp: In member function ‘virtual void Reference_ConstructeurNormal_Test::TestBody()’:
+../ReferenceTesteur.cpp:43:29: error: ‘ref_1’ was not declared in this scope
+  ASSERT_EQ("Mon grand ami", ref_1.reqAuteurs());
+                             ^
+../ReferenceTesteur.cpp:43:29: note: suggested alternative: ‘greg_t’
+../ReferenceTesteur.cpp:45:51: error: ‘ref_1’ was not declared in this scope
+  ASSERT_EQ("Fundamentals of Speaker Recognition", ref_1.reqTitre());
+                                                   ^
+../ReferenceTesteur.cpp:45:51: note: suggested alternative: ‘greg_t’
+../ReferenceTesteur.cpp:47:38: error: ‘ref_1’ was not declared in this scope
+  ASSERT_EQ("ISBN 978-0-387-77591-3", ref_1.reqIdentifiant());
+                                      ^
+../ReferenceTesteur.cpp:47:38: note: suggested alternative: ‘greg_t’
+../ReferenceTesteur.cpp:49:18: error: ‘ref_1’ was not declared in this scope
+  ASSERT_EQ(2008, ref_1.reqAnnee());
+                  ^
+../ReferenceTesteur.cpp:49:18: note: suggested alternative: ‘greg_t’
+subdir.mk:18: recipe for target 'ReferenceTesteur.o' failed
+make: *** [ReferenceTesteur.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:09:26 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+20:09:26 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../ReferenceTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReferenceTesteur.d" -MT"ReferenceTesteur.o" -o "ReferenceTesteur.o" "../ReferenceTesteur.cpp"
+In file included from /usr/local/include/gtest/gtest.h:1874:0,
+                 from ../ReferenceTesteur.cpp:8:
+../ReferenceTesteur.cpp: In member function ‘virtual void OneRef_ConstructeurNormal_Test::TestBody()’:
+../ReferenceTesteur.cpp:43:29: error: ‘ref_1’ was not declared in this scope
+  ASSERT_EQ("Mon grand ami", ref_1.reqAuteurs());
+                             ^
+../ReferenceTesteur.cpp:43:29: note: suggested alternative: ‘greg_t’
+../ReferenceTesteur.cpp:45:51: error: ‘ref_1’ was not declared in this scope
+  ASSERT_EQ("Fundamentals of Speaker Recognition", ref_1.reqTitre());
+                                                   ^
+../ReferenceTesteur.cpp:45:51: note: suggested alternative: ‘greg_t’
+../ReferenceTesteur.cpp:47:38: error: ‘ref_1’ was not declared in this scope
+  ASSERT_EQ("ISBN 978-0-387-77591-3", ref_1.reqIdentifiant());
+                                      ^
+../ReferenceTesteur.cpp:47:38: note: suggested alternative: ‘greg_t’
+../ReferenceTesteur.cpp:49:18: error: ‘ref_1’ was not declared in this scope
+  ASSERT_EQ(2008, ref_1.reqAnnee());
+                  ^
+../ReferenceTesteur.cpp:49:18: note: suggested alternative: ‘greg_t’
+make: *** [ReferenceTesteur.o] Error 1
+subdir.mk:18: recipe for target 'ReferenceTesteur.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+20:13:10 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+20:13:10 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../ReferenceTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReferenceTesteur.d" -MT"ReferenceTesteur.o" -o "ReferenceTesteur.o" "../ReferenceTesteur.cpp"
+In file included from /usr/local/include/gtest/gtest.h:1874:0,
+                 from ../ReferenceTesteur.cpp:8:
+../ReferenceTesteur.cpp: In member function ‘virtual void OneRef_ConstructeurNormal_Test::TestBody()’:
+../ReferenceTesteur.cpp:43:29: error: ‘ref_1’ was not declared in this scope
+  ASSERT_EQ("Mon grand ami", ref_1.reqAuteurs());
+                             ^
+../ReferenceTesteur.cpp:43:29: note: suggested alternative: ‘greg_t’
+../ReferenceTesteur.cpp:45:51: error: ‘ref_1’ was not declared in this scope
+  ASSERT_EQ("Fundamentals of Speaker Recognition", ref_1.reqTitre());
+                                                   ^
+../ReferenceTesteur.cpp:45:51: note: suggested alternative: ‘greg_t’
+../ReferenceTesteur.cpp:47:38: error: ‘ref_1’ was not declared in this scope
+  ASSERT_EQ("ISBN 978-0-387-77591-3", ref_1.reqIdentifiant());
+                                      ^
+../ReferenceTesteur.cpp:47:38: note: suggested alternative: ‘greg_t’
+../ReferenceTesteur.cpp:49:18: error: ‘ref_1’ was not declared in this scope
+  ASSERT_EQ(2008, ref_1.reqAnnee());
+                  ^
+../ReferenceTesteur.cpp:49:18: note: suggested alternative: ‘greg_t’
+subdir.mk:18: recipe for target 'ReferenceTesteur.o' failed
+make: *** [ReferenceTesteur.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:20:45 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+20:20:45 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../ReferenceTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReferenceTesteur.d" -MT"ReferenceTesteur.o" -o "ReferenceTesteur.o" "../ReferenceTesteur.cpp"
+Finished building: ../ReferenceTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+20:32:46 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+20:32:47 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../ReferenceTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReferenceTesteur.d" -MT"ReferenceTesteur.o" -o "ReferenceTesteur.o" "../ReferenceTesteur.cpp"
+Finished building: ../ReferenceTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+20:32:59 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+20:52:45 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Reference.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reference.d" -MT"Reference.o" -o "Reference.o" "../Reference.cpp"
+Finished building: ../Reference.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+20:52:45 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../ReferenceTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReferenceTesteur.d" -MT"ReferenceTesteur.o" -o "ReferenceTesteur.o" "../ReferenceTesteur.cpp"
+Finished building: ../ReferenceTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+20:52:50 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+20:53:14 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+20:53:14 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../ReferenceTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReferenceTesteur.d" -MT"ReferenceTesteur.o" -o "ReferenceTesteur.o" "../ReferenceTesteur.cpp"
+Finished building: ../ReferenceTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+20:53:17 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+20:53:46 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+20:53:46 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../ReferenceTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReferenceTesteur.d" -MT"ReferenceTesteur.o" -o "ReferenceTesteur.o" "../ReferenceTesteur.cpp"
+Finished building: ../ReferenceTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+20:53:49 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:32:45 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building file: ../Ouvrage.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Ouvrage.d" -MT"Ouvrage.o" -o "Ouvrage.o" "../Ouvrage.cpp"
+Finished building: ../Ouvrage.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+22:32:46 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../OuvrageTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"OuvrageTesteur.d" -MT"OuvrageTesteur.o" -o "OuvrageTesteur.o" "../OuvrageTesteur.cpp"
+../OuvrageTesteur.cpp: In constructor ‘UnOuvr::UnOuvr()’:
+../OuvrageTesteur.cpp:23:30: error: no matching function for call to ‘biblio::Ouvrage::Ouvrage(const char [15], const char [36], const char [9], const char [9], int, const char [23])’
+      "ISBN 978-0-387-77591-3")
+                              ^
+In file included from ../OuvrageTesteur.cpp:7:0:
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:19:2: note: candidate: biblio::Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string, std::__cxx11::string)
+  Ouvrage(const std::string auteurs, const std::string titre, const std::string identifiant
+  ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:19:2: note:   no known conversion for argument 5 from ‘int’ to ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note: candidate: biblio::Ouvrage::Ouvrage(const biblio::Ouvrage&)
+ class Ouvrage: public biblio::Reference{
+       ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note:   candidate expects 1 argument, 6 provided
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note: candidate: biblio::Ouvrage::Ouvrage(biblio::Ouvrage&&)
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note:   candidate expects 1 argument, 6 provided
+In file included from /usr/local/include/gtest/gtest.h:58:0,
+                 from ../OuvrageTesteur.cpp:9:
+../OuvrageTesteur.cpp: In member function ‘virtual void Ouvrage_ConstructeurVilleInvalide_Test::TestBody()’:
+../OuvrageTesteur.cpp:53:147: error: no matching function for call to ‘biblio::Ouvrage::Ouvrage(const char [15], const char [36], const char [10], const char [9], int, const char [23])’
+  ASSERT_THROW(Ouvrage ouvrageTest("Homayoon Beigi", "Fundamentals of Speaker Recognition", "New&&York", "Springer", 2008, "ISBN 978-0-387-77591-3"),
+                                                                                                                                                   ^
+In file included from ../OuvrageTesteur.cpp:7:0:
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:19:2: note: candidate: biblio::Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string, std::__cxx11::string)
+  Ouvrage(const std::string auteurs, const std::string titre, const std::string identifiant
+  ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:19:2: note:   no known conversion for argument 5 from ‘int’ to ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note: candidate: biblio::Ouvrage::Ouvrage(const biblio::Ouvrage&)
+ class Ouvrage: public biblio::Reference{
+       ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note:   candidate expects 1 argument, 6 provided
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note: candidate: biblio::Ouvrage::Ouvrage(biblio::Ouvrage&&)
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note:   candidate expects 1 argument, 6 provided
+In file included from /usr/local/include/gtest/gtest.h:58:0,
+                 from ../OuvrageTesteur.cpp:9:
+../OuvrageTesteur.cpp:55:138: error: no matching function for call to ‘biblio::Ouvrage::Ouvrage(const char [15], const char [36], const char [1], const char [9], int, const char [23])’
+  ASSERT_THROW(Ouvrage ouvrageTest("Homayoon Beigi", "Fundamentals of Speaker Recognition", "", "Springer", 2008, "ISBN 978-0-387-77591-3"),
+                                                                                                                                          ^
+In file included from ../OuvrageTesteur.cpp:7:0:
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:19:2: note: candidate: biblio::Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string, std::__cxx11::string)
+  Ouvrage(const std::string auteurs, const std::string titre, const std::string identifiant
+  ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:19:2: note:   no known conversion for argument 5 from ‘int’ to ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note: candidate: biblio::Ouvrage::Ouvrage(const biblio::Ouvrage&)
+ class Ouvrage: public biblio::Reference{
+       ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note:   candidate expects 1 argument, 6 provided
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note: candidate: biblio::Ouvrage::Ouvrage(biblio::Ouvrage&&)
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note:   candidate expects 1 argument, 6 provided
+In file included from /usr/local/include/gtest/gtest.h:58:0,
+                 from ../OuvrageTesteur.cpp:9:
+../OuvrageTesteur.cpp:57:150: error: no matching function for call to ‘biblio::Ouvrage::Ouvrage(const char [15], const char [36], const char [13], const char [9], int, const char [23])’
+  ASSERT_THROW(Ouvrage ouvrageTest("Homayoon Beigi", "Fundamentals of Speaker Recognition", "4 New York 2", "Springer", 2008, "ISBN 978-0-387-77591-3"),
+                                                                                                                                                      ^
+In file included from ../OuvrageTesteur.cpp:7:0:
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:19:2: note: candidate: biblio::Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string, std::__cxx11::string)
+  Ouvrage(const std::string auteurs, const std::string titre, const std::string identifiant
+  ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:19:2: note:   no known conversion for argument 5 from ‘int’ to ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note: candidate: biblio::Ouvrage::Ouvrage(const biblio::Ouvrage&)
+ class Ouvrage: public biblio::Reference{
+       ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note:   candidate expects 1 argument, 6 provided
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note: candidate: biblio::Ouvrage::Ouvrage(biblio::Ouvrage&&)
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note:   candidate expects 1 argument, 6 provided
+In file included from /usr/local/include/gtest/gtest.h:58:0,
+                 from ../OuvrageTesteur.cpp:9:
+../OuvrageTesteur.cpp: In member function ‘virtual void Ouvrage_ConstructeurEditeurInvalide_Test::TestBody()’:
+../OuvrageTesteur.cpp:63:138: error: no matching function for call to ‘biblio::Ouvrage::Ouvrage(const char [15], const char [36], const char [9], const char [1], int, const char [23])’
+  ASSERT_THROW(Ouvrage ouvrageTest("Homayoon Beigi", "Fundamentals of Speaker Recognition", "New York", "", 2008, "ISBN 978-0-387-77591-3"),
+                                                                                                                                          ^
+In file included from ../OuvrageTesteur.cpp:7:0:
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:19:2: note: candidate: biblio::Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string, std::__cxx11::string)
+  Ouvrage(const std::string auteurs, const std::string titre, const std::string identifiant
+  ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:19:2: note:   no known conversion for argument 5 from ‘int’ to ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note: candidate: biblio::Ouvrage::Ouvrage(const biblio::Ouvrage&)
+ class Ouvrage: public biblio::Reference{
+       ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note:   candidate expects 1 argument, 6 provided
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note: candidate: biblio::Ouvrage::Ouvrage(biblio::Ouvrage&&)
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note:   candidate expects 1 argument, 6 provided
+In file included from /usr/local/include/gtest/gtest.h:58:0,
+                 from ../OuvrageTesteur.cpp:9:
+../OuvrageTesteur.cpp:65:139: error: no matching function for call to ‘biblio::Ouvrage::Ouvrage(const char [15], const char [36], const char [9], const char [2], int, const char [23])’
+  ASSERT_THROW(Ouvrage ouvrageTest("Homayoon Beigi", "Fundamentals of Speaker Recognition", "New York", "%", 2008, "ISBN 978-0-387-77591-3"),
+                                                                                                                                           ^
+In file included from ../OuvrageTesteur.cpp:7:0:
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:19:2: note: candidate: biblio::Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string, std::__cxx11::string)
+  Ouvrage(const std::string auteurs, const std::string titre, const std::string identifiant
+  ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:19:2: note:   no known conversion for argument 5 from ‘int’ to ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note: candidate: biblio::Ouvrage::Ouvrage(const biblio::Ouvrage&)
+ class Ouvrage: public biblio::Reference{
+       ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note:   candidate expects 1 argument, 6 provided
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note: candidate: biblio::Ouvrage::Ouvrage(biblio::Ouvrage&&)
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note:   candidate expects 1 argument, 6 provided
+In file included from /usr/local/include/gtest/gtest.h:58:0,
+                 from ../OuvrageTesteur.cpp:9:
+../OuvrageTesteur.cpp:67:150: error: no matching function for call to ‘biblio::Ouvrage::Ouvrage(const char [15], const char [36], const char [9], const char [13], int, const char [23])’
+  ASSERT_THROW(Ouvrage ouvrageTest("Homayoon Beigi", "Fundamentals of Speaker Recognition", "New York", " 3Springer 2", 2008, "ISBN 978-0-387-77591-3"),
+                                                                                                                                                      ^
+In file included from ../OuvrageTesteur.cpp:7:0:
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:19:2: note: candidate: biblio::Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string, std::__cxx11::string)
+  Ouvrage(const std::string auteurs, const std::string titre, const std::string identifiant
+  ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:19:2: note:   no known conversion for argument 5 from ‘int’ to ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note: candidate: biblio::Ouvrage::Ouvrage(const biblio::Ouvrage&)
+ class Ouvrage: public biblio::Reference{
+       ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note:   candidate expects 1 argument, 6 provided
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note: candidate: biblio::Ouvrage::Ouvrage(biblio::Ouvrage&&)
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note:   candidate expects 1 argument, 6 provided
+In file included from /usr/local/include/gtest/gtest.h:58:0,
+                 from ../OuvrageTesteur.cpp:9:
+../OuvrageTesteur.cpp:69:148: error: no matching function for call to ‘biblio::Ouvrage::Ouvrage(const char [15], const char [36], const char [9], const char [11], int, const char [23])’
+  ASSERT_THROW(Ouvrage ouvrageTest("Homayoon Beigi", "Fundamentals of Speaker Recognition", "New York", "Spr&&inger", 2008, "ISBN 978-0-387-77591-3"),
+                                                                                                                                                    ^
+In file included from ../OuvrageTesteur.cpp:7:0:
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:19:2: note: candidate: biblio::Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string, std::__cxx11::string)
+  Ouvrage(const std::string auteurs, const std::string titre, const std::string identifiant
+  ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:19:2: note:   no known conversion for argument 5 from ‘int’ to ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note: candidate: biblio::Ouvrage::Ouvrage(const biblio::Ouvrage&)
+ class Ouvrage: public biblio::Reference{
+       ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note:   candidate expects 1 argument, 6 provided
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note: candidate: biblio::Ouvrage::Ouvrage(biblio::Ouvrage&&)
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note:   candidate expects 1 argument, 6 provided
+make: *** [OuvrageTesteur.o] Error 1
+subdir.mk:21: recipe for target 'OuvrageTesteur.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+22:37:02 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+22:37:02 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../OuvrageTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"OuvrageTesteur.d" -MT"OuvrageTesteur.o" -o "OuvrageTesteur.o" "../OuvrageTesteur.cpp"
+../OuvrageTesteur.cpp: In constructor ‘UnOuvr::UnOuvr()’:
+../OuvrageTesteur.cpp:23:30: error: no matching function for call to ‘biblio::Ouvrage::Ouvrage(const char [15], const char [36], const char [9], const char [9], int, const char [23])’
+      "ISBN 978-0-387-77591-3")
+                              ^
+In file included from ../OuvrageTesteur.cpp:7:0:
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:19:2: note: candidate: biblio::Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string, std::__cxx11::string)
+  Ouvrage(const std::string auteurs, const std::string titre, const std::string identifiant
+  ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:19:2: note:   no known conversion for argument 5 from ‘int’ to ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note: candidate: biblio::Ouvrage::Ouvrage(const biblio::Ouvrage&)
+ class Ouvrage: public biblio::Reference{
+       ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note:   candidate expects 1 argument, 6 provided
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note: candidate: biblio::Ouvrage::Ouvrage(biblio::Ouvrage&&)
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note:   candidate expects 1 argument, 6 provided
+In file included from /usr/local/include/gtest/gtest.h:58:0,
+                 from ../OuvrageTesteur.cpp:9:
+../OuvrageTesteur.cpp: In member function ‘virtual void Ouvrage_ConstructeurVilleInvalide_Test::TestBody()’:
+../OuvrageTesteur.cpp:53:146: error: no matching function for call to ‘biblio::Ouvrage::Ouvrage(const char [15], const char [36], int, const char [23], const char [10], const char [9])’
+  ASSERT_THROW(Ouvrage ouvrageTest("Homayoon Beigi", "Fundamentals of Speaker Recognition", 2008, "ISBN 978-0-387-77591-3","New&&York", "Springer"),
+                                                                                                                                                  ^
+In file included from ../OuvrageTesteur.cpp:7:0:
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:19:2: note: candidate: biblio::Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string, std::__cxx11::string)
+  Ouvrage(const std::string auteurs, const std::string titre, const std::string identifiant
+  ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:19:2: note:   no known conversion for argument 3 from ‘int’ to ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note: candidate: biblio::Ouvrage::Ouvrage(const biblio::Ouvrage&)
+ class Ouvrage: public biblio::Reference{
+       ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note:   candidate expects 1 argument, 6 provided
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note: candidate: biblio::Ouvrage::Ouvrage(biblio::Ouvrage&&)
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note:   candidate expects 1 argument, 6 provided
+In file included from /usr/local/include/gtest/gtest.h:58:0,
+                 from ../OuvrageTesteur.cpp:9:
+../OuvrageTesteur.cpp:55:138: error: no matching function for call to ‘biblio::Ouvrage::Ouvrage(const char [15], const char [36], int, const char [23], const char [1], const char [9])’
+  ASSERT_THROW(Ouvrage ouvrageTest("Homayoon Beigi", "Fundamentals of Speaker Recognition", 2008, "ISBN 978-0-387-77591-3", "", "Springer"),
+                                                                                                                                          ^
+In file included from ../OuvrageTesteur.cpp:7:0:
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:19:2: note: candidate: biblio::Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string, std::__cxx11::string)
+  Ouvrage(const std::string auteurs, const std::string titre, const std::string identifiant
+  ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:19:2: note:   no known conversion for argument 3 from ‘int’ to ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note: candidate: biblio::Ouvrage::Ouvrage(const biblio::Ouvrage&)
+ class Ouvrage: public biblio::Reference{
+       ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note:   candidate expects 1 argument, 6 provided
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note: candidate: biblio::Ouvrage::Ouvrage(biblio::Ouvrage&&)
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note:   candidate expects 1 argument, 6 provided
+In file included from /usr/local/include/gtest/gtest.h:58:0,
+                 from ../OuvrageTesteur.cpp:9:
+../OuvrageTesteur.cpp:57:150: error: no matching function for call to ‘biblio::Ouvrage::Ouvrage(const char [15], const char [36], int, const char [23], const char [13], const char [9])’
+  ASSERT_THROW(Ouvrage ouvrageTest("Homayoon Beigi", "Fundamentals of Speaker Recognition", 2008, "ISBN 978-0-387-77591-3", "4 New York 2", "Springer"),
+                                                                                                                                                      ^
+In file included from ../OuvrageTesteur.cpp:7:0:
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:19:2: note: candidate: biblio::Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string, std::__cxx11::string)
+  Ouvrage(const std::string auteurs, const std::string titre, const std::string identifiant
+  ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:19:2: note:   no known conversion for argument 3 from ‘int’ to ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note: candidate: biblio::Ouvrage::Ouvrage(const biblio::Ouvrage&)
+ class Ouvrage: public biblio::Reference{
+       ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note:   candidate expects 1 argument, 6 provided
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note: candidate: biblio::Ouvrage::Ouvrage(biblio::Ouvrage&&)
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note:   candidate expects 1 argument, 6 provided
+In file included from /usr/local/include/gtest/gtest.h:58:0,
+                 from ../OuvrageTesteur.cpp:9:
+../OuvrageTesteur.cpp: In member function ‘virtual void Ouvrage_ConstructeurEditeurInvalide_Test::TestBody()’:
+../OuvrageTesteur.cpp:63:138: error: no matching function for call to ‘biblio::Ouvrage::Ouvrage(const char [15], const char [36], int, const char [23], const char [10], const char [1])’
+  ASSERT_THROW(Ouvrage ouvrageTest("Homayoon Beigi", "Fundamentals of Speaker Recognition", 2008, "ISBN 978-0-387-77591-3","New&&York", ""),
+                                                                                                                                          ^
+In file included from ../OuvrageTesteur.cpp:7:0:
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:19:2: note: candidate: biblio::Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string, std::__cxx11::string)
+  Ouvrage(const std::string auteurs, const std::string titre, const std::string identifiant
+  ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:19:2: note:   no known conversion for argument 3 from ‘int’ to ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note: candidate: biblio::Ouvrage::Ouvrage(const biblio::Ouvrage&)
+ class Ouvrage: public biblio::Reference{
+       ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note:   candidate expects 1 argument, 6 provided
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note: candidate: biblio::Ouvrage::Ouvrage(biblio::Ouvrage&&)
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note:   candidate expects 1 argument, 6 provided
+In file included from /usr/local/include/gtest/gtest.h:58:0,
+                 from ../OuvrageTesteur.cpp:9:
+../OuvrageTesteur.cpp:65:139: error: no matching function for call to ‘biblio::Ouvrage::Ouvrage(const char [15], const char [36], int, const char [23], const char [10], const char [2])’
+  ASSERT_THROW(Ouvrage ouvrageTest("Homayoon Beigi", "Fundamentals of Speaker Recognition", 2008, "ISBN 978-0-387-77591-3","New&&York", "%"),
+                                                                                                                                           ^
+In file included from ../OuvrageTesteur.cpp:7:0:
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:19:2: note: candidate: biblio::Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string, std::__cxx11::string)
+  Ouvrage(const std::string auteurs, const std::string titre, const std::string identifiant
+  ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:19:2: note:   no known conversion for argument 3 from ‘int’ to ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note: candidate: biblio::Ouvrage::Ouvrage(const biblio::Ouvrage&)
+ class Ouvrage: public biblio::Reference{
+       ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note:   candidate expects 1 argument, 6 provided
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note: candidate: biblio::Ouvrage::Ouvrage(biblio::Ouvrage&&)
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note:   candidate expects 1 argument, 6 provided
+In file included from /usr/local/include/gtest/gtest.h:58:0,
+                 from ../OuvrageTesteur.cpp:9:
+../OuvrageTesteur.cpp:67:150: error: no matching function for call to ‘biblio::Ouvrage::Ouvrage(const char [15], const char [36], int, const char [23], const char [10], const char [13])’
+  ASSERT_THROW(Ouvrage ouvrageTest("Homayoon Beigi", "Fundamentals of Speaker Recognition", 2008, "ISBN 978-0-387-77591-3","New&&York", "3 Springer 2"),
+                                                                                                                                                      ^
+In file included from ../OuvrageTesteur.cpp:7:0:
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:19:2: note: candidate: biblio::Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string, std::__cxx11::string)
+  Ouvrage(const std::string auteurs, const std::string titre, const std::string identifiant
+  ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:19:2: note:   no known conversion for argument 3 from ‘int’ to ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note: candidate: biblio::Ouvrage::Ouvrage(const biblio::Ouvrage&)
+ class Ouvrage: public biblio::Reference{
+       ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note:   candidate expects 1 argument, 6 provided
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note: candidate: biblio::Ouvrage::Ouvrage(biblio::Ouvrage&&)
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note:   candidate expects 1 argument, 6 provided
+In file included from /usr/local/include/gtest/gtest.h:58:0,
+                 from ../OuvrageTesteur.cpp:9:
+../OuvrageTesteur.cpp:69:149: error: no matching function for call to ‘biblio::Ouvrage::Ouvrage(const char [15], const char [36], int, const char [23], const char [10], const char [12])’
+  ASSERT_THROW(Ouvrage ouvrageTest("Homayoon Beigi", "Fundamentals of Speaker Recognition", 2008, "ISBN 978-0-387-77591-3","New&&York", "Spr&&%inger"),
+                                                                                                                                                     ^
+In file included from ../OuvrageTesteur.cpp:7:0:
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:19:2: note: candidate: biblio::Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string, std::__cxx11::string)
+  Ouvrage(const std::string auteurs, const std::string titre, const std::string identifiant
+  ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:19:2: note:   no known conversion for argument 3 from ‘int’ to ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note: candidate: biblio::Ouvrage::Ouvrage(const biblio::Ouvrage&)
+ class Ouvrage: public biblio::Reference{
+       ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note:   candidate expects 1 argument, 6 provided
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note: candidate: biblio::Ouvrage::Ouvrage(biblio::Ouvrage&&)
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note:   candidate expects 1 argument, 6 provided
+subdir.mk:21: recipe for target 'OuvrageTesteur.o' failed
+make: *** [OuvrageTesteur.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:38:23 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+22:38:24 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../OuvrageTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"OuvrageTesteur.d" -MT"OuvrageTesteur.o" -o "OuvrageTesteur.o" "../OuvrageTesteur.cpp"
+../OuvrageTesteur.cpp: In constructor ‘UnOuvr::UnOuvr()’:
+../OuvrageTesteur.cpp:23:30: error: no matching function for call to ‘biblio::Ouvrage::Ouvrage(const char [15], const char [36], const char [9], const char [9], int, const char [23])’
+      "ISBN 978-0-387-77591-3")
+                              ^
+In file included from ../OuvrageTesteur.cpp:7:0:
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:19:2: note: candidate: biblio::Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string, std::__cxx11::string)
+  Ouvrage(const std::string auteurs, const std::string titre, const std::string identifiant
+  ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:19:2: note:   no known conversion for argument 5 from ‘int’ to ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note: candidate: biblio::Ouvrage::Ouvrage(const biblio::Ouvrage&)
+ class Ouvrage: public biblio::Reference{
+       ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note:   candidate expects 1 argument, 6 provided
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note: candidate: biblio::Ouvrage::Ouvrage(biblio::Ouvrage&&)
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note:   candidate expects 1 argument, 6 provided
+subdir.mk:21: recipe for target 'OuvrageTesteur.o' failed
+make: *** [OuvrageTesteur.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:38:55 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+22:38:55 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../OuvrageTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"OuvrageTesteur.d" -MT"OuvrageTesteur.o" -o "OuvrageTesteur.o" "../OuvrageTesteur.cpp"
+../OuvrageTesteur.cpp: In constructor ‘UnOuvr::UnOuvr()’:
+../OuvrageTesteur.cpp:23:17: error: expected primary-expression before ‘)’ token
+      "Springer",)
+                 ^
+make: *** [OuvrageTesteur.o] Error 1
+subdir.mk:21: recipe for target 'OuvrageTesteur.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+22:39:07 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+22:39:07 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../OuvrageTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"OuvrageTesteur.d" -MT"OuvrageTesteur.o" -o "OuvrageTesteur.o" "../OuvrageTesteur.cpp"
+Finished building: ../OuvrageTesteur.cpp
+ 
+Building file: ../ReferenceTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReferenceTesteur.d" -MT"ReferenceTesteur.o" -o "ReferenceTesteur.o" "../ReferenceTesteur.cpp"
+Finished building: ../ReferenceTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+22:39:14 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:40:49 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building file: ../Ouvrage.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Ouvrage.d" -MT"Ouvrage.o" -o "Ouvrage.o" "../Ouvrage.cpp"
+Finished building: ../Ouvrage.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+22:40:50 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../OuvrageTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"OuvrageTesteur.d" -MT"OuvrageTesteur.o" -o "OuvrageTesteur.o" "../OuvrageTesteur.cpp"
+Finished building: ../OuvrageTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+22:41:00 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+09:58:27 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+09:59:18 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+09:59:18 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../OuvrageTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"OuvrageTesteur.d" -MT"OuvrageTesteur.o" -o "OuvrageTesteur.o" "../OuvrageTesteur.cpp"
+Finished building: ../OuvrageTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+09:59:23 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+10:00:40 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+10:00:40 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../ReferenceTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReferenceTesteur.d" -MT"ReferenceTesteur.o" -o "ReferenceTesteur.o" "../ReferenceTesteur.cpp"
+Finished building: ../ReferenceTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+10:00:44 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+10:01:30 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Ouvrage.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Ouvrage.d" -MT"Ouvrage.o" -o "Ouvrage.o" "../Ouvrage.cpp"
+Finished building: ../Ouvrage.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+10:01:31 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+10:01:34 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+10:03:15 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Ouvrage.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Ouvrage.d" -MT"Ouvrage.o" -o "Ouvrage.o" "../Ouvrage.cpp"
+Finished building: ../Ouvrage.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+10:03:16 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+10:03:26 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+10:04:53 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+10:04:53 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../OuvrageTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"OuvrageTesteur.d" -MT"OuvrageTesteur.o" -o "OuvrageTesteur.o" "../OuvrageTesteur.cpp"
+Finished building: ../OuvrageTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+10:05:01 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+10:05:01 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../OuvrageTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"OuvrageTesteur.d" -MT"OuvrageTesteur.o" -o "OuvrageTesteur.o" "../OuvrageTesteur.cpp"
+Finished building: ../OuvrageTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+10:05:05 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+10:07:37 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+10:07:37 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../OuvrageTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"OuvrageTesteur.d" -MT"OuvrageTesteur.o" -o "OuvrageTesteur.o" "../OuvrageTesteur.cpp"
+Finished building: ../OuvrageTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+10:07:42 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
