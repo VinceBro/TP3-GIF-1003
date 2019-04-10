@@ -1737,3 +1737,252 @@ Finished building target: Testeur
 10:07:42 **** Incremental Build of configuration Debug for project Testeur ****
 make all 
 make: Nothing to be done for 'all'.
+10:15:41 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building file: ../Journal.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Journal.d" -MT"Journal.o" -o "Journal.o" "../Journal.cpp"
+Finished building: ../Journal.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+10:15:42 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../JournalTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"JournalTesteur.d" -MT"JournalTesteur.o" -o "JournalTesteur.o" "../JournalTesteur.cpp"
+Finished building: ../JournalTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+10:24:37 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+10:24:37 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../JournalTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"JournalTesteur.d" -MT"JournalTesteur.o" -o "JournalTesteur.o" "../JournalTesteur.cpp"
+../JournalTesteur.cpp:27:3: error: expected unqualified-id before ‘{’ token
+   {};
+   ^
+../JournalTesteur.cpp: In constructor ‘UnJourn::UnJourn()’:
+../JournalTesteur.cpp:26:6: error: expected ‘{’ at end of input
+     6);
+      ^
+make: *** [JournalTesteur.o] Error 1
+subdir.mk:24: recipe for target 'JournalTesteur.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+10:24:50 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+10:24:50 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../JournalTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"JournalTesteur.d" -MT"JournalTesteur.o" -o "JournalTesteur.o" "../JournalTesteur.cpp"
+Finished building: ../JournalTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+10:27:35 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+10:27:35 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../JournalTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"JournalTesteur.d" -MT"JournalTesteur.o" -o "JournalTesteur.o" "../JournalTesteur.cpp"
+Finished building: ../JournalTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+10:27:38 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+10:47:26 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+10:47:26 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../JournalTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"JournalTesteur.d" -MT"JournalTesteur.o" -o "JournalTesteur.o" "../JournalTesteur.cpp"
+Finished building: ../JournalTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+10:47:32 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+10:57:09 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+10:57:09 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../JournalTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"JournalTesteur.d" -MT"JournalTesteur.o" -o "JournalTesteur.o" "../JournalTesteur.cpp"
+../JournalTesteur.cpp: In constructor ‘UnJourn::UnJourn()’:
+../JournalTesteur.cpp:26:6: error: no matching function for call to ‘biblio::Journal::Journal(const char [5], const char [65], const char [15], const char [42], int, int, int, int)’
+     6)
+      ^
+In file included from ../JournalTesteur.cpp:8:0:
+/home/vincebro/Documents/cpp/TP3/Classes/Journal.h:20:2: note: candidate: biblio::Journal::Journal(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string, int, int, int)
+  Journal(const std::string auteurs, const std::string titre,
+  ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Journal.h:20:2: note:   no known conversion for argument 5 from ‘int’ to ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’
+/home/vincebro/Documents/cpp/TP3/Classes/Journal.h:17:7: note: candidate: biblio::Journal::Journal(const biblio::Journal&)
+ class Journal: public biblio::Reference{
+       ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Journal.h:17:7: note:   candidate expects 1 argument, 8 provided
+/home/vincebro/Documents/cpp/TP3/Classes/Journal.h:17:7: note: candidate: biblio::Journal::Journal(biblio::Journal&&)
+/home/vincebro/Documents/cpp/TP3/Classes/Journal.h:17:7: note:   candidate expects 1 argument, 8 provided
+../JournalTesteur.cpp: In member function ‘virtual void Journal_ConstructeurNormal_Test::TestBody()’:
+../JournalTesteur.cpp:40:5: error: no matching function for call to ‘biblio::Journal::Journal(const char [5], const char [65], const char [15], const char [42], int, int, int, int)’
+    6)
+     ^
+In file included from ../JournalTesteur.cpp:8:0:
+/home/vincebro/Documents/cpp/TP3/Classes/Journal.h:20:2: note: candidate: biblio::Journal::Journal(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string, int, int, int)
+  Journal(const std::string auteurs, const std::string titre,
+  ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Journal.h:20:2: note:   no known conversion for argument 5 from ‘int’ to ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’
+/home/vincebro/Documents/cpp/TP3/Classes/Journal.h:17:7: note: candidate: biblio::Journal::Journal(const biblio::Journal&)
+ class Journal: public biblio::Reference{
+       ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Journal.h:17:7: note:   candidate expects 1 argument, 8 provided
+/home/vincebro/Documents/cpp/TP3/Classes/Journal.h:17:7: note: candidate: biblio::Journal::Journal(biblio::Journal&&)
+/home/vincebro/Documents/cpp/TP3/Classes/Journal.h:17:7: note:   candidate expects 1 argument, 8 provided
+In file included from /usr/local/include/gtest/internal/gtest-internal.h:40:0,
+                 from /usr/local/include/gtest/gtest.h:58,
+                 from ../JournalTesteur.cpp:10:
+../JournalTesteur.cpp:41:2: error: expected ‘,’ or ‘;’ before ‘switch’
+  EXPECT_EQ("Hart", Testeur.reqAuteurs())
+  ^
+In file included from /usr/local/include/gtest/gtest.h:1874:0,
+                 from ../JournalTesteur.cpp:10:
+../JournalTesteur.cpp:41:2: error: ‘else’ without a previous ‘if’
+  EXPECT_EQ("Hart", Testeur.reqAuteurs())
+  ^
+In file included from /usr/local/include/gtest/gtest.h:58:0,
+                 from ../JournalTesteur.cpp:10:
+../JournalTesteur.cpp:41:2: error: ‘gtest_ar’ was not declared in this scope
+  EXPECT_EQ("Hart", Testeur.reqAuteurs())
+  ^
+../JournalTesteur.cpp:41:2: note: suggested alternative: ‘strstr’
+make: *** [JournalTesteur.o] Error 1
+subdir.mk:24: recipe for target 'JournalTesteur.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+10:57:48 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+10:57:48 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../JournalTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"JournalTesteur.d" -MT"JournalTesteur.o" -o "JournalTesteur.o" "../JournalTesteur.cpp"
+Finished building: ../JournalTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+10:57:54 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+11:42:50 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+11:42:50 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../JournalTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"JournalTesteur.d" -MT"JournalTesteur.o" -o "JournalTesteur.o" "../JournalTesteur.cpp"
+Finished building: ../JournalTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+11:48:16 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+11:48:16 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../JournalTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"JournalTesteur.d" -MT"JournalTesteur.o" -o "JournalTesteur.o" "../JournalTesteur.cpp"
+Finished building: ../JournalTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+11:48:24 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+11:48:58 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+11:48:58 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../JournalTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"JournalTesteur.d" -MT"JournalTesteur.o" -o "JournalTesteur.o" "../JournalTesteur.cpp"
+Finished building: ../JournalTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+11:49:01 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+11:49:45 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Journal.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Journal.d" -MT"Journal.o" -o "Journal.o" "../Journal.cpp"
+Finished building: ../Journal.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+11:49:46 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+11:49:49 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.

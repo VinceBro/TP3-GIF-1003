@@ -23,6 +23,10 @@ Journal::Journal(const string auteurs, const string titre,
 		const int volume, const int numero, const int page) :
 				biblio::Reference(auteurs, titre, identifiant, annee)
 {
+	PRECONDITION(!(nom.empty()));
+	PRECONDITION(volume >= 0);
+	PRECONDITION(numero >= 0);
+	PRECONDITION(page > 0);
 	if (util::validerFormatNom(nom) && volume >= 0 && numero >=0 && page >= 0)
 	{
 	m_nom= nom;
@@ -30,6 +34,13 @@ Journal::Journal(const string auteurs, const string titre,
 	m_numero= numero;
 	m_page= page;
 	}
+	POSTCONDITION(m_nom == nom);
+	POSTCONDITION(m_volume ==volume);
+	POSTCONDITION(m_numero == numero);
+	POSTCONDITION(m_page == page);
+
+	INVARIANTS();
+
 }
 /**
  * \brief Génère un objet string formaté
@@ -39,7 +50,14 @@ std::string Journal::reqReferenceFormate() const{
 	ostringstream os;
 	os << m_auteurs << ". " << m_titre << ". "<< m_nom << ", vol. " <<
 			m_volume << ", no. " << m_numero << ", pp. " << m_page <<
-			", " << m_annee << ". " << m_identifiant;
+			", " << m_annee << ". " << m_identifiant << ".";
 	return os.str();
+}
+void Journal::verifieInvariant() const
+{
+	INVARIANT(!(m_nom.empty()));
+	INVARIANT(m_volume >= 0);
+	INVARIANT(m_numero >= 0);
+	INVARIANT(m_page > 0);
 }
 

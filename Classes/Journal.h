@@ -51,6 +51,7 @@ public:
 private:
 	std::string m_nom;
 	int m_volume, m_numero, m_page;
+	void verifieInvariant() const;
 };
 
 }
