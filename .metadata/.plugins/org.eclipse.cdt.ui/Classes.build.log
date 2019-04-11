@@ -1,9 +1,9 @@
-11:49:45 **** Incremental Build of configuration Debug for project Classes ****
+20:59:38 **** Incremental Build of configuration Debug for project Classes ****
 make all 
-Building file: ../Journal.cpp
+Building file: ../Bibliographie.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Journal.d" -MT"Journal.o" -o "Journal.o" "../Journal.cpp"
-Finished building: ../Journal.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
  
 Building target: libClasses.a
 Invoking: GCC Archiver
@@ -12,5 +12,5 @@ ar: creating libClasses.a
 Finished building target: libClasses.a
  
 
-11:49:46 Build Finished. 0 errors, 0 warnings. (took 646ms)
+20:59:39 Build Finished. 0 errors, 0 warnings. (took 632ms)
 

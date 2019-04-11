@@ -1986,3 +1986,2502 @@ Finished building target: Testeur
 11:49:49 **** Incremental Build of configuration Debug for project Testeur ****
 make all 
 make: Nothing to be done for 'all'.
+19:36:55 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+../Bibliographie.cpp:14:1: error: prototype for ‘biblio::Bibliographie::Bibliographie(const biblio::Reference&)’ does not match any in class ‘biblio::Bibliographie’
+ Bibliographie::Bibliographie(const Reference& p_nouvelleReference){
+ ^~~~~~~~~~~~~
+In file included from ../Bibliographie.cpp:7:0:
+../Bibliographie.h:37:2: error: candidates are: biblio::Bibliographie::Bibliographie(const biblio::Bibliographie&)
+  Bibliographie(const Bibliographie& bibliographie);
+  ^~~~~~~~~~~~~
+../Bibliographie.h:22:2: error:                 biblio::Bibliographie::Bibliographie(std::__cxx11::string)
+  Bibliographie(const std::string nBibliographie);
+  ^~~~~~~~~~~~~
+make: *** [Bibliographie.o] Error 1
+subdir.mk:33: recipe for target 'Bibliographie.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+19:36:57 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+/usr/bin/ld: cannot find -lClasses
+collect2: error: ld returned 1 exit status
+makefile:44: recipe for target 'Testeur' failed
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:37:33 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+../Bibliographie.cpp:14:1: error: prototype for ‘biblio::Bibliographie::Bibliographie(const biblio::Reference&)’ does not match any in class ‘biblio::Bibliographie’
+ Bibliographie::Bibliographie(const Reference& p_nouvelleReference){
+ ^~~~~~~~~~~~~
+In file included from ../Bibliographie.cpp:7:0:
+../Bibliographie.h:37:2: error: candidates are: biblio::Bibliographie::Bibliographie(const biblio::Bibliographie&)
+  Bibliographie(const biblio::Bibliographie& bibliographie);
+  ^~~~~~~~~~~~~
+../Bibliographie.h:22:2: error:                 biblio::Bibliographie::Bibliographie(std::__cxx11::string)
+  Bibliographie(const std::string nBibliographie);
+  ^~~~~~~~~~~~~
+subdir.mk:33: recipe for target 'Bibliographie.o' failed
+make: *** [Bibliographie.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:37:34 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+/usr/bin/ld: cannot find -lClasses
+makefile:44: recipe for target 'Testeur' failed
+collect2: error: ld returned 1 exit status
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:38:40 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+../Bibliographie.cpp:14:1: error: prototype for ‘biblio::Bibliographie::Bibliographie(const biblio::Reference&)’ does not match any in class ‘biblio::Bibliographie’
+ Bibliographie::Bibliographie(const Reference& p_nouvelleReference){
+ ^~~~~~~~~~~~~
+In file included from ../Bibliographie.cpp:7:0:
+../Bibliographie.h:37:2: error: candidates are: biblio::Bibliographie::Bibliographie(const biblio::Bibliographie&)
+  Bibliographie(const biblio::Bibliographie&);
+  ^~~~~~~~~~~~~
+../Bibliographie.h:22:2: error:                 biblio::Bibliographie::Bibliographie(const string&)
+  Bibliographie(const std::string& nBibliographie);
+  ^~~~~~~~~~~~~
+make: *** [Bibliographie.o] Error 1
+subdir.mk:33: recipe for target 'Bibliographie.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+19:38:41 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+/usr/bin/ld: cannot find -lClasses
+collect2: error: ld returned 1 exit status
+makefile:44: recipe for target 'Testeur' failed
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:40:12 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+../Bibliographie.cpp:14:1: error: prototype for ‘biblio::Bibliographie::Bibliographie(std::__cxx11::string)’ does not match any in class ‘biblio::Bibliographie’
+ Bibliographie::Bibliographie(const string nombiblio){
+ ^~~~~~~~~~~~~
+In file included from ../Bibliographie.cpp:7:0:
+../Bibliographie.h:37:2: error: candidates are: biblio::Bibliographie::Bibliographie(const biblio::Bibliographie&)
+  Bibliographie(const biblio::Bibliographie&);
+  ^~~~~~~~~~~~~
+../Bibliographie.h:22:2: error:                 biblio::Bibliographie::Bibliographie(const string&)
+  Bibliographie(const std::string& nombiblio);
+  ^~~~~~~~~~~~~
+make: *** [Bibliographie.o] Error 1
+subdir.mk:33: recipe for target 'Bibliographie.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+19:40:12 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+/usr/bin/ld: cannot find -lClasses
+makefile:44: recipe for target 'Testeur' failed
+collect2: error: ld returned 1 exit status
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:40:24 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+19:40:25 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+19:41:25 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+In file included from ../Bibliographie.cpp:7:0:
+../Bibliographie.h: In member function ‘const string biblio::Bibliographie::reqNomBibliographie() const’:
+../Bibliographie.h:33:72: error: expected ‘;’ before ‘}’ token
+  const std::string reqNomBibliographie() const {return m_nBibliographie};
+                                                                        ^
+../Bibliographie.h: In member function ‘const std::vector<biblio::Reference*> biblio::Bibliographie::reqvReferences() const’:
+../Bibliographie.h:34:75: error: expected ‘;’ before ‘}’ token
+  const std::vector<Reference*> reqvReferences() const{return m_vReferences};
+                                                                           ^
+subdir.mk:33: recipe for target 'Bibliographie.o' failed
+make: *** [Bibliographie.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:41:26 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+In file included from ../BibliographieTesteur.cpp:7:0:
+/home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h: In member function ‘const string biblio::Bibliographie::reqNomBibliographie() const’:
+/home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:33:72: error: expected ‘;’ before ‘}’ token
+  const std::string reqNomBibliographie() const {return m_nBibliographie};
+                                                                        ^
+/home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h: In member function ‘const std::vector<biblio::Reference*> biblio::Bibliographie::reqvReferences() const’:
+/home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:34:75: error: expected ‘;’ before ‘}’ token
+  const std::vector<Reference*> reqvReferences() const{return m_vReferences};
+                                                                           ^
+subdir.mk:27: recipe for target 'BibliographieTesteur.o' failed
+make: *** [BibliographieTesteur.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:41:42 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+19:41:42 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+19:44:11 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+../Bibliographie.cpp: In destructor ‘biblio::Bibliographie::~Bibliographie()’:
+../Bibliographie.cpp:37:26: error: type ‘class biblio::Reference’ argument given to ‘delete’, expected pointer
+   delete *m_vReferences[i];
+                          ^
+make: *** [Bibliographie.o] Error 1
+subdir.mk:33: recipe for target 'Bibliographie.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+19:44:12 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+19:44:24 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+19:44:24 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+19:50:00 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+../Bibliographie.cpp:51:25: error: non-member function ‘void verifieInvariant()’ cannot have cv-qualifier
+ void verifieInvariant() const{
+                         ^~~~~
+In file included from ../Reference.h:10:0,
+                 from ../Bibliographie.h:9,
+                 from ../Bibliographie.cpp:7:
+../Bibliographie.cpp: In function ‘void verifieInvariant()’:
+../Bibliographie.cpp:52:14: error: ‘m_nBibliographie’ was not declared in this scope
+  INVARIANT(!(m_nBibliographie.empty()));
+              ^
+../ContratException.h:89:13: note: in definition of macro ‘INVARIANT’
+       if (!(f)) throw InvariantException(__FILE__,__LINE__, #f);
+             ^
+subdir.mk:33: recipe for target 'Bibliographie.o' failed
+make: *** [Bibliographie.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:50:00 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+/usr/bin/ld: cannot find -lClasses
+makefile:44: recipe for target 'Testeur' failed
+collect2: error: ld returned 1 exit status
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:50:06 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+../Bibliographie.cpp:51:25: error: non-member function ‘void verifieInvariant()’ cannot have cv-qualifier
+ void verifieInvariant() const{
+                         ^~~~~
+In file included from ../Reference.h:10:0,
+                 from ../Bibliographie.h:9,
+                 from ../Bibliographie.cpp:7:
+../Bibliographie.cpp: In function ‘void verifieInvariant()’:
+../Bibliographie.cpp:52:14: error: ‘m_nBibliographie’ was not declared in this scope
+  INVARIANT(!(m_nBibliographie.empty()));
+              ^
+../ContratException.h:89:13: note: in definition of macro ‘INVARIANT’
+       if (!(f)) throw InvariantException(__FILE__,__LINE__, #f);
+             ^
+subdir.mk:33: recipe for target 'Bibliographie.o' failed
+make: *** [Bibliographie.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:50:06 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+/usr/bin/ld: cannot find -lClasses
+makefile:44: recipe for target 'Testeur' failed
+collect2: error: ld returned 1 exit status
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:50:53 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+../Bibliographie.cpp:51:25: error: non-member function ‘void verifieInvariant()’ cannot have cv-qualifier
+ void verifieInvariant() const{
+                         ^~~~~
+In file included from ../Reference.h:10:0,
+                 from ../Bibliographie.h:9,
+                 from ../Bibliographie.cpp:7:
+../Bibliographie.cpp: In function ‘void verifieInvariant()’:
+../Bibliographie.cpp:52:14: error: ‘m_nBibliographie’ was not declared in this scope
+  INVARIANT(!(m_nBibliographie.empty()));
+              ^
+../ContratException.h:89:13: note: in definition of macro ‘INVARIANT’
+       if (!(f)) throw InvariantException(__FILE__,__LINE__, #f);
+             ^
+make: *** [Bibliographie.o] Error 1
+subdir.mk:33: recipe for target 'Bibliographie.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+19:50:54 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+/usr/bin/ld: cannot find -lClasses
+makefile:44: recipe for target 'Testeur' failed
+collect2: error: ld returned 1 exit status
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:51:25 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+19:51:26 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+19:51:36 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+19:51:36 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+19:54:01 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:54:01 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+../BibliographieTesteur.cpp: In member function ‘virtual void Bibliographie_ConstructeurNormal_Test::TestBody()’:
+../BibliographieTesteur.cpp:13:2: error: ‘Bibliographie’ was not declared in this scope
+  Bibliographie Testeur("Sauceur");
+  ^~~~~~~~~~~~~
+../BibliographieTesteur.cpp:13:2: note: suggested alternative:
+In file included from ../BibliographieTesteur.cpp:7:0:
+/home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:19:7: note:   ‘biblio::Bibliographie’
+ class Bibliographie
+       ^~~~~~~~~~~~~
+In file included from /usr/local/include/gtest/gtest.h:1874:0,
+                 from ../BibliographieTesteur.cpp:9:
+../BibliographieTesteur.cpp:14:23: error: ‘Testeur’ was not declared in this scope
+  EXPECT_EQ("Sauceur", Testeur.reqNomBibliographie())
+                       ^
+../BibliographieTesteur.cpp:14:23: note: suggested alternative: ‘Test’
+subdir.mk:27: recipe for target 'BibliographieTesteur.o' failed
+make: *** [BibliographieTesteur.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:55:14 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:55:14 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+19:55:25 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:55:25 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+19:59:24 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+19:59:25 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+19:59:58 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+19:59:59 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+20:00:24 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+20:00:24 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+20:02:02 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+20:02:03 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+20:02:21 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+20:02:21 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+20:02:50 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+20:02:51 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+20:03:39 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+20:03:39 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+../BibliographieTesteur.cpp:12:17: error: ‘biblio’ is not a namespace-name
+ using namespace biblio;
+                 ^~~~~~
+../BibliographieTesteur.cpp:12:23: error: expected namespace-name before ‘;’ token
+ using namespace biblio;
+                       ^
+../BibliographieTesteur.cpp: In member function ‘virtual void Bibliographie_ConstructeurNormal_Test::TestBody()’:
+../BibliographieTesteur.cpp:16:2: error: ‘Bibliographie’ was not declared in this scope
+  Bibliographie Testeur("Sauceur");
+  ^~~~~~~~~~~~~
+../BibliographieTesteur.cpp:17:2: error: ‘Testeur’ was not declared in this scope
+  Testeur.
+  ^~~~~~~
+../BibliographieTesteur.cpp:17:2: note: suggested alternative: ‘Test’
+  Testeur.
+  ^~~~~~~
+  Test
+In file included from /usr/local/include/gtest/internal/gtest-internal.h:40:0,
+                 from /usr/local/include/gtest/gtest.h:58,
+                 from ../BibliographieTesteur.cpp:9:
+../BibliographieTesteur.cpp:18:2: error: expected unqualified-id before ‘switch’
+  EXPECT_EQ("Sauceur", Testeur.reqNomBibliographie());
+  ^
+In file included from /usr/local/include/gtest/gtest.h:1874:0,
+                 from ../BibliographieTesteur.cpp:9:
+../BibliographieTesteur.cpp:18:2: error: ‘else’ without a previous ‘if’
+  EXPECT_EQ("Sauceur", Testeur.reqNomBibliographie());
+  ^
+In file included from /usr/local/include/gtest/gtest.h:58:0,
+                 from ../BibliographieTesteur.cpp:9:
+../BibliographieTesteur.cpp:18:2: error: ‘gtest_ar’ was not declared in this scope
+  EXPECT_EQ("Sauceur", Testeur.reqNomBibliographie());
+  ^
+../BibliographieTesteur.cpp:18:2: note: suggested alternative: ‘strstr’
+make: *** [BibliographieTesteur.o] Error 1
+subdir.mk:27: recipe for target 'BibliographieTesteur.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+20:03:52 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+20:03:53 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+In file included from /usr/local/include/gtest/internal/gtest-internal.h:40:0,
+                 from /usr/local/include/gtest/gtest.h:58,
+                 from ../BibliographieTesteur.cpp:9:
+../BibliographieTesteur.cpp: In member function ‘virtual void Bibliographie_ConstructeurNormal_Test::TestBody()’:
+../BibliographieTesteur.cpp:18:2: error: expected unqualified-id before ‘switch’
+  EXPECT_EQ("Sauceur", Testeur.reqNomBibliographie());
+  ^
+In file included from /usr/local/include/gtest/gtest.h:1874:0,
+                 from ../BibliographieTesteur.cpp:9:
+../BibliographieTesteur.cpp:18:2: error: ‘else’ without a previous ‘if’
+  EXPECT_EQ("Sauceur", Testeur.reqNomBibliographie());
+  ^
+In file included from /usr/local/include/gtest/gtest.h:58:0,
+                 from ../BibliographieTesteur.cpp:9:
+../BibliographieTesteur.cpp:18:2: error: ‘gtest_ar’ was not declared in this scope
+  EXPECT_EQ("Sauceur", Testeur.reqNomBibliographie());
+  ^
+../BibliographieTesteur.cpp:18:2: note: suggested alternative: ‘strstr’
+subdir.mk:27: recipe for target 'BibliographieTesteur.o' failed
+make: *** [BibliographieTesteur.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:06:34 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+20:06:34 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+20:08:54 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+20:08:54 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+../BibliographieTesteur.cpp: In member function ‘virtual void Bibliographie_ConstructeurNormal_Test::TestBody()’:
+../BibliographieTesteur.cpp:17:10: error: request for member ‘reqNomBibliographie’ in ‘Testeur’, which is of non-class type ‘biblio::Bibliographie()’
+  Testeur.reqNomBibliographie();
+          ^~~~~~~~~~~~~~~~~~~
+In file included from /usr/local/include/gtest/gtest.h:1874:0,
+                 from ../BibliographieTesteur.cpp:9:
+../BibliographieTesteur.cpp:18:31: error: request for member ‘reqNomBibliographie’ in ‘Testeur’, which is of non-class type ‘biblio::Bibliographie()’
+  EXPECT_EQ("Sauceur", Testeur.reqNomBibliographie());
+                               ^
+subdir.mk:27: recipe for target 'BibliographieTesteur.o' failed
+make: *** [BibliographieTesteur.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:10:08 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+20:10:08 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+../BibliographieTesteur.cpp: In member function ‘virtual void Bibliographie_ConstructeurNormal_Test::TestBody()’:
+../BibliographieTesteur.cpp:17:10: error: request for member ‘reqNomBibliographie’ in ‘Testeur’, which is of non-class type ‘biblio::Bibliographie()’
+  Testeur.reqNomBibliographie();
+          ^~~~~~~~~~~~~~~~~~~
+In file included from /usr/local/include/gtest/gtest.h:1874:0,
+                 from ../BibliographieTesteur.cpp:9:
+../BibliographieTesteur.cpp:18:31: error: request for member ‘reqNomBibliographie’ in ‘Testeur’, which is of non-class type ‘biblio::Bibliographie()’
+  EXPECT_EQ("Sauceur", Testeur.reqNomBibliographie());
+                               ^
+subdir.mk:27: recipe for target 'BibliographieTesteur.o' failed
+make: *** [BibliographieTesteur.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:10:21 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+20:10:21 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+20:36:29 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+20:36:29 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h: In instantiation of ‘testing::AssertionResult testing::internal::CmpHelperEQ(const char*, const char*, const T1&, const T2&) [with T1 = char [8]; T2 = std::vector<biblio::Reference*>]’:
+/usr/local/include/gtest/gtest.h:1421:23:   required from ‘static testing::AssertionResult testing::internal::EqHelper<lhs_is_null_literal>::Compare(const char*, const char*, const T1&, const T2&) [with T1 = char [8]; T2 = std::vector<biblio::Reference*>; bool lhs_is_null_literal = false]’
+../BibliographieTesteur.cpp:23:2:   required from here
+/usr/local/include/gtest/gtest.h:1392:11: error: no match for ‘operator==’ (operand types are ‘const char [8]’ and ‘const std::vector<biblio::Reference*>’)
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/local/include/gtest/internal/gtest-param-util.h:48:0,
+                 from /usr/local/include/gtest/gtest-param-test.h:192,
+                 from /usr/local/include/gtest/gtest.h:62,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/local/include/gtest/internal/gtest-linked_ptr.h:223:6: note: candidate: template<class T> bool testing::internal::operator==(T*, const testing::internal::linked_ptr<T>&)
+ bool operator==(T* ptr, const linked_ptr<T>& x) {
+      ^~~~~~~~
+/usr/local/include/gtest/internal/gtest-linked_ptr.h:223:6: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   ‘const std::vector<biblio::Reference*>’ is not derived from ‘const testing::internal::linked_ptr<T>’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/iterator:66:0,
+                 from /usr/local/include/gtest/internal/gtest-param-util.h:39,
+                 from /usr/local/include/gtest/gtest-param-test.h:192,
+                 from /usr/local/include/gtest/gtest.h:62,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/include/c++/7/bits/stream_iterator.h:130:5: note: candidate: template<class _Tp, class _CharT, class _Traits, class _Dist> bool std::operator==(const std::istream_iterator<_Tp, _CharT, _Traits, _Dist>&, const std::istream_iterator<_Tp, _CharT, _Traits, _Dist>&)
+     operator==(const istream_iterator<_Tp, _CharT, _Traits, _Dist>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stream_iterator.h:130:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::istream_iterator<_Tp, _CharT, _Traits, _Dist>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/set:62:0,
+                 from /usr/local/include/gtest/internal/gtest-internal.h:59,
+                 from /usr/local/include/gtest/gtest.h:58,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/include/c++/7/bits/stl_multiset.h:896:5: note: candidate: template<class _Key, class _Compare, class _Alloc> bool std::operator==(const std::multiset<_Key, _Compare, _Alloc>&, const std::multiset<_Key, _Compare, _Alloc>&)
+     operator==(const multiset<_Key, _Compare, _Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_multiset.h:896:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::multiset<_Key, _Compare, _Alloc>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/set:61:0,
+                 from /usr/local/include/gtest/internal/gtest-internal.h:59,
+                 from /usr/local/include/gtest/gtest.h:58,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/include/c++/7/bits/stl_set.h:913:5: note: candidate: template<class _Key, class _Compare, class _Alloc> bool std::operator==(const std::set<_Key, _Compare, _Alloc>&, const std::set<_Key, _Compare, _Alloc>&)
+     operator==(const set<_Key, _Compare, _Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_set.h:913:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::set<_Key, _Compare, _Alloc>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/map:62:0,
+                 from /usr/local/include/gtest/internal/gtest-internal.h:58,
+                 from /usr/local/include/gtest/gtest.h:58,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/include/c++/7/bits/stl_multimap.h:1061:5: note: candidate: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator==(const std::multimap<_Key, _Tp, _Compare, _Alloc>&, const std::multimap<_Key, _Tp, _Compare, _Alloc>&)
+     operator==(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_multimap.h:1061:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::multimap<_Key, _Tp, _Compare, _Alloc>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/map:61:0,
+                 from /usr/local/include/gtest/internal/gtest-internal.h:58,
+                 from /usr/local/include/gtest/gtest.h:58,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/include/c++/7/bits/stl_map.h:1395:5: note: candidate: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator==(const std::map<_Key, _Tp, _Compare, _Alloc>&, const std::map<_Key, _Tp, _Compare, _Alloc>&)
+     operator==(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_map.h:1395:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::map<_Key, _Tp, _Compare, _Alloc>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/map:60:0,
+                 from /usr/local/include/gtest/internal/gtest-internal.h:58,
+                 from /usr/local/include/gtest/gtest.h:58,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/include/c++/7/bits/stl_tree.h:1533:5: note: candidate: template<class _Key, class _Val, class _KeyOfValue, class _Compare, class _Alloc> bool std::operator==(const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&, const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&)
+     operator==(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_tree.h:1533:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/map:60:0,
+                 from /usr/local/include/gtest/internal/gtest-internal.h:58,
+                 from /usr/local/include/gtest/gtest.h:58,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/include/c++/7/bits/stl_tree.h:406:5: note: candidate: template<class _Val> bool std::operator==(const std::_Rb_tree_iterator<_Tp>&, const std::_Rb_tree_const_iterator<_Val>&)
+     operator==(const _Rb_tree_iterator<_Val>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_tree.h:406:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::_Rb_tree_iterator<_Tp>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/locale_conv.h:41:0,
+                 from /usr/include/c++/7/locale:43,
+                 from /usr/include/c++/7/iomanip:43,
+                 from /usr/local/include/gtest/internal/gtest-internal.h:56,
+                 from /usr/local/include/gtest/gtest.h:58,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/include/c++/7/bits/unique_ptr.h:694:5: note: candidate: template<class _Tp, class _Dp> bool std::operator==(std::nullptr_t, const std::unique_ptr<_Tp, _Dp>&)
+     operator==(nullptr_t, const unique_ptr<_Tp, _Dp>& __x) noexcept
+     ^~~~~~~~
+/usr/include/c++/7/bits/unique_ptr.h:694:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   ‘const std::vector<biblio::Reference*>’ is not derived from ‘const std::unique_ptr<_Tp, _Dp>’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/locale_conv.h:41:0,
+                 from /usr/include/c++/7/locale:43,
+                 from /usr/include/c++/7/iomanip:43,
+                 from /usr/local/include/gtest/internal/gtest-internal.h:56,
+                 from /usr/local/include/gtest/gtest.h:58,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/include/c++/7/bits/unique_ptr.h:689:5: note: candidate: template<class _Tp, class _Dp> bool std::operator==(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)
+     operator==(const unique_ptr<_Tp, _Dp>& __x, nullptr_t) noexcept
+     ^~~~~~~~
+/usr/include/c++/7/bits/unique_ptr.h:689:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::unique_ptr<_Tp, _Dp>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/locale_conv.h:41:0,
+                 from /usr/include/c++/7/locale:43,
+                 from /usr/include/c++/7/iomanip:43,
+                 from /usr/local/include/gtest/internal/gtest-internal.h:56,
+                 from /usr/local/include/gtest/gtest.h:58,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/include/c++/7/bits/unique_ptr.h:683:5: note: candidate: template<class _Tp, class _Dp, class _Up, class _Ep> bool std::operator==(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)
+     operator==(const unique_ptr<_Tp, _Dp>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/unique_ptr.h:683:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::unique_ptr<_Tp, _Dp>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/local/include/gtest/internal/gtest-port.h:677:0,
+                 from /usr/local/include/gtest/internal/gtest-internal.h:40,
+                 from /usr/local/include/gtest/gtest.h:58,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/include/c++/7/tuple:1397:5: note: candidate: template<class ... _TElements, class ... _UElements> constexpr bool std::operator==(const std::tuple<_Tps ...>&, const std::tuple<_Elements ...>&)
+     operator==(const tuple<_TElements...>& __t,
+     ^~~~~~~~
+/usr/include/c++/7/tuple:1397:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::tuple<_Tps ...>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/tuple:39:0,
+                 from /usr/local/include/gtest/internal/gtest-port.h:677,
+                 from /usr/local/include/gtest/internal/gtest-internal.h:40,
+                 from /usr/local/include/gtest/gtest.h:58,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/include/c++/7/array:252:5: note: candidate: template<class _Tp, long unsigned int _Nm> bool std::operator==(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)
+     operator==(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)
+     ^~~~~~~~
+/usr/include/c++/7/array:252:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::array<_Tp, _Nm>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/vector:64:0,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:12,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/stl_vector.h:1596:5: note: candidate: template<class _Tp, class _Alloc> bool std::operator==(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+     operator==(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_vector.h:1596:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::vector<_Tp, _Alloc>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/locale_facets.h:48:0,
+                 from /usr/include/c++/7/bits/basic_ios.h:37,
+                 from /usr/include/c++/7/ios:44,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:11,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/streambuf_iterator.h:204:5: note: candidate: template<class _CharT, class _Traits> bool std::operator==(const std::istreambuf_iterator<_CharT, _Traits>&, const std::istreambuf_iterator<_CharT, _Traits>&)
+     operator==(const istreambuf_iterator<_CharT, _Traits>& __a,
+     ^~~~~~~~
+/usr/include/c++/7/bits/streambuf_iterator.h:204:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::istreambuf_iterator<_CharT, _Traits>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/ios_base.h:46:0,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:11,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/system_error:311:3: note: candidate: bool std::operator==(const std::error_condition&, const std::error_condition&)
+   operator==(const error_condition& __lhs,
+   ^~~~~~~~
+/usr/include/c++/7/system_error:311:3: note:   no known conversion for argument 1 from ‘const char [8]’ to ‘const std::error_condition&’
+/usr/include/c++/7/system_error:304:3: note: candidate: bool std::operator==(const std::error_condition&, const std::error_code&)
+   operator==(const error_condition& __lhs, const error_code& __rhs) noexcept
+   ^~~~~~~~
+/usr/include/c++/7/system_error:304:3: note:   no known conversion for argument 1 from ‘const char [8]’ to ‘const std::error_condition&’
+/usr/include/c++/7/system_error:297:3: note: candidate: bool std::operator==(const std::error_code&, const std::error_condition&)
+   operator==(const error_code& __lhs, const error_condition& __rhs) noexcept
+   ^~~~~~~~
+/usr/include/c++/7/system_error:297:3: note:   no known conversion for argument 1 from ‘const char [8]’ to ‘const std::error_code&’
+/usr/include/c++/7/system_error:292:3: note: candidate: bool std::operator==(const std::error_code&, const std::error_code&)
+   operator==(const error_code& __lhs, const error_code& __rhs) noexcept
+   ^~~~~~~~
+/usr/include/c++/7/system_error:292:3: note:   no known conversion for argument 1 from ‘const char [8]’ to ‘const std::error_code&’
+In file included from /usr/include/c++/7/string:52:0,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/basic_string.h:6034:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator==(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6034:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/string:52:0,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/basic_string.h:6022:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator==(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator==(const _CharT* __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6022:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   ‘const std::vector<biblio::Reference*>’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/string:52:0,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/basic_string.h:6008:5: note: candidate: template<class _CharT> typename __gnu_cxx::__enable_if<std::__is_char<_Tp>::__value, bool>::__type std::operator==(const std::__cxx11::basic_string<_CharT>&, const std::__cxx11::basic_string<_CharT>&)
+     operator==(const basic_string<_CharT>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6008:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/string:52:0,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/basic_string.h:6000:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator==(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6000:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/string:41:0,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/allocator.h:152:5: note: candidate: template<class _Tp> bool std::operator==(const std::allocator<_CharT>&, const std::allocator<_CharT>&)
+     operator==(const allocator<_Tp>&, const allocator<_Tp>&)
+     ^~~~~~~~
+/usr/include/c++/7/bits/allocator.h:152:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::allocator<_CharT>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/string:41:0,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/allocator.h:146:5: note: candidate: template<class _T1, class _T2> bool std::operator==(const std::allocator<_CharT>&, const std::allocator<_T2>&)
+     operator==(const allocator<_T1>&, const allocator<_T2>&)
+     ^~~~~~~~
+/usr/include/c++/7/bits/allocator.h:146:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::allocator<_CharT>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/char_traits.h:40:0,
+                 from /usr/include/c++/7/string:40,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/postypes.h:216:5: note: candidate: template<class _StateT> bool std::operator==(const std::fpos<_StateT>&, const std::fpos<_StateT>&)
+     operator==(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+     ^~~~~~~~
+/usr/include/c++/7/bits/postypes.h:216:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::fpos<_StateT>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/string:40,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/stl_iterator.h:1124:5: note: candidate: template<class _Iterator> bool std::operator==(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)
+     operator==(const move_iterator<_Iterator>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:1124:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::move_iterator<_IteratorL>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/string:40,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/stl_iterator.h:1118:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator==(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)
+     operator==(const move_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:1118:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::move_iterator<_IteratorL>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/string:40,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/stl_iterator.h:337:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator==(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator==(const reverse_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:337:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::reverse_iterator<_Iterator>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/string:40,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/stl_iterator.h:299:5: note: candidate: template<class _Iterator> bool std::operator==(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator==(const reverse_iterator<_Iterator>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:299:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+subdir.mk:27: recipe for target 'BibliographieTesteur.o' failed
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::reverse_iterator<_Iterator>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/string:40,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/stl_pair.h:443:5: note: candidate: template<class _T1, class _T2> constexpr bool std::operator==(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator==(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_pair.h:443:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::pair<_T1, _T2>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/x86_64-linux-gnu/c++/7/bits/c++allocator.h:33:0,
+                 from /usr/include/c++/7/bits/allocator.h:46,
+                 from /usr/include/c++/7/string:41,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/ext/new_allocator.h:155:5: note: candidate: template<class _Tp> bool __gnu_cxx::operator==(const __gnu_cxx::new_allocator<_Tp>&, const __gnu_cxx::new_allocator<_Tp>&)
+     operator==(const new_allocator<_Tp>&, const new_allocator<_Tp>&)
+     ^~~~~~~~
+/usr/include/c++/7/ext/new_allocator.h:155:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const __gnu_cxx::new_allocator<_Tp>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/string:40,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/stl_iterator.h:866:5: note: candidate: template<class _Iterator, class _Container> bool __gnu_cxx::operator==(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+     operator==(const __normal_iterator<_Iterator, _Container>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:866:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/string:40,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/stl_iterator.h:859:5: note: candidate: template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator==(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+     operator==(const __normal_iterator<_IteratorL, _Container>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:859:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const __gnu_cxx::__normal_iterator<_IteratorL, _Container>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+make: *** [BibliographieTesteur.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:36:40 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+20:36:40 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+20:39:03 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+20:39:03 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+../BibliographieTesteur.cpp: In member function ‘virtual void Bibliographie_ConstructeurNormal_Test::TestBody()’:
+../BibliographieTesteur.cpp:25:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+make: *** [BibliographieTesteur.o] Error 1
+subdir.mk:27: recipe for target 'BibliographieTesteur.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+20:39:31 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+20:39:32 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+20:39:56 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+20:39:56 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+20:42:37 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../alaide.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"alaide.d" -MT"alaide.o" -o "alaide.o" "../alaide.cpp"
+../alaide.cpp:13:1: error: ‘SAUCE’ does not name a type
+ SAUCE.reqNomBibliographie();
+ ^~~~~
+make: *** [alaide.o] Error 1
+subdir.mk:36: recipe for target 'alaide.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+20:42:38 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+In file included from /usr/local/include/gtest/gtest.h:1874:0,
+                 from ../BibliographieTesteur.cpp:9:
+../BibliographieTesteur.cpp: In member function ‘virtual void Bibliographie_ConstructeurNormal_Test::TestBody()’:
+../BibliographieTesteur.cpp:23:31: error: ‘std::vector<biblio::Reference*> biblio::Bibliographie::m_vReferences’ is private within this context
+  EXPECT_EQ("Sauceur", Testeur.m_vReferences);
+                               ^
+In file included from ../BibliographieTesteur.cpp:7:0:
+/home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:36:34: note: declared private here
+  std::vector<biblio::Reference*> m_vReferences;
+                                  ^~~~~~~~~~~~~
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h: In instantiation of ‘testing::AssertionResult testing::internal::CmpHelperEQ(const char*, const char*, const T1&, const T2&) [with T1 = char [8]; T2 = std::vector<biblio::Reference*>]’:
+/usr/local/include/gtest/gtest.h:1421:23:   required from ‘static testing::AssertionResult testing::internal::EqHelper<lhs_is_null_literal>::Compare(const char*, const char*, const T1&, const T2&) [with T1 = char [8]; T2 = std::vector<biblio::Reference*>; bool lhs_is_null_literal = false]’
+../BibliographieTesteur.cpp:23:2:   required from here
+/usr/local/include/gtest/gtest.h:1392:11: error: no match for ‘operator==’ (operand types are ‘const char [8]’ and ‘const std::vector<biblio::Reference*>’)
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/local/include/gtest/internal/gtest-param-util.h:48:0,
+                 from /usr/local/include/gtest/gtest-param-test.h:192,
+                 from /usr/local/include/gtest/gtest.h:62,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/local/include/gtest/internal/gtest-linked_ptr.h:223:6: note: candidate: template<class T> bool testing::internal::operator==(T*, const testing::internal::linked_ptr<T>&)
+ bool operator==(T* ptr, const linked_ptr<T>& x) {
+      ^~~~~~~~
+/usr/local/include/gtest/internal/gtest-linked_ptr.h:223:6: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   ‘const std::vector<biblio::Reference*>’ is not derived from ‘const testing::internal::linked_ptr<T>’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/iterator:66:0,
+                 from /usr/local/include/gtest/internal/gtest-param-util.h:39,
+                 from /usr/local/include/gtest/gtest-param-test.h:192,
+                 from /usr/local/include/gtest/gtest.h:62,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/include/c++/7/bits/stream_iterator.h:130:5: note: candidate: template<class _Tp, class _CharT, class _Traits, class _Dist> bool std::operator==(const std::istream_iterator<_Tp, _CharT, _Traits, _Dist>&, const std::istream_iterator<_Tp, _CharT, _Traits, _Dist>&)
+     operator==(const istream_iterator<_Tp, _CharT, _Traits, _Dist>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stream_iterator.h:130:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::istream_iterator<_Tp, _CharT, _Traits, _Dist>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/set:62:0,
+                 from /usr/local/include/gtest/internal/gtest-internal.h:59,
+                 from /usr/local/include/gtest/gtest.h:58,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/include/c++/7/bits/stl_multiset.h:896:5: note: candidate: template<class _Key, class _Compare, class _Alloc> bool std::operator==(const std::multiset<_Key, _Compare, _Alloc>&, const std::multiset<_Key, _Compare, _Alloc>&)
+     operator==(const multiset<_Key, _Compare, _Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_multiset.h:896:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::multiset<_Key, _Compare, _Alloc>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/set:61:0,
+                 from /usr/local/include/gtest/internal/gtest-internal.h:59,
+                 from /usr/local/include/gtest/gtest.h:58,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/include/c++/7/bits/stl_set.h:913:5: note: candidate: template<class _Key, class _Compare, class _Alloc> bool std::operator==(const std::set<_Key, _Compare, _Alloc>&, const std::set<_Key, _Compare, _Alloc>&)
+     operator==(const set<_Key, _Compare, _Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_set.h:913:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::set<_Key, _Compare, _Alloc>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/map:62:0,
+                 from /usr/local/include/gtest/internal/gtest-internal.h:58,
+                 from /usr/local/include/gtest/gtest.h:58,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/include/c++/7/bits/stl_multimap.h:1061:5: note: candidate: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator==(const std::multimap<_Key, _Tp, _Compare, _Alloc>&, const std::multimap<_Key, _Tp, _Compare, _Alloc>&)
+     operator==(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_multimap.h:1061:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::multimap<_Key, _Tp, _Compare, _Alloc>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/map:61:0,
+                 from /usr/local/include/gtest/internal/gtest-internal.h:58,
+                 from /usr/local/include/gtest/gtest.h:58,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/include/c++/7/bits/stl_map.h:1395:5: note: candidate: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator==(const std::map<_Key, _Tp, _Compare, _Alloc>&, const std::map<_Key, _Tp, _Compare, _Alloc>&)
+     operator==(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_map.h:1395:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::map<_Key, _Tp, _Compare, _Alloc>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/map:60:0,
+                 from /usr/local/include/gtest/internal/gtest-internal.h:58,
+                 from /usr/local/include/gtest/gtest.h:58,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/include/c++/7/bits/stl_tree.h:1533:5: note: candidate: template<class _Key, class _Val, class _KeyOfValue, class _Compare, class _Alloc> bool std::operator==(const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&, const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&)
+     operator==(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_tree.h:1533:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/map:60:0,
+                 from /usr/local/include/gtest/internal/gtest-internal.h:58,
+                 from /usr/local/include/gtest/gtest.h:58,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/include/c++/7/bits/stl_tree.h:406:5: note: candidate: template<class _Val> bool std::operator==(const std::_Rb_tree_iterator<_Tp>&, const std::_Rb_tree_const_iterator<_Val>&)
+     operator==(const _Rb_tree_iterator<_Val>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_tree.h:406:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::_Rb_tree_iterator<_Tp>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/locale_conv.h:41:0,
+                 from /usr/include/c++/7/locale:43,
+                 from /usr/include/c++/7/iomanip:43,
+                 from /usr/local/include/gtest/internal/gtest-internal.h:56,
+                 from /usr/local/include/gtest/gtest.h:58,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/include/c++/7/bits/unique_ptr.h:694:5: note: candidate: template<class _Tp, class _Dp> bool std::operator==(std::nullptr_t, const std::unique_ptr<_Tp, _Dp>&)
+     operator==(nullptr_t, const unique_ptr<_Tp, _Dp>& __x) noexcept
+     ^~~~~~~~
+/usr/include/c++/7/bits/unique_ptr.h:694:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   ‘const std::vector<biblio::Reference*>’ is not derived from ‘const std::unique_ptr<_Tp, _Dp>’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/locale_conv.h:41:0,
+                 from /usr/include/c++/7/locale:43,
+                 from /usr/include/c++/7/iomanip:43,
+                 from /usr/local/include/gtest/internal/gtest-internal.h:56,
+                 from /usr/local/include/gtest/gtest.h:58,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/include/c++/7/bits/unique_ptr.h:689:5: note: candidate: template<class _Tp, class _Dp> bool std::operator==(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)
+     operator==(const unique_ptr<_Tp, _Dp>& __x, nullptr_t) noexcept
+     ^~~~~~~~
+/usr/include/c++/7/bits/unique_ptr.h:689:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::unique_ptr<_Tp, _Dp>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/locale_conv.h:41:0,
+                 from /usr/include/c++/7/locale:43,
+                 from /usr/include/c++/7/iomanip:43,
+                 from /usr/local/include/gtest/internal/gtest-internal.h:56,
+                 from /usr/local/include/gtest/gtest.h:58,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/include/c++/7/bits/unique_ptr.h:683:5: note: candidate: template<class _Tp, class _Dp, class _Up, class _Ep> bool std::operator==(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)
+     operator==(const unique_ptr<_Tp, _Dp>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/unique_ptr.h:683:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::unique_ptr<_Tp, _Dp>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/local/include/gtest/internal/gtest-port.h:677:0,
+                 from /usr/local/include/gtest/internal/gtest-internal.h:40,
+                 from /usr/local/include/gtest/gtest.h:58,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/include/c++/7/tuple:1397:5: note: candidate: template<class ... _TElements, class ... _UElements> constexpr bool std::operator==(const std::tuple<_Tps ...>&, const std::tuple<_Elements ...>&)
+     operator==(const tuple<_TElements...>& __t,
+     ^~~~~~~~
+/usr/include/c++/7/tuple:1397:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::tuple<_Tps ...>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/tuple:39:0,
+                 from /usr/local/include/gtest/internal/gtest-port.h:677,
+                 from /usr/local/include/gtest/internal/gtest-internal.h:40,
+                 from /usr/local/include/gtest/gtest.h:58,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/include/c++/7/array:252:5: note: candidate: template<class _Tp, long unsigned int _Nm> bool std::operator==(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)
+     operator==(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)
+     ^~~~~~~~
+/usr/include/c++/7/array:252:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::array<_Tp, _Nm>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/vector:64:0,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:12,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/stl_vector.h:1596:5: note: candidate: template<class _Tp, class _Alloc> bool std::operator==(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+     operator==(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_vector.h:1596:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::vector<_Tp, _Alloc>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/locale_facets.h:48:0,
+                 from /usr/include/c++/7/bits/basic_ios.h:37,
+                 from /usr/include/c++/7/ios:44,
+                 from /usr/include/c++/7/ostream:38,
+subdir.mk:27: recipe for target 'BibliographieTesteur.o' failed
+                 from /usr/include/c++/7/iostream:39,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:11,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/streambuf_iterator.h:204:5: note: candidate: template<class _CharT, class _Traits> bool std::operator==(const std::istreambuf_iterator<_CharT, _Traits>&, const std::istreambuf_iterator<_CharT, _Traits>&)
+     operator==(const istreambuf_iterator<_CharT, _Traits>& __a,
+     ^~~~~~~~
+/usr/include/c++/7/bits/streambuf_iterator.h:204:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::istreambuf_iterator<_CharT, _Traits>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/ios_base.h:46:0,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:11,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/system_error:311:3: note: candidate: bool std::operator==(const std::error_condition&, const std::error_condition&)
+   operator==(const error_condition& __lhs,
+   ^~~~~~~~
+/usr/include/c++/7/system_error:311:3: note:   no known conversion for argument 1 from ‘const char [8]’ to ‘const std::error_condition&’
+/usr/include/c++/7/system_error:304:3: note: candidate: bool std::operator==(const std::error_condition&, const std::error_code&)
+   operator==(const error_condition& __lhs, const error_code& __rhs) noexcept
+   ^~~~~~~~
+/usr/include/c++/7/system_error:304:3: note:   no known conversion for argument 1 from ‘const char [8]’ to ‘const std::error_condition&’
+/usr/include/c++/7/system_error:297:3: note: candidate: bool std::operator==(const std::error_code&, const std::error_condition&)
+   operator==(const error_code& __lhs, const error_condition& __rhs) noexcept
+   ^~~~~~~~
+/usr/include/c++/7/system_error:297:3: note:   no known conversion for argument 1 from ‘const char [8]’ to ‘const std::error_code&’
+/usr/include/c++/7/system_error:292:3: note: candidate: bool std::operator==(const std::error_code&, const std::error_code&)
+   operator==(const error_code& __lhs, const error_code& __rhs) noexcept
+   ^~~~~~~~
+/usr/include/c++/7/system_error:292:3: note:   no known conversion for argument 1 from ‘const char [8]’ to ‘const std::error_code&’
+In file included from /usr/include/c++/7/string:52:0,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/basic_string.h:6034:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator==(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6034:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/string:52:0,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/basic_string.h:6022:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator==(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator==(const _CharT* __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6022:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   ‘const std::vector<biblio::Reference*>’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/string:52:0,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/basic_string.h:6008:5: note: candidate: template<class _CharT> typename __gnu_cxx::__enable_if<std::__is_char<_Tp>::__value, bool>::__type std::operator==(const std::__cxx11::basic_string<_CharT>&, const std::__cxx11::basic_string<_CharT>&)
+     operator==(const basic_string<_CharT>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6008:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/string:52:0,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/basic_string.h:6000:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator==(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6000:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/string:41:0,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/allocator.h:152:5: note: candidate: template<class _Tp> bool std::operator==(const std::allocator<_CharT>&, const std::allocator<_CharT>&)
+     operator==(const allocator<_Tp>&, const allocator<_Tp>&)
+     ^~~~~~~~
+/usr/include/c++/7/bits/allocator.h:152:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::allocator<_CharT>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/string:41:0,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/allocator.h:146:5: note: candidate: template<class _T1, class _T2> bool std::operator==(const std::allocator<_CharT>&, const std::allocator<_T2>&)
+     operator==(const allocator<_T1>&, const allocator<_T2>&)
+     ^~~~~~~~
+/usr/include/c++/7/bits/allocator.h:146:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::allocator<_CharT>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/char_traits.h:40:0,
+                 from /usr/include/c++/7/string:40,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/postypes.h:216:5: note: candidate: template<class _StateT> bool std::operator==(const std::fpos<_StateT>&, const std::fpos<_StateT>&)
+     operator==(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+     ^~~~~~~~
+/usr/include/c++/7/bits/postypes.h:216:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::fpos<_StateT>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/string:40,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/stl_iterator.h:1124:5: note: candidate: template<class _Iterator> bool std::operator==(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)
+     operator==(const move_iterator<_Iterator>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:1124:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::move_iterator<_IteratorL>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/string:40,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/stl_iterator.h:1118:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator==(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)
+     operator==(const move_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:1118:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::move_iterator<_IteratorL>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/string:40,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/stl_iterator.h:337:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator==(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator==(const reverse_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:337:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::reverse_iterator<_Iterator>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/string:40,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/stl_iterator.h:299:5: note: candidate: template<class _Iterator> bool std::operator==(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator==(const reverse_iterator<_Iterator>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:299:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::reverse_iterator<_Iterator>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/string:40,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/stl_pair.h:443:5: note: candidate: template<class _T1, class _T2> constexpr bool std::operator==(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator==(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_pair.h:443:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::pair<_T1, _T2>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/x86_64-linux-gnu/c++/7/bits/c++allocator.h:33:0,
+                 from /usr/include/c++/7/bits/allocator.h:46,
+                 from /usr/include/c++/7/string:41,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/ext/new_allocator.h:155:5: note: candidate: template<class _Tp> bool __gnu_cxx::operator==(const __gnu_cxx::new_allocator<_Tp>&, const __gnu_cxx::new_allocator<_Tp>&)
+     operator==(const new_allocator<_Tp>&, const new_allocator<_Tp>&)
+     ^~~~~~~~
+/usr/include/c++/7/ext/new_allocator.h:155:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const __gnu_cxx::new_allocator<_Tp>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/string:40,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/stl_iterator.h:866:5: note: candidate: template<class _Iterator, class _Container> bool __gnu_cxx::operator==(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+     operator==(const __normal_iterator<_Iterator, _Container>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:866:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/string:40,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/stl_iterator.h:859:5: note: candidate: template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator==(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+     operator==(const __normal_iterator<_IteratorL, _Container>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:859:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const __gnu_cxx::__normal_iterator<_IteratorL, _Container>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+make: *** [BibliographieTesteur.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:43:07 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../alaide.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"alaide.d" -MT"alaide.o" -o "alaide.o" "../alaide.cpp"
+../alaide.cpp:13:1: error: ‘SAUCE’ does not name a type
+ SAUCE.ajouterReferences();
+ ^~~~~
+subdir.mk:36: recipe for target 'alaide.o' failed
+make: *** [alaide.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:43:07 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+In file included from /usr/local/include/gtest/gtest.h:1874:0,
+                 from ../BibliographieTesteur.cpp:9:
+../BibliographieTesteur.cpp: In member function ‘virtual void Bibliographie_ConstructeurNormal_Test::TestBody()’:
+../BibliographieTesteur.cpp:23:31: error: ‘std::vector<biblio::Reference*> biblio::Bibliographie::m_vReferences’ is private within this context
+  EXPECT_EQ("Sauceur", Testeur.m_vReferences);
+                               ^
+In file included from ../BibliographieTesteur.cpp:7:0:
+/home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:36:34: note: declared private here
+  std::vector<biblio::Reference*> m_vReferences;
+                                  ^~~~~~~~~~~~~
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h: In instantiation of ‘testing::AssertionResult testing::internal::CmpHelperEQ(const char*, const char*, const T1&, const T2&) [with T1 = char [8]; T2 = std::vector<biblio::Reference*>]’:
+/usr/local/include/gtest/gtest.h:1421:23:   required from ‘static testing::AssertionResult testing::internal::EqHelper<lhs_is_null_literal>::Compare(const char*, const char*, const T1&, const T2&) [with T1 = char [8]; T2 = std::vector<biblio::Reference*>; bool lhs_is_null_literal = false]’
+../BibliographieTesteur.cpp:23:2:   required from here
+/usr/local/include/gtest/gtest.h:1392:11: error: no match for ‘operator==’ (operand types are ‘const char [8]’ and ‘const std::vector<biblio::Reference*>’)
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/local/include/gtest/internal/gtest-param-util.h:48:0,
+                 from /usr/local/include/gtest/gtest-param-test.h:192,
+                 from /usr/local/include/gtest/gtest.h:62,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/local/include/gtest/internal/gtest-linked_ptr.h:223:6: note: candidate: template<class T> bool testing::internal::operator==(T*, const testing::internal::linked_ptr<T>&)
+ bool operator==(T* ptr, const linked_ptr<T>& x) {
+      ^~~~~~~~
+/usr/local/include/gtest/internal/gtest-linked_ptr.h:223:6: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   ‘const std::vector<biblio::Reference*>’ is not derived from ‘const testing::internal::linked_ptr<T>’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/iterator:66:0,
+                 from /usr/local/include/gtest/internal/gtest-param-util.h:39,
+                 from /usr/local/include/gtest/gtest-param-test.h:192,
+                 from /usr/local/include/gtest/gtest.h:62,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/include/c++/7/bits/stream_iterator.h:130:5: note: candidate: template<class _Tp, class _CharT, class _Traits, class _Dist> bool std::operator==(const std::istream_iterator<_Tp, _CharT, _Traits, _Dist>&, const std::istream_iterator<_Tp, _CharT, _Traits, _Dist>&)
+     operator==(const istream_iterator<_Tp, _CharT, _Traits, _Dist>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stream_iterator.h:130:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::istream_iterator<_Tp, _CharT, _Traits, _Dist>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/set:62:0,
+                 from /usr/local/include/gtest/internal/gtest-internal.h:59,
+                 from /usr/local/include/gtest/gtest.h:58,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/include/c++/7/bits/stl_multiset.h:896:5: note: candidate: template<class _Key, class _Compare, class _Alloc> bool std::operator==(const std::multiset<_Key, _Compare, _Alloc>&, const std::multiset<_Key, _Compare, _Alloc>&)
+     operator==(const multiset<_Key, _Compare, _Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_multiset.h:896:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::multiset<_Key, _Compare, _Alloc>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/set:61:0,
+                 from /usr/local/include/gtest/internal/gtest-internal.h:59,
+                 from /usr/local/include/gtest/gtest.h:58,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/include/c++/7/bits/stl_set.h:913:5: note: candidate: template<class _Key, class _Compare, class _Alloc> bool std::operator==(const std::set<_Key, _Compare, _Alloc>&, const std::set<_Key, _Compare, _Alloc>&)
+     operator==(const set<_Key, _Compare, _Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_set.h:913:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::set<_Key, _Compare, _Alloc>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/map:62:0,
+                 from /usr/local/include/gtest/internal/gtest-internal.h:58,
+                 from /usr/local/include/gtest/gtest.h:58,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/include/c++/7/bits/stl_multimap.h:1061:5: note: candidate: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator==(const std::multimap<_Key, _Tp, _Compare, _Alloc>&, const std::multimap<_Key, _Tp, _Compare, _Alloc>&)
+     operator==(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_multimap.h:1061:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::multimap<_Key, _Tp, _Compare, _Alloc>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/map:61:0,
+                 from /usr/local/include/gtest/internal/gtest-internal.h:58,
+                 from /usr/local/include/gtest/gtest.h:58,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/include/c++/7/bits/stl_map.h:1395:5: note: candidate: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator==(const std::map<_Key, _Tp, _Compare, _Alloc>&, const std::map<_Key, _Tp, _Compare, _Alloc>&)
+     operator==(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_map.h:1395:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::map<_Key, _Tp, _Compare, _Alloc>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/map:60:0,
+                 from /usr/local/include/gtest/internal/gtest-internal.h:58,
+                 from /usr/local/include/gtest/gtest.h:58,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/include/c++/7/bits/stl_tree.h:1533:5: note: candidate: template<class _Key, class _Val, class _KeyOfValue, class _Compare, class _Alloc> bool std::operator==(const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&, const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&)
+     operator==(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_tree.h:1533:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/map:60:0,
+                 from /usr/local/include/gtest/internal/gtest-internal.h:58,
+                 from /usr/local/include/gtest/gtest.h:58,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/include/c++/7/bits/stl_tree.h:406:5: note: candidate: template<class _Val> bool std::operator==(const std::_Rb_tree_iterator<_Tp>&, const std::_Rb_tree_const_iterator<_Val>&)
+     operator==(const _Rb_tree_iterator<_Val>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_tree.h:406:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::_Rb_tree_iterator<_Tp>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/locale_conv.h:41:0,
+                 from /usr/include/c++/7/locale:43,
+                 from /usr/include/c++/7/iomanip:43,
+                 from /usr/local/include/gtest/internal/gtest-internal.h:56,
+                 from /usr/local/include/gtest/gtest.h:58,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/include/c++/7/bits/unique_ptr.h:694:5: note: candidate: template<class _Tp, class _Dp> bool std::operator==(std::nullptr_t, const std::unique_ptr<_Tp, _Dp>&)
+     operator==(nullptr_t, const unique_ptr<_Tp, _Dp>& __x) noexcept
+     ^~~~~~~~
+/usr/include/c++/7/bits/unique_ptr.h:694:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   ‘const std::vector<biblio::Reference*>’ is not derived from ‘const std::unique_ptr<_Tp, _Dp>’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/locale_conv.h:41:0,
+                 from /usr/include/c++/7/locale:43,
+                 from /usr/include/c++/7/iomanip:43,
+                 from /usr/local/include/gtest/internal/gtest-internal.h:56,
+                 from /usr/local/include/gtest/gtest.h:58,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/include/c++/7/bits/unique_ptr.h:689:5: note: candidate: template<class _Tp, class _Dp> bool std::operator==(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)
+     operator==(const unique_ptr<_Tp, _Dp>& __x, nullptr_t) noexcept
+     ^~~~~~~~
+/usr/include/c++/7/bits/unique_ptr.h:689:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::unique_ptr<_Tp, _Dp>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/locale_conv.h:41:0,
+                 from /usr/include/c++/7/locale:43,
+                 from /usr/include/c++/7/iomanip:43,
+                 from /usr/local/include/gtest/internal/gtest-internal.h:56,
+                 from /usr/local/include/gtest/gtest.h:58,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/include/c++/7/bits/unique_ptr.h:683:5: note: candidate: template<class _Tp, class _Dp, class _Up, class _Ep> bool std::operator==(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)
+     operator==(const unique_ptr<_Tp, _Dp>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/unique_ptr.h:683:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::unique_ptr<_Tp, _Dp>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/local/include/gtest/internal/gtest-port.h:677:0,
+                 from /usr/local/include/gtest/internal/gtest-internal.h:40,
+                 from /usr/local/include/gtest/gtest.h:58,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/include/c++/7/tuple:1397:5: note: candidate: template<class ... _TElements, class ... _UElements> constexpr bool std::operator==(const std::tuple<_Tps ...>&, const std::tuple<_Elements ...>&)
+     operator==(const tuple<_TElements...>& __t,
+     ^~~~~~~~
+/usr/include/c++/7/tuple:1397:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::tuple<_Tps ...>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/tuple:39:0,
+                 from /usr/local/include/gtest/internal/gtest-port.h:677,
+                 from /usr/local/include/gtest/internal/gtest-internal.h:40,
+                 from /usr/local/include/gtest/gtest.h:58,
+                 from ../BibliographieTesteur.cpp:9:
+/usr/include/c++/7/array:252:5: note: candidate: template<class _Tp, long unsigned int _Nm> bool std::operator==(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)
+     operator==(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)
+     ^~~~~~~~
+/usr/include/c++/7/array:252:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::array<_Tp, _Nm>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/vector:64:0,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:12,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/stl_vector.h:1596:5: note: candidate: template<class _Tp, class _Alloc> bool std::operator==(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+     operator==(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_vector.h:1596:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::vector<_Tp, _Alloc>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/locale_facets.h:48:0,
+                 from /usr/include/c++/7/bits/basic_ios.h:37,
+                 from /usr/include/c++/7/ios:44,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:11,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/streambuf_iterator.h:204:5: note: candidate: template<class _CharT, class _Traits> bool std::operator==(const std::istreambuf_iterator<_CharT, _Traits>&, const std::istreambuf_iterator<_CharT, _Traits>&)
+     operator==(const istreambuf_iterator<_CharT, _Traits>& __a,
+     ^~~~~~~~
+/usr/include/c++/7/bits/streambuf_iterator.h:204:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::istreambuf_iterator<_CharT, _Traits>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/ios_base.h:46:0,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:11,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/system_error:311:3: note: candidate: bool std::operator==(const std::error_condition&, const std::error_condition&)
+   operator==(const error_condition& __lhs,
+   ^~~~~~~~
+/usr/include/c++/7/system_error:311:3: note:   no known conversion for argument 1 from ‘const char [8]’ to ‘const std::error_condition&’
+/usr/include/c++/7/system_error:304:3: note: candidate: bool std::operator==(const std::error_condition&, const std::error_code&)
+   operator==(const error_condition& __lhs, const error_code& __rhs) noexcept
+   ^~~~~~~~
+/usr/include/c++/7/system_error:304:3: note:   no known conversion for argument 1 from ‘const char [8]’ to ‘const std::error_condition&’
+/usr/include/c++/7/system_error:297:3: note: candidate: bool std::operator==(const std::error_code&, const std::error_condition&)
+   operator==(const error_code& __lhs, const error_condition& __rhs) noexcept
+   ^~~~~~~~
+/usr/include/c++/7/system_error:297:3: note:   no known conversion for argument 1 from ‘const char [8]’ to ‘const std::error_code&’
+/usr/include/c++/7/system_error:292:3: note: candidate: bool std::operator==(const std::error_code&, const std::error_code&)
+   operator==(const error_code& __lhs, const error_code& __rhs) noexcept
+   ^~~~~~~~
+/usr/include/c++/7/system_error:292:3: note:   no known conversion for argument 1 from ‘const char [8]’ to ‘const std::error_code&’
+In file included from /usr/include/c++/7/string:52:0,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/basic_string.h:6034:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator==(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6034:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/string:52:0,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/basic_string.h:6022:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator==(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator==(const _CharT* __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6022:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   ‘const std::vector<biblio::Reference*>’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/string:52:0,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/basic_string.h:6008:5: note: candidate: template<class _CharT> typename __gnu_cxx::__enable_if<std::__is_char<_Tp>::__value, bool>::__type std::operator==(const std::__cxx11::basic_string<_CharT>&, const std::__cxx11::basic_string<_CharT>&)
+     operator==(const basic_string<_CharT>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6008:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/string:52:0,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/basic_string.h:6000:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator==(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6000:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/string:41:0,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/allocator.h:152:5: note: candidate: template<class _Tp> bool std::operator==(const std::allocator<_CharT>&, const std::allocator<_CharT>&)
+     operator==(const allocator<_Tp>&, const allocator<_Tp>&)
+     ^~~~~~~~
+/usr/include/c++/7/bits/allocator.h:152:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::allocator<_CharT>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/string:41:0,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/allocator.h:146:5: note: candidate: template<class _T1, class _T2> bool std::operator==(const std::allocator<_CharT>&, const std::allocator<_T2>&)
+     operator==(const allocator<_T1>&, const allocator<_T2>&)
+     ^~~~~~~~
+/usr/include/c++/7/bits/allocator.h:146:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::allocator<_CharT>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/char_traits.h:40:0,
+                 from /usr/include/c++/7/string:40,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/postypes.h:216:5: note: candidate: template<class _StateT> bool std::operator==(const std::fpos<_StateT>&, const std::fpos<_StateT>&)
+     operator==(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+     ^~~~~~~~
+/usr/include/c++/7/bits/postypes.h:216:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::fpos<_StateT>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/string:40,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/stl_iterator.h:1124:5: note: candidate: template<class _Iterator> bool std::operator==(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)
+     operator==(const move_iterator<_Iterator>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:1124:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::move_iterator<_IteratorL>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/string:40,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/stl_iterator.h:1118:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator==(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)
+     operator==(const move_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:1118:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::move_iterator<_IteratorL>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/string:40,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/stl_iterator.h:337:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator==(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator==(const reverse_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:337:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::reverse_iterator<_Iterator>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/string:40,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/stl_iterator.h:299:5: note: candidate: template<class _Iterator> bool std::operator==(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator==(const reverse_iterator<_Iterator>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:299:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::reverse_iterator<_Iterator>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/string:40,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/stl_pair.h:443:5: note: candidate: template<class _T1, class _T2> constexpr bool std::operator==(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator==(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_pair.h:443:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const std::pair<_T1, _T2>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/x86_64-linux-gnu/c++/7/bits/c++allocator.h:33:0,
+                 from /usr/include/c++/7/bits/allocator.h:46,
+                 from /usr/include/c++/7/string:41,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/ext/new_allocator.h:155:5: note: candidate: template<class _Tp> bool __gnu_cxx::operator==(const __gnu_cxx::new_allocator<_Tp>&, const __gnu_cxx::new_allocator<_Tp>&)
+     operator==(const new_allocator<_Tp>&, const new_allocator<_Tp>&)
+     ^~~~~~~~
+/usr/include/c++/7/ext/new_allocator.h:155:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const __gnu_cxx::new_allocator<_Tp>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/string:40,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/stl_iterator.h:866:5: note: candidate: template<class _Iterator, class _Container> bool __gnu_cxx::operator==(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+     operator==(const __normal_iterator<_Iterator, _Container>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:866:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/string:40,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Util.h:10,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:9,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../BibliographieTesteur.cpp:7:
+/usr/include/c++/7/bits/stl_iterator.h:859:5: note: candidate: template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator==(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+     operator==(const __normal_iterator<_IteratorL, _Container>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:859:5: note:   template argument deduction/substitution failed:
+In file included from ../BibliographieTesteur.cpp:9:0:
+/usr/local/include/gtest/gtest.h:1392:11: note:   mismatched types ‘const __gnu_cxx::__normal_iterator<_IteratorL, _Container>’ and ‘const char [8]’
+   if (lhs == rhs) {
+       ~~~~^~~~~~
+make: *** [BibliographieTesteur.o] Error 1
+subdir.mk:27: recipe for target 'BibliographieTesteur.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+20:45:43 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+ar: creating libClasses.a
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+Finished building target: libClasses.a
+ 
+20:45:43 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+20:47:28 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+../Bibliographie.cpp:27:8: error: prototype for ‘std::__cxx11::string biblio::Bibliographie::reqBibliographieFormate() const’ does not match any in class ‘biblio::Bibliographie’
+ string Bibliographie::reqBibliographieFormate() const{
+        ^~~~~~~~~~~~~
+In file included from ../Bibliographie.cpp:7:0:
+../Bibliographie.h:33:15: error: candidate is: std::__cxx11::string& biblio::Bibliographie::reqBibliographieFormate() const
+  std::string& reqBibliographieFormate() const;
+               ^~~~~~~~~~~~~~~~~~~~~~~
+../Bibliographie.cpp:53:14: error: prototype for ‘std::__cxx11::string& biblio::Bibliographie::reqNomBibliographie() const’ does not match any in class ‘biblio::Bibliographie’
+ std::string& Bibliographie::reqNomBibliographie() const
+              ^~~~~~~~~~~~~
+In file included from ../Bibliographie.cpp:7:0:
+../Bibliographie.h:27:14: error: candidate is: std::__cxx11::string biblio::Bibliographie::reqNomBibliographie() const
+  std::string reqNomBibliographie() const;
+              ^~~~~~~~~~~~~~~~~~~
+make: *** [Bibliographie.o] Error 1
+subdir.mk:33: recipe for target 'Bibliographie.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+20:47:29 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+/usr/bin/ld: cannot find -lClasses
+makefile:44: recipe for target 'Testeur' failed
+collect2: error: ld returned 1 exit status
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:47:48 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+../Bibliographie.cpp: In member function ‘std::__cxx11::string& biblio::Bibliographie::reqNomBibliographie() const’:
+../Bibliographie.cpp:54:9: error: binding reference of type ‘std::__cxx11::string& {aka std::__cxx11::basic_string<char>&}’ to ‘const string {aka const std::__cxx11::basic_string<char>}’ discards qualifiers
+ {return m_nBibliographie;};
+         ^~~~~~~~~~~~~~~~
+make: *** [Bibliographie.o] Error 1
+subdir.mk:33: recipe for target 'Bibliographie.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+20:47:48 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+/usr/bin/ld: cannot find -lClasses
+makefile:44: recipe for target 'Testeur' failed
+collect2: error: ld returned 1 exit status
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:48:38 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+../Bibliographie.cpp: In member function ‘std::__cxx11::string& biblio::Bibliographie::reqNomBibliographie() const’:
+../Bibliographie.cpp:55:9: error: binding reference of type ‘std::__cxx11::string& {aka std::__cxx11::basic_string<char>&}’ to ‘const string {aka const std::__cxx11::basic_string<char>}’ discards qualifiers
+  return m_nBibliographie;
+         ^~~~~~~~~~~~~~~~
+subdir.mk:33: recipe for target 'Bibliographie.o' failed
+make: *** [Bibliographie.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:48:39 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+/usr/bin/ld: cannot find -lClasses
+makefile:44: recipe for target 'Testeur' failed
+collect2: error: ld returned 1 exit status
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:50:09 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+../Bibliographie.cpp:53:20: error: prototype for ‘const string& biblio::Bibliographie::reqNomBibliographie() const’ does not match any in class ‘biblio::Bibliographie’
+ const std::string& Bibliographie::reqNomBibliographie() const
+                    ^~~~~~~~~~~~~
+In file included from ../Bibliographie.cpp:7:0:
+../Bibliographie.h:27:15: error: candidate is: std::__cxx11::string& biblio::Bibliographie::reqNomBibliographie() const
+  std::string& reqNomBibliographie() const;
+               ^~~~~~~~~~~~~~~~~~~
+subdir.mk:33: recipe for target 'Bibliographie.o' failed
+make: *** [Bibliographie.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:50:09 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+/usr/bin/ld: cannot find -lClasses
+makefile:44: recipe for target 'Testeur' failed
+collect2: error: ld returned 1 exit status
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:50:24 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+20:50:25 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+20:50:39 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+20:50:39 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+20:50:51 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+20:51:36 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+20:51:36 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+20:52:02 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+20:52:02 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+20:52:05 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+20:52:13 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+20:52:13 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+20:52:17 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+20:57:50 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+20:57:50 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+../BibliographieTesteur.cpp: In member function ‘virtual void Bibliographie_ajouterReference_Test::TestBody()’:
+../BibliographieTesteur.cpp:41:31: error: no matching function for call to ‘biblio::Ouvrage::Ouvrage(const char [15], const char [36], const char [9], const char [9], int, const char [23])’
+       "ISBN 978-0-387-77591-3");
+                               ^
+In file included from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:10:0,
+                 from ../BibliographieTesteur.cpp:7:
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:19:2: note: candidate: biblio::Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string, std::__cxx11::string)
+  Ouvrage(const std::string auteurs, const std::string titre, const std::string identifiant
+  ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:19:2: note:   no known conversion for argument 5 from ‘int’ to ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note: candidate: biblio::Ouvrage::Ouvrage(const biblio::Ouvrage&)
+ class Ouvrage: public biblio::Reference{
+       ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note:   candidate expects 1 argument, 6 provided
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note: candidate: biblio::Ouvrage::Ouvrage(biblio::Ouvrage&&)
+/home/vincebro/Documents/cpp/TP3/Classes/Ouvrage.h:16:7: note:   candidate expects 1 argument, 6 provided
+In file included from /usr/local/include/gtest/gtest.h:58:0,
+                 from ../BibliographieTesteur.cpp:9:
+../BibliographieTesteur.cpp:42:33: error: ‘class biblio::Bibliographie’ has no member named ‘reqVecteur’
+  EXPECT_TRUE((bibliographieTest.reqVecteur()).empty())
+                                 ^
+../BibliographieTesteur.cpp:45:34: error: ‘class biblio::Bibliographie’ has no member named ‘reqVecteur’
+  EXPECT_FALSE((bibliographieTest.reqVecteur()).empty())
+                                  ^
+In file included from /usr/local/include/gtest/gtest.h:1874:0,
+                 from ../BibliographieTesteur.cpp:9:
+../BibliographieTesteur.cpp:47:64: error: ‘class biblio::Bibliographie’ has no member named ‘reqVecteur’
+  ASSERT_EQ(t_ouvrage.reqReferenceFormate(), (bibliographieTest.reqVecteur())[0]->reqReferenceFormate())
+                                                                ^
+../BibliographieTesteur.cpp:57:24: error: no matching function for call to ‘biblio::Journal::Journal(const char [5], const char [65], const char [42], int, int, int, int, const char [15])’
+        "ISSN 1937-4771");
+                        ^
+In file included from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:11:0,
+                 from ../BibliographieTesteur.cpp:7:
+/home/vincebro/Documents/cpp/TP3/Classes/Journal.h:20:2: note: candidate: biblio::Journal::Journal(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string, int, int, int)
+  Journal(const std::string auteurs, const std::string titre,
+  ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Journal.h:20:2: note:   no known conversion for argument 5 from ‘int’ to ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’
+/home/vincebro/Documents/cpp/TP3/Classes/Journal.h:17:7: note: candidate: biblio::Journal::Journal(const biblio::Journal&)
+ class Journal: public biblio::Reference{
+       ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Journal.h:17:7: note:   candidate expects 1 argument, 8 provided
+/home/vincebro/Documents/cpp/TP3/Classes/Journal.h:17:7: note: candidate: biblio::Journal::Journal(biblio::Journal&&)
+/home/vincebro/Documents/cpp/TP3/Classes/Journal.h:17:7: note:   candidate expects 1 argument, 8 provided
+In file included from /usr/local/include/gtest/gtest.h:1874:0,
+                 from ../BibliographieTesteur.cpp:9:
+../BibliographieTesteur.cpp:59:66: error: ‘class biblio::Bibliographie’ has no member named ‘reqVecteur’
+  ASSERT_EQ(journalTest.reqReferenceFormate(), (bibliographieTest.reqVecteur())[1]->reqReferenceFormate())
+                                                                  ^
+make: *** [BibliographieTesteur.o] Error 1
+subdir.mk:27: recipe for target 'BibliographieTesteur.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+20:59:38 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+20:59:39 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+../BibliographieTesteur.cpp: In member function ‘virtual void Bibliographie_ajouterReference_Test::TestBody()’:
+../BibliographieTesteur.cpp:36:2: error: ‘Ouvrage’ was not declared in this scope
+  Ouvrage t_ouvrage( "Homayoon Beigi",
+  ^~~~~~~
+../BibliographieTesteur.cpp:36:2: note: suggested alternative: ‘rusage’
+  Ouvrage t_ouvrage( "Homayoon Beigi",
+  ^~~~~~~
+  rusage
+In file included from /usr/local/include/gtest/gtest.h:58:0,
+                 from ../BibliographieTesteur.cpp:9:
+../BibliographieTesteur.cpp:42:33: error: ‘class biblio::Bibliographie’ has no member named ‘reqVecteur’
+  EXPECT_TRUE((bibliographieTest.reqVecteur()).empty())
+                                 ^
+../BibliographieTesteur.cpp:44:37: error: ‘t_ouvrage’ was not declared in this scope
+  bibliographieTest.ajouterReference(t_ouvrage);
+                                     ^~~~~~~~~
+In file included from /usr/local/include/gtest/gtest.h:58:0,
+                 from ../BibliographieTesteur.cpp:9:
+../BibliographieTesteur.cpp:45:34: error: ‘class biblio::Bibliographie’ has no member named ‘reqVecteur’
+  EXPECT_FALSE((bibliographieTest.reqVecteur()).empty())
+                                  ^
+In file included from /usr/local/include/gtest/gtest.h:1874:0,
+                 from ../BibliographieTesteur.cpp:9:
+../BibliographieTesteur.cpp:47:2: error: template argument 1 is invalid
+  ASSERT_EQ(t_ouvrage.reqReferenceFormate(), (bibliographieTest.reqVecteur())[0]->reqReferenceFormate())
+  ^
+../BibliographieTesteur.cpp:47:64: error: ‘class biblio::Bibliographie’ has no member named ‘reqVecteur’
+  ASSERT_EQ(t_ouvrage.reqReferenceFormate(), (bibliographieTest.reqVecteur())[0]->reqReferenceFormate())
+                                                                ^
+../BibliographieTesteur.cpp:50:2: error: ‘Journal’ was not declared in this scope
+  Journal journalTest( "Hart",
+  ^~~~~~~
+../BibliographieTesteur.cpp:58:37: error: ‘journalTest’ was not declared in this scope
+  bibliographieTest.ajouterReference(journalTest);
+                                     ^~~~~~~~~~~
+In file included from /usr/local/include/gtest/gtest.h:1874:0,
+                 from ../BibliographieTesteur.cpp:9:
+../BibliographieTesteur.cpp:59:2: error: template argument 1 is invalid
+  ASSERT_EQ(journalTest.reqReferenceFormate(), (bibliographieTest.reqVecteur())[1]->reqReferenceFormate())
+  ^
+../BibliographieTesteur.cpp:59:66: error: ‘class biblio::Bibliographie’ has no member named ‘reqVecteur’
+  ASSERT_EQ(journalTest.reqReferenceFormate(), (bibliographieTest.reqVecteur())[1]->reqReferenceFormate())
+                                                                  ^
+subdir.mk:27: recipe for target 'BibliographieTesteur.o' failed
+make: *** [BibliographieTesteur.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.

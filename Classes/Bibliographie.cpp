@@ -11,8 +11,14 @@ using namespace biblio;
  * \brief TODO Y FAUT SASSURER QUE LE CONSTRUCTEUR EST BON
  * @param p_nouvelleReference
  */
-Bibliographie::Bibliographie(const Reference& p_nouvelleReference){
-	m_vReferences.push_back(p_nouvelleReference.clone());
+Bibliographie::Bibliographie(const string nombiblio){
+	PRECONDITION(!(nombiblio.empty()));
+
+	m_nBibliographie = nombiblio;
+
+	POSTCONDITION(m_nBibliographie == nombiblio);
+
+	INVARIANTS();
 }
 /**
  * \brief Génère un objet string les éléments de toutes les références enregistrées dans Bibliographie
@@ -31,6 +37,12 @@ string Bibliographie::reqBibliographieFormate() const{
  * @param p_identifiant
  * @return booléen
  */
+
+Bibliographie::~Bibliographie(){
+	for (unsigned int i = m_vReferences.size(); i<=0; i--){
+		delete m_vReferences[i];
+	}
+}
 bool Bibliographie::referenceEstDejaPresente(const std::string& p_identifiant) const{
 	bool valide = false;
 	for (unsigned int i = 0; i < m_vReferences.size(); i++){
@@ -38,3 +50,19 @@ bool Bibliographie::referenceEstDejaPresente(const std::string& p_identifiant) c
 	}
 	return valide;
 }
+const std::string& Bibliographie::reqNomBibliographie() const
+{
+	return m_nBibliographie;
+}
+std::vector<Reference*> Bibliographie::reqReferences() const
+{return m_vReferences;};
+void Bibliographie::verifieInvariant() const{
+	INVARIANT(!(m_nBibliographie.empty()));
+}
+
+
+
+
+
+
+

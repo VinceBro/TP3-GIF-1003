@@ -4,16 +4,19 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../BibliographieTesteur.cpp \
 ../JournalTesteur.cpp \
 ../OuvrageTesteur.cpp \
 ../ReferenceTesteur.cpp 
 
 OBJS += \
+./BibliographieTesteur.o \
 ./JournalTesteur.o \
 ./OuvrageTesteur.o \
 ./ReferenceTesteur.o 
 
 CPP_DEPS += \
+./BibliographieTesteur.d \
 ./JournalTesteur.d \
 ./OuvrageTesteur.d \
 ./ReferenceTesteur.d 
