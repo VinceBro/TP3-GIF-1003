@@ -1,10 +1,9 @@
-/*
- * util.h
- *
- *  Created on: Apr. 3, 2019
- *      Author: root
+/**
+ * \file Util.h
+ * \brief Fonctions du namespace util
+ * \author Vincent Breault
+ * \date
  */
-
 #ifndef UTIL_H_
 #define UTIL_H_
 #include <string>

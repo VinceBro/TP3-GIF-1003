@@ -1,10 +1,9 @@
-/*
- * JournalTesteur.cpp
- *
- *  Created on: Apr. 10, 2019
- *      Author: root
+/**
+ * \file JournalTesteur.cpp
+ * \brief Fonctions qui testent la classe Journal (avec google test)
+ * \author Vincent Breault
+ * \date
  */
-
 #include "Journal.h"
 #include "ContratException.h"
 #include <gtest/gtest.h>

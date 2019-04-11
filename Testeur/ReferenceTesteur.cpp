@@ -1,8 +1,8 @@
-/*
- * ReferenceTesteur.cpp
- *
- *  Created on: Apr. 7, 2019
- *      Author: root
+/**
+ * \file ReferenceTesteur.cpp
+ * \brief Fonctions qui testent la classe Reference (avec google test)
+ * \author Vincent Breault
+ * \date
  */
 #include "Reference.h"
 #include <gtest/gtest.h>

@@ -7,9 +7,10 @@
 #include "Bibliographie.h"
 using namespace std;
 using namespace biblio;
+
 /**
- * \brief TODO Y FAUT SASSURER QUE LE CONSTRUCTEUR EST BON
- * @param p_nouvelleReference
+ * \brief Constructeur avec paramètre, Construction d'un objet Bibliographie à partir des valeurs passées en paramètre
+ * @param nombiblio
  */
 Bibliographie::Bibliographie(const string& nombiblio) : m_nBibliographie(nombiblio){
 	PRECONDITION(!(nombiblio.empty()));
@@ -29,10 +30,7 @@ string Bibliographie::reqBibliographieFormate() const{
 	return os.str();
 }
 /**
- * \brief Vérifie si l'identifiant en entrée correspond à une Référence déja Présente dans Bibliographie
- * @param p_identifiant
- * @return booléen
- *
+ * \brief Destructeur de Bibliographie
  */
 Bibliographie::~Bibliographie()
 {
@@ -42,6 +40,12 @@ Bibliographie::~Bibliographie()
 	}
 }
 
+/**
+ * \brief Vérifie si l'identifiant en entrée correspond à une Référence déja Présente dans Bibliographie
+ * @param p_identifiant
+ * @return booléen
+ *
+ */
 bool Bibliographie::referenceEstDejaPresente(const std::string& p_identifiant) const{
 	bool valide = false;
 	for (unsigned int i = 0; i < m_vReferences.size(); i++){
@@ -49,12 +53,25 @@ bool Bibliographie::referenceEstDejaPresente(const std::string& p_identifiant) c
 	}
 	return valide;
 }
+/**
+ * \brief Accesseur au nom de la bibliographie
+ * @return m_nBibliographie
+ */
 const std::string& Bibliographie::reqNomBibliographie() const
 {
 	return m_nBibliographie;
 }
+/**
+ * \brief Accesseur au vecteur de References
+ * @return m_vReferences
+ */
 std::vector<Reference*> Bibliographie::reqReferences() const
 {return m_vReferences;};
+
+/**
+ * \brief Permet d'ajouter une reference si elle n'est pas déja dans le vecteur de references (selon le ISBN/ISSN)
+ * @param p_nouvelleReference
+ */
 void Bibliographie::ajouterReference (const Reference& p_nouvelleReference)
 	{
 

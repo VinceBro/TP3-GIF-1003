@@ -14,9 +14,10 @@ var files =
     [ "Ouvrage.h", "Ouvrage_8h.html", [
       [ "Ouvrage", "classbiblio_1_1Ouvrage.html", "classbiblio_1_1Ouvrage" ]
     ] ],
-    [ "Reference.cpp", "Reference_8cpp.html", "Reference_8cpp" ],
+    [ "Reference.cpp", "Reference_8cpp.html", null ],
     [ "Reference.h", "Reference_8h.html", [
       [ "Reference", "classbiblio_1_1Reference.html", "classbiblio_1_1Reference" ]
     ] ],
-    [ "Util.h", "Util_8h_source.html", null ]
+    [ "Util.cpp", "Util_8cpp.html", null ],
+    [ "Util.h", "Util_8h.html", "Util_8h" ]
 ];

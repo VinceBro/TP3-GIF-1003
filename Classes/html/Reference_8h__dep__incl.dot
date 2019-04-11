@@ -2,21 +2,21 @@ digraph "Reference.h"
 {
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
-  Node5 [label="Reference.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node6 [label="Bibliographie.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Bibliographie_8h.html",tooltip="Classe pour gérer les références Bibliographie. "];
-  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node7 [label="Bibliographie.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Bibliographie_8cpp.html",tooltip="Implémentation de la classe Bibliographie pour gérer les références. "];
-  Node5 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node8 [label="Ouvrage.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Ouvrage_8h.html",tooltip="Classe Ouvrage dérivée de Reference. "];
-  Node8 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Reference.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Bibliographie.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Bibliographie_8h.html",tooltip="Classe pour gérer les références Bibliographie. "];
   Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node9 [label="Ouvrage.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Ouvrage_8cpp.html",tooltip="Implémentation de la classe Ouvrage dérivée de Reference. "];
-  Node5 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node10 [label="Journal.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Journal_8h.html",tooltip="Classe Journal dérivée de Reference. "];
-  Node10 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Bibliographie.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Bibliographie_8cpp.html",tooltip="Implémentation de la classe Bibliographie pour gérer les références. "];
+  Node7 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Ouvrage.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Ouvrage_8h.html",tooltip="Classe Ouvrage dérivée de Reference. "];
+  Node10 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node11 [label="Journal.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Journal_8cpp.html",tooltip="Implémentation de la classe Journal dérivée de Reference. "];
-  Node5 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node12 [label="Reference.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Reference_8cpp.html",tooltip="Implémentation de la classe de base abstraite Reference. "];
+  Node11 [label="Ouvrage.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Ouvrage_8cpp.html",tooltip="Implémentation de la classe Ouvrage dérivée de Reference. "];
+  Node7 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="Journal.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Journal_8h.html",tooltip="Classe Journal dérivée de Reference. "];
+  Node12 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="Journal.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Journal_8cpp.html",tooltip="Implémentation de la classe Journal dérivée de Reference. "];
+  Node7 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="Reference.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Reference_8cpp.html",tooltip="Implémentation de la classe de base abstraite Reference. "];
 }

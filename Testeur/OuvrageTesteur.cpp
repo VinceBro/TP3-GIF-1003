@@ -1,8 +1,8 @@
-/*
- * Testeureur.cpp
- *
- *  Created on: Apr. 9, 2019
- *      Author: root
+/**
+ * \file OuvrageTesteur.cpp
+ * \brief Fonctions qui testent la classe Ouvrage (avec google test)
+ * \author Vincent Breault
+ * \date
  */
 #include "Ouvrage.h"
 #include "ContratException.h"

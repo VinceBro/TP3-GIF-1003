@@ -1,8 +1,8 @@
-/*
- * BibliographieTesteur.cpp
- *
- *  Created on: Apr. 10, 2019
- *      Author: root
+/**
+ * \file BibliographieTesteur.cpp
+ * \brief Fonctions qui testent la classe Bibliographie (avec google test)
+ * \author Vincent Breault
+ * \date
  */
 #include "Bibliographie.h"
 #include "ContratException.h"
@@ -11,6 +11,10 @@
 using namespace std;
 using namespace biblio;
 
+/**
+ * \brief Test du Constructeur de Bibliographie
+ * 				cas invalide : le constructeur est donné un nom vide
+ */
 TEST(Bibliographie, ConstructeurNormal)
 {
 	Bibliographie Testeur("sauceur");
@@ -22,6 +26,11 @@ TEST(Bibliographie, ConstructeurAvecNomInvalide)
 	ASSERT_THROW(Bibliographie Testeur(""), PreconditionException);
 }
 
+/**
+ * \brief Test de l'ajout d'une Reference avec la fonction ajouterReference
+ * 					cas invalide : Le vecteur de references est toujours vide après l'ajout de la reference
+ * 					et les References formatés ne sont pas égales
+ */
 TEST(Bibliographie, ajouteruneReference)
 {
 	Bibliographie Testeur("Sauceur");
@@ -70,7 +79,10 @@ TEST(Bibliographie, ajouterdeuxReferences)
 
 
 }
-
+/**
+ * \brief Test ajout Reference Existante
+ * 			cas invalide : la longueur du vecteur de references est plus grand que 1
+ */
 TEST(Bibliographie, ajouterReferenceExistante)
 {
 	Bibliographie Testeur("Sauceur");
@@ -89,6 +101,10 @@ TEST(Bibliographie, ajouterReferenceExistante)
 
 }
 
+
+/**
+ * \brief Test de Bibliographie formate (s'il est adéquat)
+ */
 TEST(Bibliographie, reqReferenceFormate){
 	ostringstream os;
 	Bibliographie Testeur("Sauceur");

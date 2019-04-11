@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['journal',['Journal',['../classbiblio_1_1Journal.html#aaf2c55acfecdf018f12e484f371db1ea',1,'biblio::Journal']]]
+  ['modif_5fauteurs',['modif_auteurs',['../classbiblio_1_1Reference.html#ab7a8dcf22156371b9206095d52a6c25d',1,'biblio::Reference']]]
 ];

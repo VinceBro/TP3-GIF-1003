@@ -1,16 +1,19 @@
-//============================================================================
-// Name        : Utilisation.cpp
-// Author      : 
-// Version     :
-// Copyright   : Your copyright notice
-// Description : Hello World in C++, Ansi-style
-//============================================================================
-
+/**
+ * \file Utilisation.cpp
+ * \brief Utilisation des differentes classes implémentés dans Classes
+ * \author Vincent Breault
+ * \date
+ */
 #include "Bibliographie.h"
 #include "Util.h"
 using namespace std;
 using namespace biblio;
 
+/**
+ * \fn CreerUnOuvrage
+ * \brief Permet de créer un ouvrage, l'utilisateur recommence jusqu'à temps que tout soit valide
+ *
+ */
 Ouvrage CreerUnOuvrage()
 {
 	string auteur;
@@ -50,7 +53,11 @@ Ouvrage CreerUnOuvrage()
 	}
 	return Ouvrage(auteur, titre, identifiant, annee, ville, editeur);
 }
-
+/**
+ * \fn CreerUnJournal
+ * \brief Permet de créer un journal, l'utilisateur recommence jusqu'à temps que tout soit valide
+ *
+ */
 Journal CreerUnJournal()
 {
 	string auteur;
@@ -102,7 +109,9 @@ Journal CreerUnJournal()
 	return Journal(auteur, titre, identifiant, annee, nom, volume, numero, page);
 }
 
-
+/**
+ * \brief utilisation de la classe Bibliographie et des fonctions CreerUnJournal et CreerUnOuvrage
+ */
 int main() {
 	string nombiblio;
 	cout << "Entrez un nom pour votre bibliographie" << endl;

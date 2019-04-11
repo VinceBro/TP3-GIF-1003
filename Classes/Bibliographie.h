@@ -21,10 +21,7 @@ class Bibliographie
 public:
 	Bibliographie(const std::string& nombiblio);
 	~Bibliographie();
-	/**
-	 * \brief Ajoute une référence dans m_vReferences
-	 * @param p_nouvelleReference (La référence à ajouter)
-	 */
+
 	const std::string& reqNomBibliographie() const;
 	std::vector<Reference*> reqReferences() const;
 	void ajouterReference (const Reference& p_nouvelleReference);

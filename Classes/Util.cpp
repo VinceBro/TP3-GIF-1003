@@ -1,7 +1,17 @@
-//de util: confirme si le nom est valide
+/**
+ * \file Util.cpp
+ * \brief Fonctions du namespace util
+ * \author Vincent Breault
+ * \date
+ */
 #include "Util.h"
 using namespace std;
 
+/**
+ * \fn validerFormatNom
+ * \brief Vérifie si le nom est valide
+ * \param p_nom
+ */
 bool util::validerFormatNom(const string &p_nom){
     bool valide = true;
 
@@ -16,7 +26,11 @@ bool util::validerFormatNom(const string &p_nom){
     }
     return valide;
 }
-//de util: confirme si le code ISSN est valide
+/**
+ * \fn validerCodeIssn
+ * \brief Vérifie si le code ISSN est valide
+ * \param p_issn
+ */
 bool util::validerCodeIssn(const string &p_issn){
     bool valide = true;
     int total = 0;
@@ -41,7 +55,11 @@ bool util::validerCodeIssn(const string &p_issn){
 
     return valide;
 }
-//de util: confirme si le code ISBN est valide
+/**
+ * \fn validerCodeIsbn
+ * \brief Vérifie si le code ISBN est valide
+ * \param p_isbn
+ */
 bool util::validerCodeIsbn(const string &p_isbn){
     int j = 5;
     int somme = 0;
