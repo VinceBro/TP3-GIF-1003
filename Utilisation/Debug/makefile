@@ -44,7 +44,7 @@ all: Utilisation
 Utilisation: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C++ Linker'
-	g++  -o "Utilisation" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Utilisation" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

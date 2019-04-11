@@ -6262,3 +6262,201 @@ makefile:45: recipe for target 'Utilisation' failed
 collect2: error: ld returned 1 exit status
 make: *** [Utilisation] Error 1
 "make all" terminated with exit code 2. Build might be incomplete.
+22:41:35 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+22:41:35 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:41:35 **** Incremental Build of configuration Debug for project Utilisation ****
+make all 
+Building file: ../src/Utilisation.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Utilisation.d" -MT"src/Utilisation.o" -o "src/Utilisation.o" "../src/Utilisation.cpp"
+../src/Utilisation.cpp: In function ‘biblio::Ouvrage CreerUnOuvrage()’:
+../src/Utilisation.cpp:24:16: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  while (valide = false){
+         ~~~~~~~^~~~~~~
+Finished building: ../src/Utilisation.cpp
+ 
+Building target: Utilisation
+Invoking: GCC C++ Linker
+g++  -o "Utilisation"  ./src/Utilisation.o   
+./src/Utilisation.o: In function `CreerUnOuvrage()':
+/home/vincebro/Documents/cpp/TP3/Utilisation/Debug/../src/Utilisation.cpp:43: undefined reference to `util::validerFormatNom(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/home/vincebro/Documents/cpp/TP3/Utilisation/Debug/../src/Utilisation.cpp:44: undefined reference to `util::validerFormatNom(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+makefile:45: recipe for target 'Utilisation' failed
+/home/vincebro/Documents/cpp/TP3/Utilisation/Debug/../src/Utilisation.cpp:45: undefined reference to `util::validerCodeIsbn(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/home/vincebro/Documents/cpp/TP3/Utilisation/Debug/../src/Utilisation.cpp:45: undefined reference to `util::validerCodeIssn(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/home/vincebro/Documents/cpp/TP3/Utilisation/Debug/../src/Utilisation.cpp:46: undefined reference to `util::validerFormatNom(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/home/vincebro/Documents/cpp/TP3/Utilisation/Debug/../src/Utilisation.cpp:46: undefined reference to `util::validerFormatNom(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/home/vincebro/Documents/cpp/TP3/Utilisation/Debug/../src/Utilisation.cpp:51: undefined reference to `biblio::Ouvrage::Ouvrage(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)'
+collect2: error: ld returned 1 exit status
+make: *** [Utilisation] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:42:58 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+22:42:58 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:42:58 **** Incremental Build of configuration Debug for project Utilisation ****
+make all 
+Building file: ../src/Utilisation.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Utilisation.d" -MT"src/Utilisation.o" -o "src/Utilisation.o" "../src/Utilisation.cpp"
+../src/Utilisation.cpp: In function ‘biblio::Ouvrage CreerUnOuvrage()’:
+../src/Utilisation.cpp:24:16: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  while (valide = false){
+         ~~~~~~~^~~~~~~
+Finished building: ../src/Utilisation.cpp
+ 
+Building target: Utilisation
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Utilisation"  ./src/Utilisation.o   -lClasses -lpthread
+Finished building target: Utilisation
+ 
+22:43:13 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:43:21 **** Incremental Build of configuration Debug for project Utilisation ****
+make all 
+make: Nothing to be done for 'all'.
+22:43:43 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+22:43:43 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:43:43 **** Incremental Build of configuration Debug for project Utilisation ****
+make all 
+Building file: ../src/Utilisation.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Utilisation.d" -MT"src/Utilisation.o" -o "src/Utilisation.o" "../src/Utilisation.cpp"
+../src/Utilisation.cpp: In function ‘biblio::Ouvrage CreerUnOuvrage()’:
+../src/Utilisation.cpp:24:16: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  while (valide = false){
+         ~~~~~~~^~~~~~~
+Finished building: ../src/Utilisation.cpp
+ 
+Building target: Utilisation
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Utilisation"  ./src/Utilisation.o   -lClasses -lpthread
+Finished building target: Utilisation
+ 
+22:43:47 **** Incremental Build of configuration Debug for project Utilisation ****
+make all 
+make: Nothing to be done for 'all'.
+22:45:13 **** Incremental Build of configuration Debug for project Utilisation ****
+make all 
+make: Nothing to be done for 'all'.
+22:45:14 **** Incremental Build of configuration Debug for project Utilisation ****
+make all 
+make: Nothing to be done for 'all'.
+22:45:15 **** Incremental Build of configuration Debug for project Utilisation ****
+make all 
+make: Nothing to be done for 'all'.
+22:45:15 **** Incremental Build of configuration Debug for project Utilisation ****
+make all 
+make: Nothing to be done for 'all'.
+22:45:16 **** Incremental Build of configuration Debug for project Utilisation ****
+make all 
+make: Nothing to be done for 'all'.
+22:45:32 **** Incremental Build of configuration Debug for project Utilisation ****
+make all 
+make: Nothing to be done for 'all'.
+22:46:06 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+22:46:06 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:46:07 **** Incremental Build of configuration Debug for project Utilisation ****
+make all 
+Building file: ../src/Utilisation.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Utilisation.d" -MT"src/Utilisation.o" -o "src/Utilisation.o" "../src/Utilisation.cpp"
+Finished building: ../src/Utilisation.cpp
+ 
+Building target: Utilisation
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Utilisation"  ./src/Utilisation.o   -lClasses -lpthread
+Finished building target: Utilisation
+ 
+22:46:09 **** Incremental Build of configuration Debug for project Utilisation ****
+make all 
+make: Nothing to be done for 'all'.
+22:47:04 **** Incremental Build of configuration Debug for project Utilisation ****
+make all 
+make: Nothing to be done for 'all'.
+22:59:47 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+22:59:47 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:59:47 **** Incremental Build of configuration Debug for project Utilisation ****
+make all 
+Building file: ../src/Utilisation.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Utilisation.d" -MT"src/Utilisation.o" -o "src/Utilisation.o" "../src/Utilisation.cpp"
+../src/Utilisation.cpp: In function ‘int main()’:
+../src/Utilisation.cpp:114:41: error: ‘class biblio::Bibliographie’ has no member named ‘reqReferenceFormate’; did you mean ‘reqReferences’?
+  cout << "Jusqu'a présent: " << biblio.reqReferenceFormate() << endl;
+                                         ^~~~~~~~~~~~~~~~~~~
+                                         reqReferences
+make: *** [src/Utilisation.o] Error 1
+src/subdir.mk:18: recipe for target 'src/Utilisation.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+23:00:20 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+23:00:20 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+23:00:20 **** Incremental Build of configuration Debug for project Utilisation ****
+make all 
+Building file: ../src/Utilisation.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Utilisation.d" -MT"src/Utilisation.o" -o "src/Utilisation.o" "../src/Utilisation.cpp"
+../src/Utilisation.cpp: In function ‘int main()’:
+../src/Utilisation.cpp:114:41: error: ‘class biblio::Bibliographie’ has no member named ‘reqBiblioFormate’; did you mean ‘reqBibliographieFormate’?
+  cout << "Jusqu'a présent: " << biblio.reqBiblioFormate() << endl;
+                                         ^~~~~~~~~~~~~~~~
+                                         reqBibliographieFormate
+src/subdir.mk:18: recipe for target 'src/Utilisation.o' failed
+make: *** [src/Utilisation.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:00:34 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+23:00:34 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+23:00:34 **** Incremental Build of configuration Debug for project Utilisation ****
+make all 
+Building file: ../src/Utilisation.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Utilisation.d" -MT"src/Utilisation.o" -o "src/Utilisation.o" "../src/Utilisation.cpp"
+Finished building: ../src/Utilisation.cpp
+ 
+Building target: Utilisation
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Utilisation"  ./src/Utilisation.o   -lClasses -lpthread
+Finished building target: Utilisation
+ 
+23:00:37 **** Incremental Build of configuration Debug for project Utilisation ****
+make all 
+make: Nothing to be done for 'all'.
+23:02:07 **** Incremental Build of configuration Debug for project Utilisation ****
+make all 
+Building file: ../src/Utilisation.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Utilisation.d" -MT"src/Utilisation.o" -o "src/Utilisation.o" "../src/Utilisation.cpp"
+Finished building: ../src/Utilisation.cpp
+ 
+Building target: Utilisation
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Utilisation"  ./src/Utilisation.o   -lClasses -lpthread
+Finished building target: Utilisation
+ 
