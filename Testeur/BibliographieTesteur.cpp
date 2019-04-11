@@ -11,18 +11,10 @@
 using namespace std;
 using namespace biblio;
 
-class UneBiblio : public ::testing::Test
-{
-public:
-	UneBiblio() : biblio1("biblio") {};
-	Bibliographie biblio1;
-};
-
 TEST(Bibliographie, ConstructeurNormal)
 {
-	Bibliographie Testeur("Sauceur");
-	EXPECT_EQ("Sauceur", Testeur.reqNomBibliographie());
-
+	Bibliographie Testeur("sauceur");
+	ASSERT_EQ("sauceur", Testeur.reqNomBibliographie());
 }
 
 TEST(Bibliographie, ConstructeurAvecNomInvalide)
@@ -30,32 +22,117 @@ TEST(Bibliographie, ConstructeurAvecNomInvalide)
 	ASSERT_THROW(Bibliographie Testeur(""), PreconditionException);
 }
 
-TEST(Bibliographie, ajouterReference)
+TEST(Bibliographie, ajouteruneReference)
 {
-	Bibliographie bibliographieTest("Biblio");
-	Ouvrage t_ouvrage(	"Homayoon Beigi",
+	Bibliographie Testeur("Sauceur");
+	Ouvrage OuvrageTesteur(	"Homayoon Beigi",
 						"Fundamentals of Speaker Recognition",
-						"New York",
-						"Springer",
+						"ISBN 978-0-387-77591-3",
 						2011,
-						"ISBN 978-0-387-77591-3");
-	EXPECT_TRUE((bibliographieTest.reqVecteur()).empty())
-	;
-	bibliographieTest.ajouterReference(t_ouvrage);
-	EXPECT_FALSE((bibliographieTest.reqVecteur()).empty())
-	;
-	ASSERT_EQ(t_ouvrage.reqReferenceFormate(), (bibliographieTest.reqVecteur())[0]->reqReferenceFormate())
-	;
+						"New York",
+						"Springer");
+	EXPECT_TRUE((Testeur.reqReferences()).empty());
 
-	Journal journalTest(	"Hart",
-							"A survey of source code management tools for programming courses",
-							"Journal of Computing Sciences in Colleges",
-							24,
-							6,
-							113,
-							2009,
-							"ISSN 1937-4771");
-	bibliographieTest.ajouterReference(journalTest);
-	ASSERT_EQ(journalTest.reqReferenceFormate(), (bibliographieTest.reqVecteur())[1]->reqReferenceFormate())
+	Testeur.ajouterReference(OuvrageTesteur);
+	EXPECT_FALSE((Testeur.reqReferences()).empty());
+
+	ASSERT_EQ(OuvrageTesteur.reqReferenceFormate(), (Testeur.reqReferences())[0]->reqReferenceFormate());
+
+
+}
+
+TEST(Bibliographie, ajouterdeuxReferences)
+{
+	Bibliographie Testeur("Sauceur");
+	Ouvrage OuvrageTesteur(	"Homayoon Beigi",
+						"Fundamentals of Speaker Recognition",
+						"ISBN 978-0-387-77591-3",
+						2011,
+						"New York",
+						"Springer");
+	EXPECT_TRUE((Testeur.reqReferences()).empty());
+
+	Testeur.ajouterReference(OuvrageTesteur);
+	EXPECT_FALSE((Testeur.reqReferences()).empty());
+
+	ASSERT_EQ(OuvrageTesteur.reqReferenceFormate(), (Testeur.reqReferences())[0]->reqReferenceFormate());
+	Journal JournalTesteur(	"Hart",
+								"A survey of source code management tools for programming courses",
+								"ISSN 1937-4771",
+								2009,
+								"Journal of Computing Sciences in Colleges",
+								24,
+								6,
+								113);
+		Testeur.ajouterReference(JournalTesteur);
+		ASSERT_EQ(JournalTesteur.reqReferenceFormate(), (Testeur.reqReferences())[1]->reqReferenceFormate())
+		;
+
+
+}
+
+TEST(Bibliographie, ajouterReferenceExistante)
+{
+	Bibliographie Testeur("Sauceur");
+		Ouvrage OuvrageTesteur(	"Homayoon Beigi",
+							"Fundamentals of Speaker Recognition",
+							"ISBN 978-0-387-77591-3",
+							2011,
+							"New York",
+							"Springer");
+		EXPECT_TRUE((Testeur.reqReferences()).empty());
+
+		Testeur.ajouterReference(OuvrageTesteur);
+		EXPECT_FALSE((Testeur.reqReferences()).empty());
+		Testeur.ajouterReference(OuvrageTesteur);
+		EXPECT_EQ(1, Testeur.reqReferences().size());
+
+}
+
+TEST(Bibliographie, reqReferenceFormate){
+	ostringstream os;
+	Bibliographie Testeur("Sauceur");
+	Ouvrage OuvrageTesteur(	"Homayoon Beigi",
+								"Fundamentals of Speaker Recognition",
+								"ISBN 978-0-387-77591-3",
+								2011,
+								"New York",
+								"Springer");
+	Testeur.ajouterReference(OuvrageTesteur);
+	os << "Sauceur" << endl;
+		os << "===============================" << endl;
+		os << "[" << 1 << "]" << " " << OuvrageTesteur.reqReferenceFormate() << endl;
+		ASSERT_EQ(os.str(), Testeur.reqBibliographieFormate()) << Testeur.reqBibliographieFormate();
 	;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

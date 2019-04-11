@@ -4485,3 +4485,1780 @@ In file included from /usr/local/include/gtest/gtest.h:1874:0,
 subdir.mk:27: recipe for target 'BibliographieTesteur.o' failed
 make: *** [BibliographieTesteur.o] Error 1
 "make all" terminated with exit code 2. Build might be incomplete.
+21:02:41 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:02:41 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+../BibliographieTesteur.cpp: In member function ‘virtual void Bibliographie_ajouterReference_Test::TestBody()’:
+../BibliographieTesteur.cpp:36:2: error: ‘Ouvrage’ was not declared in this scope
+  Ouvrage t_ouvrage( "Homayoon Beigi",
+  ^~~~~~~
+../BibliographieTesteur.cpp:36:2: note: suggested alternative: ‘rusage’
+  Ouvrage t_ouvrage( "Homayoon Beigi",
+  ^~~~~~~
+  rusage
+In file included from /usr/local/include/gtest/gtest.h:58:0,
+                 from ../BibliographieTesteur.cpp:9:
+../BibliographieTesteur.cpp:42:33: error: ‘class biblio::Bibliographie’ has no member named ‘reqVecteur’
+  EXPECT_TRUE((bibliographieTest.reqVecteur()).empty())
+                                 ^
+../BibliographieTesteur.cpp:44:37: error: ‘t_ouvrage’ was not declared in this scope
+  bibliographieTest.ajouterReference(t_ouvrage);
+                                     ^~~~~~~~~
+In file included from /usr/local/include/gtest/gtest.h:1874:0,
+                 from ../BibliographieTesteur.cpp:9:
+../BibliographieTesteur.cpp:47:2: error: template argument 1 is invalid
+  ASSERT_EQ(t_ouvrage.reqReferenceFormate(), (bibliographieTest.reqVecteur())[0]->reqReferenceFormate())
+  ^
+../BibliographieTesteur.cpp:47:64: error: ‘class biblio::Bibliographie’ has no member named ‘reqVecteur’
+  ASSERT_EQ(t_ouvrage.reqReferenceFormate(), (bibliographieTest.reqVecteur())[0]->reqReferenceFormate())
+                                                                ^
+../BibliographieTesteur.cpp:50:2: error: ‘Journal’ was not declared in this scope
+  Journal journalTest( "Hart",
+  ^~~~~~~
+../BibliographieTesteur.cpp:58:37: error: ‘journalTest’ was not declared in this scope
+  bibliographieTest.ajouterReference(journalTest);
+                                     ^~~~~~~~~~~
+In file included from /usr/local/include/gtest/gtest.h:1874:0,
+                 from ../BibliographieTesteur.cpp:9:
+../BibliographieTesteur.cpp:59:2: error: template argument 1 is invalid
+  ASSERT_EQ(journalTest.reqReferenceFormate(), (bibliographieTest.reqVecteur())[1]->reqReferenceFormate())
+  ^
+../BibliographieTesteur.cpp:59:66: error: ‘class biblio::Bibliographie’ has no member named ‘reqVecteur’
+  ASSERT_EQ(journalTest.reqReferenceFormate(), (bibliographieTest.reqVecteur())[1]->reqReferenceFormate())
+                                                                  ^
+subdir.mk:27: recipe for target 'BibliographieTesteur.o' failed
+make: *** [BibliographieTesteur.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:07:56 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:07:56 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+../BibliographieTesteur.cpp: In member function ‘virtual void Bibliographie_ConstructeurNormal_Test::TestBody()’:
+../BibliographieTesteur.cpp:23:16: error: no matching function for call to ‘biblio::Bibliographie::Bibliographie()’
+  Bibliographie Testeur;
+                ^~~~~~~
+In file included from ../BibliographieTesteur.cpp:7:0:
+/home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:36:2: note: candidate: biblio::Bibliographie::Bibliographie(const biblio::Bibliographie&)
+  Bibliographie(const biblio::Bibliographie&);
+  ^~~~~~~~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:36:2: note:   candidate expects 1 argument, 0 provided
+/home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:20:2: note: candidate: biblio::Bibliographie::Bibliographie(std::__cxx11::string)
+  Bibliographie(const std::string nombiblio);
+  ^~~~~~~~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:20:2: note:   candidate expects 1 argument, 0 provided
+subdir.mk:27: recipe for target 'BibliographieTesteur.o' failed
+make: *** [BibliographieTesteur.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:08:11 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:08:11 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+21:08:57 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:08:58 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+21:10:20 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:10:33 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:10:33 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+21:10:37 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:11:45 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:11:45 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+21:11:48 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:12:02 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:12:02 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+21:12:05 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:13:38 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+21:13:38 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:13:42 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:13:48 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:13:48 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+21:13:51 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:14:03 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:14:03 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+21:14:06 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:14:23 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:14:23 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+21:14:26 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:14:34 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:14:34 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+21:14:37 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:14:57 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+../Bibliographie.cpp:14:1: error: prototype for ‘biblio::Bibliographie::Bibliographie(const string&)’ does not match any in class ‘biblio::Bibliographie’
+ Bibliographie::Bibliographie(const string& nombiblio) : m_nBibliographie(nombiblio){
+ ^~~~~~~~~~~~~
+In file included from ../Bibliographie.cpp:7:0:
+../Bibliographie.h:36:2: error: candidates are: biblio::Bibliographie::Bibliographie(const biblio::Bibliographie&)
+  Bibliographie(const biblio::Bibliographie&);
+  ^~~~~~~~~~~~~
+../Bibliographie.h:20:2: error:                 biblio::Bibliographie::Bibliographie(std::__cxx11::string)
+  Bibliographie(const std::string nombiblio);
+  ^~~~~~~~~~~~~
+make: *** [Bibliographie.o] Error 1
+subdir.mk:33: recipe for target 'Bibliographie.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+21:14:57 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:15:00 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+21:15:01 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+21:15:04 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:15:22 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:15:22 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+21:15:25 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:15:40 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:16:36 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:20:16 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+21:20:17 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:20:19 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:20:32 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+../Bibliographie.cpp:44:1: error: ‘ssss’ does not name a type
+ ssss
+ ^~~~
+subdir.mk:33: recipe for target 'Bibliographie.o' failed
+make: *** [Bibliographie.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:20:33 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:20:39 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+21:20:40 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:21:06 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+21:21:06 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:21:08 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:22:41 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+21:22:42 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:22:44 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:24:01 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+21:24:09 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:24:19 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:24:19 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:24:23 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:24:47 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+21:24:53 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:24:54 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:25:00 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:25:00 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:25:01 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:25:01 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:25:07 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:25:07 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:25:08 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:25:08 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:25:12 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:25:12 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:25:13 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:25:13 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:25:16 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:26:04 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:26:26 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+In file included from ../Bibliographie.h:9:0,
+                 from ../Bibliographie.cpp:7:
+../Reference.h:48:28: error: ‘sss’ does not name a type
+     virtual ~Reference(){};sss
+                            ^~~
+../Reference.h: In member function ‘std::__cxx11::string biblio::Reference::reqAuteurs() const’:
+../Reference.h:28:44: error: ‘m_auteurs’ was not declared in this scope
+     std::string reqAuteurs() const {return m_auteurs;};
+                                            ^~~~~~~~~
+../Reference.h:28:44: note: suggested alternative: ‘reqAuteurs’
+     std::string reqAuteurs() const {return m_auteurs;};
+                                            ^~~~~~~~~
+                                            reqAuteurs
+../Reference.h: In member function ‘std::__cxx11::string biblio::Reference::reqTitre() const’:
+../Reference.h:33:42: error: ‘m_titre’ was not declared in this scope
+     std::string reqTitre() const {return m_titre;};
+                                          ^~~~~~~
+../Reference.h:33:42: note: suggested alternative: ‘mktime’
+     std::string reqTitre() const {return m_titre;};
+                                          ^~~~~~~
+                                          mktime
+../Reference.h: In member function ‘std::__cxx11::string biblio::Reference::reqIdentifiant() const’:
+../Reference.h:38:48: error: ‘m_identifiant’ was not declared in this scope
+     std::string reqIdentifiant() const {return m_identifiant;};
+                                                ^~~~~~~~~~~~~
+../Reference.h:38:48: note: suggested alternative: ‘reqIdentifiant’
+     std::string reqIdentifiant() const {return m_identifiant;};
+                                                ^~~~~~~~~~~~~
+                                                reqIdentifiant
+make: *** [Bibliographie.o] Error 1
+subdir.mk:33: recipe for target 'Bibliographie.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+21:26:27 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+In file included from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9:0,
+                 from ../BibliographieTesteur.cpp:7:
+/home/vincebro/Documents/cpp/TP3/Classes/Reference.h:48:28: error: ‘sss’ does not name a type
+     virtual ~Reference(){};sss
+                            ^~~
+/home/vincebro/Documents/cpp/TP3/Classes/Reference.h: In member function ‘std::__cxx11::string biblio::Reference::reqAuteurs() const’:
+/home/vincebro/Documents/cpp/TP3/Classes/Reference.h:28:44: error: ‘m_auteurs’ was not declared in this scope
+     std::string reqAuteurs() const {return m_auteurs;};
+                                            ^~~~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Reference.h:28:44: note: suggested alternative: ‘reqAuteurs’
+     std::string reqAuteurs() const {return m_auteurs;};
+                                            ^~~~~~~~~
+                                            reqAuteurs
+/home/vincebro/Documents/cpp/TP3/Classes/Reference.h: In member function ‘std::__cxx11::string biblio::Reference::reqTitre() const’:
+/home/vincebro/Documents/cpp/TP3/Classes/Reference.h:33:42: error: ‘m_titre’ was not declared in this scope
+     std::string reqTitre() const {return m_titre;};
+                                          ^~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Reference.h:33:42: note: suggested alternative: ‘mktime’
+     std::string reqTitre() const {return m_titre;};
+                                          ^~~~~~~
+                                          mktime
+/home/vincebro/Documents/cpp/TP3/Classes/Reference.h: In member function ‘std::__cxx11::string biblio::Reference::reqIdentifiant() const’:
+/home/vincebro/Documents/cpp/TP3/Classes/Reference.h:38:48: error: ‘m_identifiant’ was not declared in this scope
+     std::string reqIdentifiant() const {return m_identifiant;};
+                                                ^~~~~~~~~~~~~
+/home/vincebro/Documents/cpp/TP3/Classes/Reference.h:38:48: note: suggested alternative: ‘reqIdentifiant’
+     std::string reqIdentifiant() const {return m_identifiant;};
+                                                ^~~~~~~~~~~~~
+                                                reqIdentifiant
+make: *** [BibliographieTesteur.o] Error 1
+subdir.mk:27: recipe for target 'BibliographieTesteur.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+21:26:34 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building file: ../Journal.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Journal.d" -MT"Journal.o" -o "Journal.o" "../Journal.cpp"
+Finished building: ../Journal.cpp
+ 
+Building file: ../Ouvrage.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Ouvrage.d" -MT"Ouvrage.o" -o "Ouvrage.o" "../Ouvrage.cpp"
+Finished building: ../Ouvrage.cpp
+ 
+Building file: ../Reference.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reference.d" -MT"Reference.o" -o "Reference.o" "../Reference.cpp"
+Finished building: ../Reference.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+21:26:37 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building file: ../JournalTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"JournalTesteur.d" -MT"JournalTesteur.o" -o "JournalTesteur.o" "../JournalTesteur.cpp"
+Finished building: ../JournalTesteur.cpp
+ 
+Building file: ../OuvrageTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"OuvrageTesteur.d" -MT"OuvrageTesteur.o" -o "OuvrageTesteur.o" "../OuvrageTesteur.cpp"
+Finished building: ../OuvrageTesteur.cpp
+ 
+Building file: ../ReferenceTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReferenceTesteur.d" -MT"ReferenceTesteur.o" -o "ReferenceTesteur.o" "../ReferenceTesteur.cpp"
+Finished building: ../ReferenceTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+21:26:44 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:27:45 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:27:45 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+21:27:47 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:27:47 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:27:49 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:28:01 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:28:16 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:29:42 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:30:19 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+21:30:20 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:30:22 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:31:21 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:32:22 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+21:32:23 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:32:24 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:32:52 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:35:08 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+21:35:09 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+21:35:15 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:35:38 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+21:35:39 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:35:41 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:36:11 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:36:11 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+21:36:14 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:36:31 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:37:24 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+21:37:24 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:37:30 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:37:32 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:37:32 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:37:35 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:38:16 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+21:38:17 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:38:18 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:38:48 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:39:38 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+21:39:39 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:39:44 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:39:49 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:41:05 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+21:41:06 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:41:09 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:41:27 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+21:41:28 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:41:29 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:41:37 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:41:37 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+./BibliographieTesteur.o: In function `Bibliographie_ConstructeurNormal_Test::TestBody()':
+/home/vincebro/Documents/cpp/TP3/Testeur/Debug/../BibliographieTesteur.cpp:23: undefined reference to `biblio::Bibliographie::~Bibliographie()'
+./BibliographieTesteur.o: In function `Bibliographie_ConstructeurAvecNomInvalide_Test::TestBody()':
+/home/vincebro/Documents/cpp/TP3/Testeur/Debug/../BibliographieTesteur.cpp:29: undefined reference to `biblio::Bibliographie::~Bibliographie()'
+/home/vincebro/Documents/cpp/TP3/Classes/Debug/libClasses.a(Bibliographie.o): In function `biblio::Bibliographie::Bibliographie(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/home/vincebro/Documents/cpp/TP3/Classes/Debug/../Bibliographie.cpp:14: undefined reference to `vtable for biblio::Bibliographie'
+collect2: error: ld returned 1 exit status
+make: *** [Testeur] Error 1
+makefile:44: recipe for target 'Testeur' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+21:42:10 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+21:42:11 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+21:42:13 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:42:28 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+21:42:28 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+21:42:31 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:42:46 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+21:42:46 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+21:42:49 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:43:13 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+21:43:14 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:43:15 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:43:27 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+21:43:28 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+./BibliographieTesteur.o: In function `Bibliographie_ConstructeurAvecNomInvalide_Test::TestBody()':
+/home/vincebro/Documents/cpp/TP3/Testeur/Debug/../BibliographieTesteur.cpp:29: undefined reference to `biblio::Bibliographie::~Bibliographie()'
+collect2: error: ld returned 1 exit status
+makefile:44: recipe for target 'Testeur' failed
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:43:30 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+./BibliographieTesteur.o: In function `Bibliographie_ConstructeurAvecNomInvalide_Test::TestBody()':
+/home/vincebro/Documents/cpp/TP3/Testeur/Debug/../BibliographieTesteur.cpp:29: undefined reference to `biblio::Bibliographie::~Bibliographie()'
+makefile:44: recipe for target 'Testeur' failed
+collect2: error: ld returned 1 exit status
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:43:47 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+21:43:48 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+21:43:51 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:44:00 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:44:00 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+21:44:03 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:44:34 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:44:55 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+../Bibliographie.cpp:37:1: error: redefinition of ‘biblio::Bibliographie::~Bibliographie()’
+ Bibliographie::~Bibliographie()
+ ^~~~~~~~~~~~~
+In file included from ../Bibliographie.cpp:7:0:
+../Bibliographie.h:21:2: note: ‘biblio::Bibliographie::~Bibliographie()’ previously defined here
+  ~Bibliographie(){};
+  ^
+subdir.mk:33: recipe for target 'Bibliographie.o' failed
+make: *** [Bibliographie.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:44:56 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:45:05 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+21:45:06 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+21:45:09 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:49:11 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+21:49:12 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+../BibliographieTesteur.cpp: In member function ‘virtual void Bibliographie_ajouteruneReference_Test::TestBody()’:
+../BibliographieTesteur.cpp:35:2: error: ‘Ouvrage’ was not declared in this scope
+  Ouvrage OuvrageTesteur( "Homayoon Beigi",
+  ^~~~~~~
+../BibliographieTesteur.cpp:35:2: note: suggested alternative: ‘rusage’
+  Ouvrage OuvrageTesteur( "Homayoon Beigi",
+  ^~~~~~~
+  rusage
+../BibliographieTesteur.cpp:43:27: error: ‘OuvrageTesteur’ was not declared in this scope
+  Testeur.ajouterReference(OuvrageTesteur);
+                           ^~~~~~~~~~~~~~
+../BibliographieTesteur.cpp:43:27: note: suggested alternative: ‘Testeur’
+  Testeur.ajouterReference(OuvrageTesteur);
+                           ^~~~~~~~~~~~~~
+                           Testeur
+In file included from /usr/local/include/gtest/gtest.h:1874:0,
+                 from ../BibliographieTesteur.cpp:9:
+../BibliographieTesteur.cpp:46:2: error: template argument 1 is invalid
+  ASSERT_EQ(OuvrageTesteur.reqReferenceFormate(), (Testeur.reqReferences())[0]->reqReferenceFormate());
+  ^
+subdir.mk:27: recipe for target 'BibliographieTesteur.o' failed
+make: *** [BibliographieTesteur.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:50:00 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+21:50:00 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+21:50:03 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:52:31 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:52:31 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+21:52:36 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:55:15 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+21:55:15 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+21:55:19 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:57:24 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+../Bibliographie.cpp:58:6: error: redefinition of ‘void biblio::Bibliographie::ajouterReference(const biblio::Reference&)’
+ void Bibliographie::ajouterReference (const Reference& p_nouvelleReference)
+      ^~~~~~~~~~~~~
+In file included from ../Bibliographie.cpp:7:0:
+../Bibliographie.h:30:7: note: ‘void biblio::Bibliographie::ajouterReference(const biblio::Reference&)’ previously defined here
+  void ajouterReference (const Reference& p_nouvelleReference)
+       ^~~~~~~~~~~~~~~~
+subdir.mk:33: recipe for target 'Bibliographie.o' failed
+make: *** [Bibliographie.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:57:25 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+21:57:32 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+../Bibliographie.cpp: In member function ‘void biblio::Bibliographie::ajouterReference(const biblio::Reference&)’:
+../Bibliographie.cpp:61:53: error: no matching function for call to ‘biblio::Bibliographie::referenceEstDejaPresente(const biblio::Reference&)’
+   if (!(referenceEstDejaPresente(p_nouvelleReference)) {
+                                                     ^
+../Bibliographie.cpp:45:6: note: candidate: bool biblio::Bibliographie::referenceEstDejaPresente(const string&) const
+ bool Bibliographie::referenceEstDejaPresente(const std::string& p_identifiant) const{
+      ^~~~~~~~~~~~~
+../Bibliographie.cpp:45:6: note:   no known conversion for argument 1 from ‘const biblio::Reference’ to ‘const string& {aka const std::__cxx11::basic_string<char>&}’
+../Bibliographie.cpp:61:56: error: expected ‘)’ before ‘{’ token
+   if (!(referenceEstDejaPresente(p_nouvelleReference)) {
+                                                        ^
+../Bibliographie.cpp:64:2: error: expected primary-expression before ‘}’ token
+  };
+  ^
+make: *** [Bibliographie.o] Error 1
+subdir.mk:33: recipe for target 'Bibliographie.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+21:57:33 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+/usr/bin/ld: cannot find -lClasses
+makefile:44: recipe for target 'Testeur' failed
+collect2: error: ld returned 1 exit status
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:57:46 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+../Bibliographie.cpp: In member function ‘void biblio::Bibliographie::ajouterReference(const biblio::Reference&)’:
+../Bibliographie.cpp:61:53: error: no matching function for call to ‘biblio::Bibliographie::referenceEstDejaPresente(const biblio::Reference&)’
+   if (!(referenceEstDejaPresente(p_nouvelleReference))) {
+                                                     ^
+../Bibliographie.cpp:45:6: note: candidate: bool biblio::Bibliographie::referenceEstDejaPresente(const string&) const
+ bool Bibliographie::referenceEstDejaPresente(const std::string& p_identifiant) const{
+      ^~~~~~~~~~~~~
+../Bibliographie.cpp:45:6: note:   no known conversion for argument 1 from ‘const biblio::Reference’ to ‘const string& {aka const std::__cxx11::basic_string<char>&}’
+subdir.mk:33: recipe for target 'Bibliographie.o' failed
+make: *** [Bibliographie.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:57:47 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+/usr/bin/ld: cannot find -lClasses
+makefile:44: recipe for target 'Testeur' failed
+collect2: error: ld returned 1 exit status
+make: *** [Testeur] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:58:19 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+../Bibliographie.cpp: In member function ‘void biblio::Bibliographie::ajouterReference(const biblio::Reference&)’:
+../Bibliographie.cpp:61:54: error: ‘std::__cxx11::string biblio::Reference::m_identifiant’ is protected within this context
+   if (!(referenceEstDejaPresente(p_nouvelleReference.m_identifiant))) {
+                                                      ^~~~~~~~~~~~~
+In file included from ../Bibliographie.h:9:0,
+                 from ../Bibliographie.cpp:7:
+../Reference.h:50:37: note: declared protected here
+     std::string m_auteurs, m_titre, m_identifiant;
+                                     ^~~~~~~~~~~~~
+make: *** [Bibliographie.o] Error 1
+subdir.mk:33: recipe for target 'Bibliographie.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+21:58:19 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+/usr/bin/ld: cannot find -lClasses
+collect2: error: ld returned 1 exit status
+make: *** [Testeur] Error 1
+makefile:44: recipe for target 'Testeur' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+21:58:41 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+21:58:42 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+21:58:47 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:00:17 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+22:00:17 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+22:00:20 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:03:21 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+22:03:22 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+22:03:25 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:03:53 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+22:03:53 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+22:03:58 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+22:03:58 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:04:02 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:04:49 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+22:04:50 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:04:52 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:05:01 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+22:05:02 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:05:06 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:05:18 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+22:05:19 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:05:21 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:05:38 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+22:05:39 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:05:41 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:06:10 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+22:06:11 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:06:19 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+22:06:20 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:06:22 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:06:45 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+22:06:45 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:06:47 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:07:17 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+22:07:17 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:07:19 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:09:39 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+22:09:39 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:09:41 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:09:57 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+22:09:57 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:10:00 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:10:19 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building target: libClasses.a
+Invoking: GCC Archiver
+ar -r  "libClasses.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./Util.o   
+ar: creating libClasses.a
+Finished building target: libClasses.a
+ 
+22:10:20 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:10:22 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:11:47 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+22:11:47 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:11:49 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:12:02 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+22:12:02 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+22:12:05 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:12:17 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+22:12:17 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+22:12:20 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:16:48 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+22:16:48 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../BibliographieTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BibliographieTesteur.d" -MT"BibliographieTesteur.o" -o "BibliographieTesteur.o" "../BibliographieTesteur.cpp"
+Finished building: ../BibliographieTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/vincebro/Documents/cpp/TP3/Classes/Debug" -o "Testeur"  ./BibliographieTesteur.o ./JournalTesteur.o ./OuvrageTesteur.o ./ReferenceTesteur.o   -lClasses -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+22:16:50 **** Build of configuration Debug for project Utilisation ****
+make all 
+Building file: ../src/Utilisation.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Utilisation.d" -MT"src/Utilisation.o" -o "src/Utilisation.o" "../src/Utilisation.cpp"
+../src/Utilisation.cpp:9:10: fatal error: Bibliographie.h: No such file or directory
+ #include "Bibliographie.h"
+          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+src/subdir.mk:18: recipe for target 'src/Utilisation.o' failed
+make: *** [src/Utilisation.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:18:00 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+22:18:00 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:18:01 **** Incremental Build of configuration Debug for project Utilisation ****
+make all 
+Building file: ../src/Utilisation.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Utilisation.d" -MT"src/Utilisation.o" -o "src/Utilisation.o" "../src/Utilisation.cpp"
+../src/Utilisation.cpp: In function ‘int main()’:
+../src/Utilisation.cpp:13:2: error: ‘cout’ was not declared in this scope
+  cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+  ^~~~
+../src/Utilisation.cpp:13:2: note: suggested alternative:
+In file included from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:11:0,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../src/Utilisation.cpp:9:
+/usr/include/c++/7/iostream:61:18: note:   ‘std::cout’
+   extern ostream cout;  /// Linked to standard output
+                  ^~~~
+../src/Utilisation.cpp:13:33: error: ‘endl’ was not declared in this scope
+  cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+                                 ^~~~
+../src/Utilisation.cpp:13:33: note: suggested alternative:
+In file included from /usr/include/c++/7/iostream:39:0,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Reference.h:11,
+                 from /home/vincebro/Documents/cpp/TP3/Classes/Bibliographie.h:9,
+                 from ../src/Utilisation.cpp:9:
+/usr/include/c++/7/ostream:590:5: note:   ‘std::endl’
+     endl(basic_ostream<_CharT, _Traits>& __os)
+     ^~~~
+src/subdir.mk:18: recipe for target 'src/Utilisation.o' failed
+make: *** [src/Utilisation.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:37:01 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+22:37:01 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:37:01 **** Incremental Build of configuration Debug for project Utilisation ****
+make all 
+Building file: ../src/Utilisation.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Utilisation.d" -MT"src/Utilisation.o" -o "src/Utilisation.o" "../src/Utilisation.cpp"
+../src/Utilisation.cpp: In function ‘biblio::Ouvrage CreerUnOuvrage()’:
+../src/Utilisation.cpp:24:16: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  while (valide = false){
+         ~~~~~~~^~~~~~~
+Finished building: ../src/Utilisation.cpp
+ 
+Building target: Utilisation
+Invoking: GCC C++ Linker
+g++  -o "Utilisation"  ./src/Utilisation.o   
+./src/Utilisation.o: In function `CreerUnOuvrage()':
+/home/vincebro/Documents/cpp/TP3/Utilisation/Debug/../src/Utilisation.cpp:44: undefined reference to `util::validerFormatNom(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/home/vincebro/Documents/cpp/TP3/Utilisation/Debug/../src/Utilisation.cpp:45: undefined reference to `util::validerCodeIsbn(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/home/vincebro/Documents/cpp/TP3/Utilisation/Debug/../src/Utilisation.cpp:45: undefined reference to `util::validerCodeIssn(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+makefile:45: recipe for target 'Utilisation' failed
+/home/vincebro/Documents/cpp/TP3/Utilisation/Debug/../src/Utilisation.cpp:46: undefined reference to `util::validerFormatNom(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/home/vincebro/Documents/cpp/TP3/Utilisation/Debug/../src/Utilisation.cpp:46: undefined reference to `util::validerFormatNom(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/home/vincebro/Documents/cpp/TP3/Utilisation/Debug/../src/Utilisation.cpp:49: undefined reference to `biblio::Ouvrage::Ouvrage(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)'
+collect2: error: ld returned 1 exit status
+make: *** [Utilisation] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:37:31 **** Incremental Build of configuration Debug for project Classes ****
+make all 
+make: Nothing to be done for 'all'.
+22:37:31 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+make: Nothing to be done for 'all'.
+22:37:31 **** Incremental Build of configuration Debug for project Utilisation ****
+make all 
+Building file: ../src/Utilisation.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/vincebro/Documents/cpp/TP3/Classes" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Utilisation.d" -MT"src/Utilisation.o" -o "src/Utilisation.o" "../src/Utilisation.cpp"
+../src/Utilisation.cpp: In function ‘biblio::Ouvrage CreerUnOuvrage()’:
+../src/Utilisation.cpp:24:16: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+  while (valide = false){
+         ~~~~~~~^~~~~~~
+Finished building: ../src/Utilisation.cpp
+ 
+Building target: Utilisation
+Invoking: GCC C++ Linker
+g++  -o "Utilisation"  ./src/Utilisation.o   
+./src/Utilisation.o: In function `CreerUnOuvrage()':
+/home/vincebro/Documents/cpp/TP3/Utilisation/Debug/../src/Utilisation.cpp:44: undefined reference to `util::validerFormatNom(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/home/vincebro/Documents/cpp/TP3/Utilisation/Debug/../src/Utilisation.cpp:45: undefined reference to `util::validerCodeIsbn(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/home/vincebro/Documents/cpp/TP3/Utilisation/Debug/../src/Utilisation.cpp:45: undefined reference to `util::validerCodeIssn(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/home/vincebro/Documents/cpp/TP3/Utilisation/Debug/../src/Utilisation.cpp:46: undefined reference to `util::validerFormatNom(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+makefile:45: recipe for target 'Utilisation' failed
+/home/vincebro/Documents/cpp/TP3/Utilisation/Debug/../src/Utilisation.cpp:46: undefined reference to `util::validerFormatNom(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/home/vincebro/Documents/cpp/TP3/Utilisation/Debug/../src/Utilisation.cpp:49: undefined reference to `biblio::Ouvrage::Ouvrage(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)'
+collect2: error: ld returned 1 exit status
+make: *** [Utilisation] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.

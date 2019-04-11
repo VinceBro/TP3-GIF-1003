@@ -11,24 +11,20 @@ using namespace biblio;
  * \brief TODO Y FAUT SASSURER QUE LE CONSTRUCTEUR EST BON
  * @param p_nouvelleReference
  */
-Bibliographie::Bibliographie(const string nombiblio){
+Bibliographie::Bibliographie(const string& nombiblio) : m_nBibliographie(nombiblio){
 	PRECONDITION(!(nombiblio.empty()));
 
-	m_nBibliographie = nombiblio;
-
 	POSTCONDITION(m_nBibliographie == nombiblio);
-
-	INVARIANTS();
 }
 /**
  * \brief Génère un objet string les éléments de toutes les références enregistrées dans Bibliographie
- * @return Les références formatées
+ * @return Les références formatéses
  */
 string Bibliographie::reqBibliographieFormate() const{
 	ostringstream os;
-	os << "Bibliographie\n" << "===============================\n" << endl;
+	os << m_nBibliographie <<"\n" << "===============================" << endl;
 	for (unsigned int i = 0; i < m_vReferences.size(); i++){
-		os << "[" << i << "]" <<  m_vReferences[i]->reqReferenceFormate()<< "\n";
+		os << "[" << i + 1 << "]" << " " <<   m_vReferences[i]->reqReferenceFormate()<< "\n";
 	}
 	return os.str();
 }
@@ -36,13 +32,16 @@ string Bibliographie::reqBibliographieFormate() const{
  * \brief Vérifie si l'identifiant en entrée correspond à une Référence déja Présente dans Bibliographie
  * @param p_identifiant
  * @return booléen
+ *
  */
-
-Bibliographie::~Bibliographie(){
-	for (unsigned int i = m_vReferences.size(); i<=0; i--){
-		delete m_vReferences[i];
+Bibliographie::~Bibliographie()
+{
+	for (vector<Reference*>::iterator i = m_vReferences.begin(); i != m_vReferences.end(); ++i)
+	{
+ 		delete *i;
 	}
 }
+
 bool Bibliographie::referenceEstDejaPresente(const std::string& p_identifiant) const{
 	bool valide = false;
 	for (unsigned int i = 0; i < m_vReferences.size(); i++){
@@ -56,9 +55,13 @@ const std::string& Bibliographie::reqNomBibliographie() const
 }
 std::vector<Reference*> Bibliographie::reqReferences() const
 {return m_vReferences;};
-void Bibliographie::verifieInvariant() const{
-	INVARIANT(!(m_nBibliographie.empty()));
-}
+void Bibliographie::ajouterReference (const Reference& p_nouvelleReference)
+	{
+
+		if (!(referenceEstDejaPresente(p_nouvelleReference.reqIdentifiant()))) {
+			m_vReferences.push_back(p_nouvelleReference.clone());
+		}
+	};
 
 
 
